@@ -2073,5 +2073,13 @@ if (window.netlifyIdentity) {
   });
 }
 </script>
+<script>
+/* Che do sua truc quan: mo trang kem ?edit=1 */
+if (location.search.indexOf("edit=1") > -1) {
+  var _s = document.createElement("script");
+  _s.src = "/edit/editor.js?v=1";
+  document.body.appendChild(_s);
+}
+</script>
 </body>
 </html>
