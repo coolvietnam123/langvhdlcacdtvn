@@ -200,10 +200,12 @@ p{margin:0 0 1em}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
 /* ---------- Program (tour) ---------- */
-.prog{display:grid;grid-template-columns:1.05fr 1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
-.prog__media{position:relative;min-height:100%}
-.prog__media .ph,.prog__media .media{height:100%;border-radius:0;border-left:0;border-top:0;border-bottom:0;min-height:320px}
-.prog__body{padding:clamp(24px,3vw,38px)}
+.prog{display:grid;grid-template-columns:minmax(208px,.62fr) 1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow-sm)}
+.prog__media{position:relative;align-self:stretch;padding:clamp(20px,2.2vw,28px);background:linear-gradient(180deg,#FFF9F0,#FBF3E6);border-right:1px solid var(--line);border-radius:var(--r-lg) 0 0 var(--r-lg)}
+.prog__sticky{position:sticky;top:86px;max-width:330px;margin:0 auto}
+.prog__media .ph,.prog__media .media{aspect-ratio:2/3;height:auto;min-height:0;width:100%;border-radius:var(--r);border:1px solid var(--line);background:#FFF8EE;box-shadow:var(--shadow-sm);cursor:zoom-in}
+.zoomhint{display:block;margin-top:10px;text-align:center;font-size:.8rem;color:var(--muted)}
+.prog__body{padding:clamp(24px,3vw,38px);min-width:0}
 .prog__meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .pill{font-size:.85rem;font-weight:600;background:var(--sand);border:1px solid var(--line);color:var(--maroon);padding:5px 13px;border-radius:99px}
 .pill--o{background:linear-gradient(135deg,var(--yellow-l),var(--yellow));border-color:transparent;color:#5A3400;font-weight:700}
@@ -357,6 +359,8 @@ td.num{text-align:right;font-weight:800;color:var(--red-d);white-space:nowrap}
   .nav .btn{display:none}
   .burger{display:block}
   .prog{grid-template-columns:1fr}
+  .prog__media{border-right:0;border-bottom:1px solid var(--line);border-radius:var(--r-lg) var(--r-lg) 0 0}
+  .prog__sticky{position:static;max-width:280px}
   .ev{grid-template-columns:1fr;gap:10px}
   .g2,.g3,.g4{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -389,6 +393,13 @@ td.num{text-align:right;font-weight:800;color:var(--red-d);white-space:nowrap}
 
 /* ===== anh poster chuong trinh: hien full khong cat ===== */
 .media img.fit{object-fit:contain;background:#FFF8EE}
+
+/* ===== xem anh poster co lon ===== */
+.lbx{position:fixed;inset:0;z-index:300;background:rgba(10,18,26,.92);display:flex;align-items:center;justify-content:center;padding:26px;cursor:zoom-out}
+.lbx[hidden]{display:none}
+.lbx img{max-width:min(96vw,860px);max-height:94vh;object-fit:contain;border-radius:10px;box-shadow:0 26px 80px rgba(0,0,0,.55);background:#FFF8EE}
+.lbx__x{position:absolute;top:14px;right:18px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:1.7rem;line-height:1;cursor:pointer}
+.lbx__x:hover{background:rgba(255,255,255,.32)}
 </style>
 <script>
 /* ====== NAP NOI DUNG TU TRANG QUAN TRI (/admin) ======
@@ -648,7 +659,7 @@ window.SITE = null;
     <!-- P1 -->
     <div class="panel on" id="p1">
       <div class="prog rv">
-        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-dau-chan-1ngay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình Dấu chân bản làng" data-ph-sub="images/ct-dau-chan-1ngay.jpg · dọc 3:4"></div></div>
+        <div class="prog__media"><div class="prog__sticky"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-dau-chan-1ngay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình Dấu chân bản làng" data-ph-sub="images/ct-dau-chan-1ngay.jpg · dọc 3:4"></div><span class="zoomhint" data-vi="Bấm vào ảnh để xem cỡ lớn" data-en="Tap the image to enlarge">Bấm vào ảnh để xem cỡ lớn</span></div></div>
         <div class="prog__body">
           <div class="prog__meta">
             <span class="pill" data-vi="Thời lượng: 1 ngày (8:00 - 16:30)" data-en="Duration: full day (8:00 - 16:30)">Thời lượng: 1 ngày (8:00 - 16:30)</span>
@@ -685,7 +696,7 @@ window.SITE = null;
     <!-- P2 -->
     <div class="panel" id="p2">
       <div class="prog rv">
-        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-dau-chan-nuangay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình ½ ngày" data-ph-sub="images/ct-dau-chan-nuangay.jpg · dọc 3:4"></div></div>
+        <div class="prog__media"><div class="prog__sticky"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-dau-chan-nuangay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình ½ ngày" data-ph-sub="images/ct-dau-chan-nuangay.jpg · dọc 3:4"></div><span class="zoomhint" data-vi="Bấm vào ảnh để xem cỡ lớn" data-en="Tap the image to enlarge">Bấm vào ảnh để xem cỡ lớn</span></div></div>
         <div class="prog__body">
           <div class="prog__meta">
             <span class="pill" data-vi="Thời lượng: ½ ngày (8:00 - 11:45)" data-en="Duration: half day (8:00 - 11:45)">Thời lượng: ½ ngày (8:00 - 11:45)</span>
@@ -717,7 +728,7 @@ window.SITE = null;
     <!-- P3 -->
     <div class="panel" id="p3">
       <div class="prog rv">
-        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-tay-nguyen-1ngay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình Tây Nguyên" data-ph-sub="images/ct-tay-nguyen-1ngay.jpg · dọc 3:4"></div></div>
+        <div class="prog__media"><div class="prog__sticky"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-tay-nguyen-1ngay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình Tây Nguyên" data-ph-sub="images/ct-tay-nguyen-1ngay.jpg · dọc 3:4"></div><span class="zoomhint" data-vi="Bấm vào ảnh để xem cỡ lớn" data-en="Tap the image to enlarge">Bấm vào ảnh để xem cỡ lớn</span></div></div>
         <div class="prog__body">
           <div class="prog__meta">
             <span class="pill" data-vi="Thời lượng: 1 ngày (8:00 - 16:30)" data-en="Duration: full day (8:00 - 16:30)">Thời lượng: 1 ngày (8:00 - 16:30)</span>
@@ -751,7 +762,7 @@ window.SITE = null;
     <!-- P4 -->
     <div class="panel" id="p4">
       <div class="prog rv">
-        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-tay-nguyen-nuangay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình Tây Nguyên ½ ngày" data-ph-sub="images/ct-tay-nguyen-nuangay.jpg · dọc 3:4"></div></div>
+        <div class="prog__media"><div class="prog__sticky"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-tay-nguyen-nuangay.jpg?v=2" alt="" data-ph-title="Ảnh chương trình Tây Nguyên ½ ngày" data-ph-sub="images/ct-tay-nguyen-nuangay.jpg · dọc 3:4"></div><span class="zoomhint" data-vi="Bấm vào ảnh để xem cỡ lớn" data-en="Tap the image to enlarge">Bấm vào ảnh để xem cỡ lớn</span></div></div>
         <div class="prog__body">
           <div class="prog__meta">
             <span class="pill" data-vi="Thời lượng: ½ ngày (8:00 - 11:45)" data-en="Duration: half day (8:00 - 11:45)">Thời lượng: ½ ngày (8:00 - 11:45)</span>
@@ -2080,6 +2091,24 @@ if (location.search.indexOf("edit=1") > -1) {
   _s.src = "/edit/editor.js?v=2";
   document.body.appendChild(_s);
 }
+</script>
+<div class="lbx" id="lbx" hidden><button class="lbx__x" type="button" aria-label="Dong">&times;</button><img id="lbxImg" src="" alt=""></div>
+<script>
+/* Xem anh poster chuong trinh o co lon */
+(function(){
+  var lb=document.getElementById("lbx"), li=document.getElementById("lbxImg");
+  if(!lb||!li) return;
+  function open(im){ if(!im) return;
+    if(document.body.classList.contains("cmsedit")) return;   /* dang o che do sua truc quan */
+    li.src = im.currentSrc || im.src; li.alt = im.alt || "";
+    lb.hidden=false; document.body.style.overflow="hidden"; }
+  function close(){ lb.hidden=true; li.src=""; document.body.style.overflow=""; }
+  Array.prototype.forEach.call(document.querySelectorAll(".prog__media .media"), function(m){
+    m.addEventListener("click", function(){ open(m.querySelector("img")); });
+  });
+  lb.addEventListener("click", close);
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape" && !lb.hidden) close(); });
+})();
 </script>
 </body>
 </html>
