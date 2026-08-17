@@ -403,16 +403,26 @@ td.num{text-align:right;font-weight:800;color:var(--red-d);white-space:nowrap}
 </style>
 <script>
 /* ====== NAP NOI DUNG TU TRANG QUAN TRI (/admin) ======
-   Tep content.json do Decap CMS ghi ra. Neu khong co thi trang van chay binh thuong. */
+   Tep content.json do Decap CMS ghi ra. Neu khong co thi trang van chay binh thuong.
+   Tai BAT DONG BO (async) de trang khong bi treo trang trang khi mang cham:
+   trinh duyet van render giao dien, noi dung tu /admin ap vao ngay khi tai xong
+   (toi da cho 8 giay, qua han thi dung noi dung goc). */
 window.SITE = null;
-(function(){
+window.SITE_READY = new Promise(function(resolve){
   try{
     var x = new XMLHttpRequest();
-    x.open("GET", "content.json?v=" + Date.now(), false);
+    x.open("GET", "content.json?v=" + Date.now(), true);
+    x.timeout = 8000;
+    x.onload = function(){
+      try{
+        if(x.status === 200 || x.status === 0) window.SITE = JSON.parse(x.responseText);
+      }catch(e){ window.SITE = null; }
+      resolve(window.SITE);
+    };
+    x.onerror = x.ontimeout = x.onabort = function(){ resolve(null); };
     x.send(null);
-    if(x.status === 200 || x.status === 0) window.SITE = JSON.parse(x.responseText);
-  }catch(e){ window.SITE = null; }
-})();
+  }catch(e){ resolve(null); }
+});
 </script>
 </head>
 <body>
@@ -1568,6 +1578,8 @@ function demoScene(name){
       + 'box-shadow:0 12px 34px rgba(0,0,0,.42);transition:.25s">'
       + '<svg width="'+Math.round(size*0.42)+'" height="'+Math.round(size*0.42)+'" viewBox="0 0 24 24" fill="#E5432B"><path d="M8 5.5v13l11-6.5z"/></svg></span>';
   }
+  function setupYT(){
+  if(window.SITE && window.SITE.videos) YOUTUBE = window.SITE.videos;
   $$(".yt").forEach(function(box){
     var id = ytId(YOUTUBE[box.getAttribute("data-yt")]);
 
@@ -1614,6 +1626,8 @@ function demoScene(name){
     });
     box._ytCap = setCap;
   });
+  }
+  if(window.SITE_READY && window.SITE_READY.then){ window.SITE_READY.then(setupYT); } else { setupYT(); }
 
   $$(".media video, .hero__bg video").forEach(function(v){
     var failed = false;
@@ -1983,6 +1997,7 @@ function demoScene(name){
 <script>
 /* ====== AP DUNG NOI DUNG TU TRANG QUAN TRI /admin ====== */
 (function(){
+  function boot(){
   var S = window.SITE; if(!S) return;
   function ready(fn){ if(document.readyState!=="loading") fn(); else document.addEventListener("DOMContentLoaded", fn); }
   function L(){ return (document.documentElement.getAttribute("lang")==="en") ? "en" : "vi"; }
@@ -2073,16 +2088,26 @@ function demoScene(name){
     setHref('a[href*="tiktok.com"]', K.tiktok);
     setHref('a[href*="langvanhoadulich.vn"]', K.website);
   });
+  }
+  if(window.SITE_READY && window.SITE_READY.then){ window.SITE_READY.then(boot); } else { boot(); }
 })();
 </script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-/* Khi ban quan tri bam link moi trong email, dua ho thang vao trang /admin */
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", function(user){
-    if(!user){ window.netlifyIdentity.on("login", function(){ document.location.href = "/admin/"; }); }
-  });
-}
+/* Widget dang nhap Netlify Identity: tai bat dong bo de khong chan trang.
+   Khi ban quan tri bam link moi trong email, dua ho thang vao trang /admin */
+(function(){
+  var s = document.createElement("script");
+  s.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+  s.async = true;
+  s.onload = function(){
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user){
+        if(!user){ window.netlifyIdentity.on("login", function(){ document.location.href = "/admin/"; }); }
+      });
+    }
+  };
+  document.head.appendChild(s);
+})();
 </script>
 <script>
 /* Che do sua truc quan: mo trang kem ?edit=1 */
