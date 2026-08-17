@@ -1,0 +1,50 @@
+HƯỚNG DẪN THAY ẢNH THẬT
+=======================
+Đặt ảnh thật vào chính thư mục "images" này, đúng tên bên dưới.
+Có ảnh nào thì trang tự dùng ảnh đó; chưa có thì hiển thị ảnh minh họa demo.
+
+TRANG CHỦ
+  hero.jpg                  Ảnh nền đầu trang (khuyến nghị 2400 x 1350 px)
+
+GIỚI THIỆU
+  gioi-thieu-1.jpg          Toàn cảnh Làng (dọc 3:4)
+  gioi-thieu-2.jpg          Đồng bào dân tộc (vuông 1:1)
+  gioi-thieu-3.jpg          Nghề thủ công (vuông 1:1)
+
+7 PHÂN KHU
+  khu-lang-1.jpg            Khu Làng dân tộc I  (4:3)
+  khu-lang-2.jpg            Khu Làng dân tộc II (4:3)
+  khu-lang-3.jpg            Khu Làng dân tộc III (4:3)
+  khu-lang-4.jpg            Khu Làng dân tộc IV (4:3)
+  khu-nghi-le.jpg           Khu Nghi lễ thờ Tổ (4:3)
+  khu-ho-tren-nui.jpg       Khu Hồ trên núi / Làng chài (4:3)
+
+CHƯƠNG TRÌNH TRẢI NGHIỆM
+  ct-dau-chan-1ngay.jpg     Dấu chân bản làng - 1 ngày (dọc 3:4)
+  ct-dau-chan-nuangay.jpg   Dấu chân bản làng - nửa ngày (dọc 3:4)
+  ct-tay-nguyen-1ngay.jpg   Tây Nguyên - 1 ngày (dọc 3:4)
+  ct-tay-nguyen-nuangay.jpg Tây Nguyên - nửa ngày (dọc 3:4)
+
+LƯU TRÚ
+  luu-tru-1.jpg             Biệt thự / phòng nghỉ (4:3)
+  luu-tru-2.jpg             Bể bơi vô cực (4:3)
+  luu-tru-3.jpg             Nhà cộng đồng (4:3)
+  luu-tru-4.jpg             Không gian BBQ / ăn uống (4:3)
+
+BẢN ĐỒ
+  ban-do-lang.jpg           Bản đồ tham quan (ĐÃ CÓ SẴN - thay nếu cần bản mới)
+
+THƯ VIỆN ẢNH
+  gallery-1.jpg  (ảnh lớn)  gallery-2.jpg  gallery-3.jpg  gallery-4.jpg
+  gallery-5.jpg             gallery-6.jpg  gallery-7.jpg
+
+VIDEO
+  Không dùng file video. Dán link YouTube vào biến YOUTUBE ở cuối file index.html:
+      var YOUTUBE = {
+        gioiThieu: "https://www.youtube.com/watch?v=6HWPuAsIAj8",
+        hoatDong:  "https://www.youtube.com/watch?v=DDOyMCEDHzY"
+      };
+
+GỢI Ý KỸ THUẬT
+  - Ảnh nên xuất JPEG chất lượng 80-85, chiều rộng 1600-2400 px.
+  - Đặt tên file không dấu, không khoảng trắng (đúng như danh sách trên).

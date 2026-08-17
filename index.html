@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Làng Văn hóa - Du lịch các dân tộc Việt Nam | Ngôi nhà chung của 54 dân tộc</title>
+<meta name="description" content="Làng Văn hóa - Du lịch các dân tộc Việt Nam (Đồng Mô, Đoài Phương, Hà Nội) - Ngôi nhà chung của 54 dân tộc. Trải nghiệm văn hóa, lưu trú, sự kiện, giáo dục ngoại khóa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Bảng màu tươi sáng lấy cảm hứng thổ cẩm các dân tộc Việt Nam */
+  --red:#E5432B; --red-d:#C22F1C; --yellow:#FFB020; --yellow-l:#FFC93C;
+  --jade:#12A594; --teal:#2EC4B6; --indigo:#1D5C8A; --indigo-d:#12405F;
+  --lotus:#FF5C8A; --violet:#7A5AA8; --leaf:#4CAF6D;
+  --maroon:#12405F; --maroon-2:#1D5C8A; --maroon-soft:#2E7D9A;
+  --orange:#E5432B; --orange-2:#FFB020; --gold:#F4A62A;
+  --cream:#FFEFD2; --sand:#FFF7EA; --paper:#FFFCF6;
+  --ink:#22323E; --muted:#55697A; --line:rgba(18,64,95,.14);
+  --shadow-sm:0 2px 12px rgba(18,64,95,.08);
+  --shadow:0 14px 36px rgba(18,64,95,.13);
+  --shadow-lg:0 26px 60px rgba(18,64,95,.20);
+  --r:20px; --r-lg:28px;
+  --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:92px}
+body{margin:0;font-family:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--paper);line-height:1.72;font-size:17.5px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.18;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);color:var(--maroon)}
+h3{font-size:clamp(1.22rem,2vw,1.55rem);color:var(--maroon-2)}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.sec{padding:clamp(56px,7vw,104px) 0;position:relative}
+.sec--sand{background:var(--sand)}
+.sec--mint{background:linear-gradient(180deg,#EDF9F6,#FFFCF6)}
+.sec--maroon{background:linear-gradient(150deg,#0E3550 0%,#1D5C8A 48%,#12A594 100%);color:#EAF6F3}
+.sec--maroon h2,.sec--maroon h3{color:#FFF3DE}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.84rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.eyebrow::before{content:"";width:32px;height:2px;background:var(--orange);display:block}
+.sec--maroon .eyebrow{color:var(--yellow-l)}
+.sec--maroon .eyebrow::before{background:var(--yellow-l)}
+.lead{font-size:clamp(1.08rem,1.5vw,1.24rem);color:var(--muted);max-width:70ch;line-height:1.7}
+.sec--maroon .lead{color:#D9EEEA}
+.sec-head{max-width:800px;margin-bottom:clamp(30px,4vw,50px)}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center .eyebrow{justify-content:center}
+.sec-head.center .lead{margin-left:auto;margin-right:auto}
+
+/* ---------- Brocade pattern strip ---------- */
+.brocade{height:14px;background-size:auto 100%;background-repeat:repeat-x;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='14' viewBox='0 0 112 14'%3E%3Crect width='112' height='14' fill='%2312405F'/%3E%3Cpath d='M0 7l7-7 7 7-7 7z' fill='%23E5432B'/%3E%3Cpath d='M14 7l7-7 7 7-7 7z' fill='%23FFB020'/%3E%3Cpath d='M28 7l7-7 7 7-7 7z' fill='%23FFEFD2'/%3E%3Cpath d='M42 7l7-7 7 7-7 7z' fill='%2312A594'/%3E%3Cpath d='M56 7l7-7 7 7-7 7z' fill='%23FF5C8A'/%3E%3Cpath d='M70 7l7-7 7 7-7 7z' fill='%23FFB020'/%3E%3Cpath d='M84 7l7-7 7 7-7 7z' fill='%237A5AA8'/%3E%3Cpath d='M98 7l7-7 7 7-7 7z' fill='%23FFEFD2'/%3E%3C/svg%3E")}
+.brocade{height:16px}
+
+/* ---------- Top bar ---------- */
+.topbar{background:linear-gradient(90deg,var(--indigo-d),var(--indigo) 55%,var(--jade));color:#FFF2DD;font-size:.9rem}
+.topbar .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;min-height:40px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.topbar a{opacity:.92;transition:.2s}
+.topbar a:hover{opacity:1;color:var(--orange-2)}
+.tb-left{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.tb-right{display:flex;gap:14px;align-items:center}
+.langsw{display:inline-flex;border:1px solid rgba(246,226,184,.35);border-radius:99px;overflow:hidden}
+.langsw button{background:transparent;border:0;color:#F3DFC0;font:inherit;font-weight:600;padding:3px 12px;cursor:pointer;transition:.2s}
+.langsw button.on{background:var(--yellow);color:#0E3550}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,253,248,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 6px 26px rgba(94,26,30,.10)}
+.nav .wrap{display:flex;align-items:center;gap:16px;min-height:78px}
+.brand{display:flex;align-items:center;gap:13px;flex-shrink:0}
+/* LOGO: giữ tỉ lệ vuông 1:1 chuẩn theo logo gốc */
+.brand__logo{width:56px;height:56px;aspect-ratio:1/1;object-fit:contain;flex-shrink:0}
+.brand__txt strong{display:block;font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--maroon);line-height:1.15}
+.brand__txt span{display:block;font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--red);font-weight:800}
+.menu{display:flex;gap:19px;margin-left:auto;align-items:center}
+.menu a{font-size:.93rem;font-weight:500;color:var(--ink);padding:6px 0;position:relative;white-space:nowrap}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:3px;border-radius:2px;width:0;background:linear-gradient(90deg,var(--red),var(--yellow));transition:width .25s}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:1.02rem;padding:14px 28px;border-radius:99px;transition:.25s;text-align:center}
+.btn--primary{background:linear-gradient(135deg,#FF6B3D,var(--red) 55%,#D62F1B);color:#fff;box-shadow:0 10px 26px rgba(229,67,43,.34)}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(229,67,43,.45)}
+.btn--maroon{background:linear-gradient(135deg,var(--indigo),var(--jade));color:#fff}
+.btn--maroon:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn--ghost{background:transparent;border:1.5px solid var(--maroon);color:var(--maroon)}
+.btn--ghost:hover{background:var(--maroon);color:#F6E2B8}
+.btn--light{background:var(--yellow);color:#4A2A00}
+.btn--light:hover{background:var(--yellow-l)}
+.btn--sm{padding:10px 20px;font-size:.94rem}
+.nav .btn{flex-shrink:0}
+.burger{display:none;margin-left:auto;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--maroon);margin:5px 0;transition:.25s}
+
+/* ---------- Media placeholder (ảnh demo) ---------- */
+.ph{position:relative;overflow:hidden;border-radius:var(--r);min-height:150px;
+  background:linear-gradient(140deg,#FFEFD2,#CFEDE8);background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
+.ph::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(8,38,56,.88) 0%,rgba(8,38,56,.55) 26%,rgba(8,38,56,.05) 58%,rgba(8,38,56,0) 100%)}
+.ph__meta{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:16px 18px;text-align:left}
+.ph__tag{display:inline-flex;align-items:center;gap:6px;background:var(--yellow);color:#42280A;
+  font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:4px 11px;border-radius:99px;margin-bottom:9px;
+  box-shadow:0 4px 12px rgba(0,0,0,.22)}
+.ph__name{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1.02rem;font-weight:800;
+  color:#fff;line-height:1.25;letter-spacing:.01em;text-shadow:0 2px 12px rgba(0,0,0,.6);word-break:break-word}
+.ph__desc{display:block;font-size:.88rem;color:#D7EBE7;margin-top:5px;line-height:1.4;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.ph--sm .ph__meta{padding:11px 12px}
+.ph--sm .ph__name{font-size:.86rem}
+.ph--sm .ph__desc{display:none}
+.ph--sm .ph__tag{font-size:.6rem;padding:2px 8px;margin-bottom:6px}
+.ph{background-position:center 60%!important}
+.ratio-3x4 .ph,.prog__media .ph,.gal .h2 .ph{background-position:center 78%!important}
+.ratio-1x1 .ph{background-position:center 70%!important}
+.media{position:relative;border-radius:var(--r);overflow:hidden;background:var(--sand)}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block}
+.ratio-16x9{aspect-ratio:16/9}
+.ratio-4x3{aspect-ratio:4/3}
+.ratio-3x4{aspect-ratio:3/4}
+.ratio-1x1{aspect-ratio:1/1}
+.ratio-21x9{aspect-ratio:21/9}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:min(92vh,880px);display:flex;align-items:center;overflow:hidden;background:var(--indigo-d)}
+.hero__bg{position:absolute;inset:0}
+.hero__bg .ph{height:100%;border-radius:0}
+.hero__bg .ph::after{background:linear-gradient(to top,rgba(8,38,56,.55),rgba(8,38,56,0) 45%)}
+.hero__bg .ph__meta{top:104px;bottom:auto;text-align:right;padding:0 34px 0 0}
+.hero__bg .ph::after{background:linear-gradient(to bottom,rgba(8,38,56,.45),rgba(8,38,56,0) 30%)}
+
+.hero__bg .ph__s{background:rgba(0,0,0,.28);color:#F6E2B8}
+.hero__bg .ph__ic{background:rgba(246,226,184,.16);color:#F6E2B8}
+.hero__bg img,.hero__bg video{width:100%;height:100%;object-fit:cover}
+.hero__veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,42,64,.90) 0%,rgba(14,53,80,.68) 42%,rgba(18,165,148,.20) 100%)}
+.hero__inner{position:relative;z-index:2;padding:110px 0 96px;color:#FCF4E4;max-width:760px}
+.hero__badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,176,32,.20);border:1px solid rgba(255,201,60,.55);border-radius:99px;padding:7px 18px;font-size:.78rem;font-weight:600;letter-spacing:.06em;margin-bottom:22px;backdrop-filter:blur(6px)}
+.hero__badge b{color:var(--yellow-l)}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4rem);color:#FFF8EA;text-shadow:0 4px 26px rgba(0,0,0,.4);margin-bottom:.35em}
+.hero h1 em{font-style:italic;color:var(--yellow-l)}
+.hero__sub{font-size:clamp(1.1rem,1.7vw,1.34rem);color:#E9F5F2;max-width:58ch;margin-bottom:34px;line-height:1.65}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+.hero__facts{display:flex;gap:14px;flex-wrap:wrap}
+.fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,243,222,.28);border-radius:14px;padding:12px 18px;backdrop-filter:blur(6px);min-width:118px}
+.fact b{display:block;font-family:'Playfair Display',serif;font-size:1.72rem;color:var(--yellow-l);line-height:1.1}
+.fact span{font-size:.86rem;color:#D6E9E5;letter-spacing:.02em}
+.hero__logo{position:absolute;right:5%;top:52%;transform:translateY(-50%);width:min(28vw,320px);aspect-ratio:1/1;opacity:.13;z-index:1;pointer-events:none;filter:drop-shadow(0 10px 40px rgba(0,0,0,.4))}
+.scrolldown{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:#E9F5F2;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.85}
+.scrolldown i{display:block;width:1px;height:34px;background:linear-gradient(#EBD8BC,transparent);animation:sd 1.8s infinite}
+@keyframes sd{0%{opacity:0;transform:scaleY(.3)}50%{opacity:1}100%{opacity:0;transform:scaleY(1)}}
+.scrolldown i{background:linear-gradient(#E9F5F2,transparent)!important}
+
+/* ---------- Cards / grids ---------- */
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm);transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(224,138,43,.4)}
+.card__body{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column}
+.card__body h3{margin-bottom:.4em}
+.card__body p{font-size:1rem;color:var(--muted);margin-bottom:0;line-height:1.68}
+.tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.chip{font-size:.85rem;background:rgba(29,92,138,.10);border:1px solid rgba(29,92,138,.22);color:var(--indigo);padding:5px 13px;border-radius:99px;font-weight:600}
+.chips .chip:nth-child(5n+2){background:rgba(229,67,43,.10);border-color:rgba(229,67,43,.25);color:var(--red-d)}
+.chips .chip:nth-child(5n+3){background:rgba(18,165,148,.12);border-color:rgba(18,165,148,.28);color:#0B7A6E}
+.chips .chip:nth-child(5n+4){background:rgba(255,176,32,.18);border-color:rgba(224,138,0,.3);color:#9A6200}
+.chips .chip:nth-child(5n+5){background:rgba(122,90,168,.12);border-color:rgba(122,90,168,.28);color:var(--violet)}
+.sec--maroon .chip{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.28);color:#FFF3DE}
+.iconbox{width:54px;height:54px;border-radius:16px;background:linear-gradient(140deg,var(--yellow-l),var(--red));display:grid;place-items:center;color:#fff;margin-bottom:16px;flex-shrink:0;box-shadow:0 8px 18px rgba(229,67,43,.25)}
+.grid > .card:nth-child(6n+2) .iconbox{background:linear-gradient(140deg,var(--teal),var(--indigo));box-shadow:0 8px 18px rgba(29,92,138,.25)}
+.grid > .card:nth-child(6n+3) .iconbox{background:linear-gradient(140deg,var(--lotus),var(--violet));box-shadow:0 8px 18px rgba(122,90,168,.25)}
+.grid > .card:nth-child(6n+4) .iconbox{background:linear-gradient(140deg,var(--leaf),var(--jade));box-shadow:0 8px 18px rgba(18,165,148,.25)}
+.grid > .card:nth-child(6n+5) .iconbox{background:linear-gradient(140deg,var(--yellow),#F27B1E);box-shadow:0 8px 18px rgba(242,123,30,.25)}
+.grid > .card:nth-child(6n+6) .iconbox{background:linear-gradient(140deg,var(--violet),var(--indigo));box-shadow:0 8px 18px rgba(122,90,168,.25)}
+.grid > .card:nth-child(6n+1){border-top:5px solid var(--red)}
+.grid > .card:nth-child(6n+2){border-top:5px solid var(--teal)}
+.grid > .card:nth-child(6n+3){border-top:5px solid var(--lotus)}
+.grid > .card:nth-child(6n+4){border-top:5px solid var(--leaf)}
+.grid > .card:nth-child(6n+5){border-top:5px solid var(--yellow)}
+.grid > .card:nth-child(6n+6){border-top:5px solid var(--violet)}
+.iconbox svg{width:24px;height:24px}
+/* ---------- Stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stat{background:var(--paper);padding:26px 18px;text-align:center}
+.stat b{display:block;font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.6rem);color:var(--red);line-height:1}
+.stat:nth-child(2) b{color:var(--indigo)}
+.stat:nth-child(3) b{color:var(--jade)}
+.stat:nth-child(4) b{color:var(--violet)}
+.stat:nth-child(5) b{color:#E08A00}
+.stat span{font-size:.92rem;color:var(--muted);display:block;margin-top:6px}
+
+/* ---------- Tabs ---------- */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{background:#fff;border:2px solid var(--line);color:var(--maroon-2);border-radius:99px;padding:11px 22px;font:inherit;font-weight:600;font-size:.96rem;cursor:pointer;transition:.22s}
+.tab:hover{border-color:var(--orange)}
+.tab.on{background:var(--maroon);border-color:var(--maroon);color:#F6E2B8}
+.panel,.bpanel{display:none;animation:fade .35s}
+.panel.on,.bpanel.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ---------- Program (tour) ---------- */
+.prog{display:grid;grid-template-columns:1.05fr 1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+.prog__media{position:relative;min-height:100%}
+.prog__media .ph,.prog__media .media{height:100%;border-radius:0;border-left:0;border-top:0;border-bottom:0;min-height:320px}
+.prog__body{padding:clamp(24px,3vw,38px)}
+.prog__meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.pill{font-size:.85rem;font-weight:600;background:var(--sand);border:1px solid var(--line);color:var(--maroon);padding:5px 13px;border-radius:99px}
+.pill--o{background:linear-gradient(135deg,var(--yellow-l),var(--yellow));border-color:transparent;color:#5A3400;font-weight:700}
+.timeline{list-style:none;margin:18px 0 0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:3px;border-radius:2px;background:linear-gradient(var(--red),var(--yellow) 45%,var(--jade))}
+.timeline li{position:relative;padding:0 0 16px 30px}
+.timeline li::before{content:"";position:absolute;left:1px;top:7px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--red)}
+.timeline b{display:block;font-size:.9rem;color:var(--red);letter-spacing:.05em;font-weight:700}
+.timeline span{font-size:1rem;color:var(--muted)}
+
+/* ---------- Table ---------- */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow-sm)}
+table{width:100%;border-collapse:collapse;font-size:1rem;min-width:540px}
+th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--indigo-d);color:#FFEFD2;font-weight:700;font-size:.88rem;letter-spacing:.04em;text-transform:uppercase}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:rgba(255,239,210,.42)}
+td.num{text-align:right;font-weight:800;color:var(--red-d);white-space:nowrap}
+.tbl-note{font-size:.92rem;color:var(--muted);margin-top:10px;font-style:italic}
+
+/* ---------- Accordion (16 làng) ---------- */
+/* Danh sách 16 làng - chia 2 cột cho gọn */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;
+  display:grid;grid-template-columns:1fr 1fr;align-items:start}
+.acc__it{border-top:1px solid var(--line)}
+.acc__it:nth-child(1),.acc__it:nth-child(2){border-top:0}
+.acc__it:nth-child(even){border-left:1px solid var(--line)}
+.acc__hd{width:100%;background:none;border:0;font:inherit;text-align:left;padding:13px 16px;display:flex;align-items:center;gap:11px;cursor:pointer;transition:.2s}
+@media(max-width:960px){
+  .acc{grid-template-columns:1fr}
+  .acc__it:nth-child(2){border-top:1px solid var(--line)}
+  .acc__it:nth-child(even){border-left:0}
+}
+.acc__hd:hover{background:var(--sand)}
+.acc__n{width:34px;height:34px;border-radius:10px;background:linear-gradient(140deg,var(--yellow-l),var(--red));color:#fff;display:grid;place-items:center;font-weight:800;font-size:.86rem;flex-shrink:0;border:0}
+.acc__hd strong{color:var(--maroon);font-size:1.02rem}
+.acc__hd em{font-style:normal;color:var(--red);font-size:.9rem;font-weight:600}
+.acc__hd .cx{margin-left:auto;color:var(--red);transition:.25s;flex-shrink:0;font-size:1.2rem;font-weight:700;line-height:1}
+.acc__it.on .cx{transform:rotate(45deg)}
+.acc__bd{display:none;padding:0 16px 16px 61px}
+.acc__it.on .acc__bd{display:block}
+.acc__bd ul{margin:0;padding-left:17px;color:var(--muted);font-size:.95rem}
+.acc__bd li{margin-bottom:6px}
+
+/* ---------- Event timeline ---------- */
+.evgrid{display:grid;gap:18px}
+.ev{display:grid;grid-template-columns:160px 1fr;gap:22px;background:rgba(255,255,255,.10);border:1px solid rgba(255,243,222,.24);border-radius:var(--r);padding:22px 24px;transition:.28s}
+.ev:hover{background:rgba(255,255,255,.17);border-color:var(--yellow)}
+.ev__m b{display:block;font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--yellow-l);line-height:1.1}
+.ev__m span{font-size:.9rem;color:#CDE7E2}
+.ev__c h3{font-size:1.12rem;margin-bottom:.35em}
+.ev__c ul{margin:0;padding-left:18px;color:#EAF6F3;font-size:1rem}
+.ev__c li{margin-bottom:5px}
+
+/* ---------- Booking ---------- */
+.book{display:grid;grid-template-columns:1.15fr .85fr;gap:0;background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line)}
+.book__form{padding:clamp(26px,3.4vw,42px)}
+.book__side{background:linear-gradient(165deg,#0E3550,#1D5C8A 55%,#12A594);color:#EAF6F3;padding:clamp(26px,3.4vw,42px);display:flex;flex-direction:column}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.9rem;font-weight:600;color:var(--maroon);margin-bottom:6px;letter-spacing:.02em}
+.field input,.field select,.field textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:14px;font:inherit;font-size:1.02rem;background:var(--paper);color:var(--ink);transition:.2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--orange);background:#fff;box-shadow:0 0 0 4px rgba(224,138,43,.13)}
+.field small{display:block;font-size:.76rem;color:var(--muted);margin-top:5px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qty{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.qty .field{margin-bottom:0}
+.sumline{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dashed rgba(255,239,210,.28);font-size:1rem}
+.sumline span:last-child{font-weight:700;white-space:nowrap;color:#FFF6E4}
+.sumline.muted{color:#CDE7E2;font-size:.92rem}
+.sumtotal{margin-top:auto;padding-top:20px}
+.sumtotal .lbl{font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;color:var(--yellow-l);font-weight:800}
+.sumtotal .val{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.2vw,3rem);color:#FFF6E4;line-height:1.1;margin:4px 0 2px}
+.sumtotal .note{font-size:.88rem;color:#CDE7E2;margin-bottom:18px}
+.empty-sum{color:#CDE7E2;font-size:.96rem;padding:16px 0}
+
+/* ---------- Map ---------- */
+.mapgrid{display:grid;grid-template-columns:1.35fr .65fr;gap:26px;align-items:start}
+.route{list-style:none;margin:0;padding:0}
+.route li{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.route li:last-child{border-bottom:0}
+.route .ic{width:44px;height:44px;border-radius:13px;background:linear-gradient(140deg,var(--teal),var(--indigo));display:grid;place-items:center;flex-shrink:0;color:#fff;border:0}
+.route b{display:block;color:var(--maroon);font-size:1.04rem}
+.route span{font-size:.98rem;color:var(--muted)}
+
+/* ---------- Gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:14px}
+.gal>*{border-radius:var(--r)}
+.gal .w2{grid-column:span 2}
+.gal .h2{grid-row:span 2}
+
+/* ---------- Contact ---------- */
+.ctgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:start}
+.ctcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow-sm)}
+.ctlist{list-style:none;margin:0;padding:0}
+.ctlist li{display:flex;gap:13px;padding:11px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+.ctlist li:last-child{border-bottom:0}
+.ctlist .ic{width:40px;height:40px;border-radius:12px;background:linear-gradient(140deg,var(--yellow-l),var(--red));display:grid;place-items:center;flex-shrink:0;color:#fff}
+.ctlist b{display:block;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.ctlist a,.ctlist span{font-size:1.02rem;color:var(--ink);word-break:break-word}
+.formbox{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm)}
+.formbox__hd{padding:18px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;background:linear-gradient(90deg,rgba(255,176,32,.20),rgba(18,165,148,.14))}
+.formbox__hd h3{margin:0;font-size:1.05rem}
+.formbox iframe{width:100%;border:0;display:block;min-height:820px;background:#fff}
+.formfallback{padding:34px 26px;text-align:center}
+
+/* ---------- Footer ---------- */
+.footer{background:#0E3550;color:#D9E6EE;padding:56px 0 0;font-size:1rem}
+.footer h4{font-family:'Be Vietnam Pro',sans-serif;font-size:.86rem;letter-spacing:.15em;text-transform:uppercase;color:var(--yellow-l);margin-bottom:14px;font-weight:800}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:40px}
+.footer a:hover{color:var(--yellow-l)}
+.flist{list-style:none;margin:0;padding:0}
+.flist li{margin-bottom:9px}
+.fbrand{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.fbrand img{width:62px;height:62px;aspect-ratio:1/1;object-fit:contain}
+.fbrand strong{font-family:'Playfair Display',serif;color:#FFF3DE;font-size:1.14rem;display:block;line-height:1.2}
+.socials{display:flex;gap:10px;margin-top:14px}
+.socials a{width:42px;height:42px;border-radius:13px;background:rgba(255,255,255,.13);display:grid;place-items:center;transition:.25s}
+.socials a:hover{background:var(--yellow);color:#0E3550}
+.copy{border-top:1px solid rgba(255,255,255,.16);padding:18px 0;font-size:.9rem;color:#A9C4D2;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ---------- Floating ---------- */
+.fab{position:fixed;right:20px;bottom:20px;z-index:90;display:flex;flex-direction:column;gap:10px}
+.fab a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.22);color:#fff;transition:.25s}
+.fab a:hover{transform:scale(1.08)}
+.fab .call{background:linear-gradient(135deg,#FF6B3D,var(--red))}
+.fab .top{background:linear-gradient(135deg,var(--indigo),var(--jade))}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,140%);background:var(--indigo-d);color:#FFF3DE;padding:13px 24px;border-radius:99px;z-index:200;box-shadow:var(--shadow-lg);font-size:.9rem;font-weight:500;transition:.4s}
+.toast.on{transform:translate(-50%,0)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:1024px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .book{grid-template-columns:1fr}
+  .mapgrid{grid-template-columns:1fr}
+  .ctgrid{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .hero__logo{display:none}
+}
+@media(max-width:1180px){
+  .menu{position:fixed;inset:78px 0 auto;background:var(--paper);flex-direction:column;align-items:stretch;gap:0;padding:10px 24px 22px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .btn{display:none}
+  .burger{display:block}
+  .prog{grid-template-columns:1fr}
+  .ev{grid-template-columns:1fr;gap:10px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .f2,.f3{grid-template-columns:1fr}
+  .tb-left{display:none}
+  .topbar .wrap{justify-content:center}
+}
+@media(max-width:520px){
+  .gal{grid-template-columns:1fr;grid-auto-rows:200px}
+  .gal .w2{grid-column:span 1}
+  .fgrid{grid-template-columns:1fr}
+  .hero__facts{gap:10px}
+  .fact{min-width:calc(50% - 5px);padding:10px 14px}
+}
+@media print{.nav,.fab,.topbar,.scrolldown{display:none}}
+
+/* ===== Fanpage / Messenger ===== */
+.fanbox{margin-top:22px;padding-top:20px;border-top:1px dashed var(--line);display:grid;grid-template-columns:118px 1fr;gap:18px;align-items:center}
+.fanbox__qr{width:118px;height:118px;border-radius:14px;background:#fff;padding:7px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(18,64,95,.08)}
+.fanbox__qr img{width:100%;height:100%;object-fit:contain;display:block}
+.fanbox h4{margin:0 0 4px;font-size:1.04rem;color:var(--indigo-d)}
+.fanbox p{margin:0 0 11px;font-size:.9rem;color:var(--muted);line-height:1.55}
+.fanbtns{display:flex;flex-wrap:wrap;gap:9px}
+.fanbtn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:700;font-size:.9rem;text-decoration:none;transition:.22s;line-height:1}
+.fanbtn.msg{background:linear-gradient(135deg,#0A7CFF,#A033FF);color:#fff;box-shadow:0 8px 20px rgba(10,124,255,.28)}
+.fanbtn.fb{background:#fff;color:var(--indigo-d);border:1.5px solid var(--line)}
+.fanbtn:hover{transform:translateY(-2px)}
+.fab .msgr{background:linear-gradient(135deg,#0A7CFF,#A033FF)}
+@media(max-width:520px){.fanbox{grid-template-columns:1fr;justify-items:center;text-align:center}.fanbtns{justify-content:center}}
+
+/* ===== anh poster chuong trinh: hien full khong cat ===== */
+.media img.fit{object-fit:contain;background:#FFF8EE}
+</style>
+<script>
+/* ====== NAP NOI DUNG TU TRANG QUAN TRI (/admin) ======
+   Tep content.json do Decap CMS ghi ra. Neu khong co thi trang van chay binh thuong. */
+window.SITE = null;
+(function(){
+  try{
+    var x = new XMLHttpRequest();
+    x.open("GET", "content.json?v=" + Date.now(), false);
+    x.send(null);
+    if(x.status === 200 || x.status === 0) window.SITE = JSON.parse(x.responseText);
+  }catch(e){ window.SITE = null; }
+})();
+</script>
+</head>
+<body>
+<!-- ======================= TOP BAR ======================= -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <a href="tel:02462929777">☎ 024.62.929.777</a>
+      <a href="mailto:ttdv.lvh@gmail.com">✉ ttdv.lvh@gmail.com</a>
+      <span data-vi="📍 Đồng Mô, Đoài Phương, Hà Nội" data-en="📍 Dong Mo, Doai Phuong, Hanoi">📍 Đồng Mô, Đoài Phương, Hà Nội</span>
+    </div>
+    <div class="tb-right">
+      <span data-vi="Mở cửa 8:00 - 18:00 tất cả các ngày" data-en="Open 8:00 - 18:00 daily">Mở cửa 8:00 - 18:00 tất cả các ngày</span>
+      <div class="langsw">
+        <button type="button" class="on" data-lang="vi">VI</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="brocade"></div>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img class="brand__logo" src="assets/logo-lang-van-hoa.png" alt="Logo Làng Văn hóa - Du lịch các dân tộc Việt Nam (VINACULTO)" id="logoNav">
+      <span class="brand__txt">
+        <strong data-vi="Làng Văn hóa - Du lịch<br>các dân tộc Việt Nam" data-en="Vietnam National Village for<br>Ethnic Culture &amp; Tourism">Làng Văn hóa - Du lịch<br>các dân tộc Việt Nam</strong>
+        <span>Vinaculto</span>
+      </span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#gioi-thieu" data-vi="Giới thiệu" data-en="About">Giới thiệu</a>
+      <a href="#khong-gian" data-vi="Không gian" data-en="Spaces">Không gian</a>
+      <a href="#trai-nghiem" data-vi="Trải nghiệm" data-en="Experiences">Trải nghiệm</a>
+      <a href="#chuong-trinh" data-vi="Chương trình" data-en="Programs">Chương trình</a>
+      <a href="#luu-tru" data-vi="Lưu trú" data-en="Stay">Lưu trú</a>
+      <a href="#lich-hoat-dong" data-vi="Lịch hoạt động" data-en="Calendar">Lịch hoạt động</a>
+      <a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a>
+      <a href="#lien-he" data-vi="Liên hệ" data-en="Contact">Liên hệ</a>
+    </nav>
+    <a href="#dat-lich" class="btn btn--primary btn--sm" data-vi="Đặt lịch trải nghiệm" data-en="Book a visit">Đặt lịch trải nghiệm</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="top">
+  <div class="hero__bg">
+    <img id="heroImg" src="images/hero.jpg" alt="" data-ph-title="Ảnh nền trang chủ" data-ph-sub="images/hero.jpg · khuyến nghị 2400×1350px">
+  </div>
+  <div class="hero__veil"></div>
+  <img class="hero__logo" src="assets/logo-lang-van-hoa.png" alt="" aria-hidden="true" id="logoHero">
+  <div class="wrap">
+    <div class="hero__inner">
+      <div class="hero__badge">
+        <b>★</b>
+        <span data-vi="Ngôi nhà chung của 54 dân tộc Việt Nam" data-en="The Common House of Vietnam's 54 ethnic groups">Ngôi nhà chung của 54 dân tộc Việt Nam</span>
+      </div>
+      <h1 id="heroTitle" data-vi="Nơi hội tụ <em>sắc màu văn hóa</em> Việt Nam" data-en="Where Vietnam's <em>cultural colours</em> converge">Nơi hội tụ <em>sắc màu văn hóa</em> Việt Nam</h1>
+      <p class="hero__sub" id="heroLead" data-vi="Làng Văn hóa - Du lịch các dân tộc Việt Nam - “bảo tàng sống” rộng 1.544 ha tại Đồng Mô, Đoài Phương, Hà Nội. Nơi nhiều cộng đồng dân tộc sinh sống, giới thiệu văn hóa và đón khách mỗi ngày." data-en="The Vietnam National Village for Ethnic Culture and Tourism - a 1,544-hectare “living museum” in Dong Mo, Doai Phuong, Hanoi, where many ethnic communities live, share their culture and welcome visitors every day.">Làng Văn hóa - Du lịch các dân tộc Việt Nam - “bảo tàng sống” rộng 1.544 ha tại Đồng Mô, Đoài Phương, Hà Nội. Nơi nhiều cộng đồng dân tộc sinh sống, giới thiệu văn hóa và đón khách mỗi ngày.</p>
+      <div class="hero__cta">
+        <a href="#dat-lich" class="btn btn--primary" data-vi="Đặt lịch &amp; tính chi phí" data-en="Book &amp; estimate cost">Đặt lịch &amp; tính chi phí</a>
+        <a href="#chuong-trinh" class="btn btn--light" data-vi="Xem chương trình trải nghiệm" data-en="View experience programs">Xem chương trình trải nghiệm</a>
+      </div>
+      <div class="hero__facts">
+        <div class="fact"><b>1.544</b><span data-vi="ha tổng diện tích" data-en="hectares in total">ha tổng diện tích</span></div>
+        <div class="fact"><b>54</b><span data-vi="dân tộc Việt Nam" data-en="ethnic groups">dân tộc Việt Nam</span></div>
+        <div class="fact"><b>16</b><span data-vi="làng các dân tộc hoạt động hằng ngày" data-en="villages open daily">làng các dân tộc hoạt động hằng ngày</span></div>
+        <div class="fact"><b>07</b><span data-vi="phân khu chức năng" data-en="functional zones">phân khu chức năng</span></div>
+        <div class="fact"><b>40</b><span data-vi="km từ trung tâm Hà Nội" data-en="km from central Hanoi">km từ trung tâm Hà Nội</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scrolldown"><span data-vi="Khám phá" data-en="Explore">Khám phá</span><i></i></div>
+</section>
+
+<!-- ======================= LỜI NGỎ / GIỚI THIỆU ======================= -->
+<section class="sec" id="gioi-thieu">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:center;gap:clamp(30px,5vw,64px)">
+      <div class="rv">
+        <div class="eyebrow" data-vi="Lời ngỏ" data-en="Welcome">Lời ngỏ</div>
+        <h2 id="h2-gioi-thieu" data-vi="“Ngôi nhà chung” của cộng đồng 54 dân tộc" data-en="The “Common House” of 54 ethnic communities">“Ngôi nhà chung” của cộng đồng 54 dân tộc</h2>
+        <p class="lead" id="lead-gioi-thieu" data-vi="Làng Văn hóa - Du lịch các dân tộc Việt Nam là nơi hội tụ, bảo tồn, tôn vinh và lan tỏa những giá trị văn hóa truyền thống đặc sắc của các vùng miền. Đơn vị nay trực thuộc Sở Văn hóa, Thể thao và Du lịch Hà Nội." data-en="The Vietnam National Village for Ethnic Culture and Tourism gathers, preserves, honours and spreads the distinctive traditional values of every region. The Village is now under the Hanoi Department of Culture, Sports and Tourism.">Làng Văn hóa - Du lịch các dân tộc Việt Nam là nơi hội tụ, bảo tồn, tôn vinh và lan tỏa những giá trị văn hóa truyền thống đặc sắc của các vùng miền. Đơn vị nay trực thuộc Sở Văn hóa, Thể thao và Du lịch Hà Nội.</p>
+        <p data-vi="Nằm tại Đồng Mô, Đoài Phương, Hà Nội - cách trung tâm Thủ đô hơn 40 km về phía Tây, cuối Đại lộ Thăng Long - Làng là vùng lõi của một dự án mang tầm quốc gia rộng 1.544 ha (939 ha mặt nước, 605 ha mặt đất), gồm 7 phân khu chức năng với địa hình bán sơn địa, trung du và mặt nước." data-en="Located in Dong Mo, Doai Phuong, Hanoi - over 40 km west of the city centre at the end of Thang Long Boulevard - the Village is the core of a national project covering 1,544 hectares (939 ha of water, 605 ha of land) with 7 functional zones across hills, midlands and lakes.">Nằm tại Đồng Mô, Đoài Phương, Hà Nội - cách trung tâm Thủ đô hơn 40 km về phía Tây, cuối Đại lộ Thăng Long - Làng là vùng lõi của một dự án mang tầm quốc gia rộng 1.544 ha (939 ha mặt nước, 605 ha mặt đất), gồm 7 phân khu chức năng với địa hình bán sơn địa, trung du và mặt nước.</p>
+        <p data-vi="Điểm khác biệt vượt trội: Làng là một “bảo tàng sống” - nơi đồng bào các dân tộc, với vai trò “chủ thể văn hóa”, tự giới thiệu về mình, tái hiện kiến trúc, lễ hội, âm nhạc và tri thức dân gian. Hiện có nhiều cộng đồng dân tộc hoạt động, giao lưu và đón khách mỗi ngày." data-en="What sets the Village apart: it is a “living museum” where ethnic communities themselves - as the true owners of their culture - present their architecture, festivals, music and folk knowledge. Today many communities live here and welcome visitors daily.">Điểm khác biệt vượt trội: Làng là một “bảo tàng sống” - nơi đồng bào các dân tộc, với vai trò “chủ thể văn hóa”, tự giới thiệu về mình, tái hiện kiến trúc, lễ hội, âm nhạc và tri thức dân gian. Hiện có nhiều cộng đồng dân tộc hoạt động, giao lưu và đón khách mỗi ngày.</p>
+        <div class="chips">
+          <span class="chip" data-vi="Khám phá văn hóa" data-en="Cultural discovery">Khám phá văn hóa</span>
+          <span class="chip" data-vi="Giáo dục ngoại khóa" data-en="School field trips">Giáo dục ngoại khóa</span>
+          <span class="chip" data-vi="Team building" data-en="Team building">Team building</span>
+          <span class="chip" data-vi="Hội nghị - sự kiện" data-en="Events &amp; conferences">Hội nghị - sự kiện</span>
+          <span class="chip" data-vi="Lưu trú - nghỉ dưỡng" data-en="Stay &amp; retreat">Lưu trú - nghỉ dưỡng</span>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="grid g2" style="gap:14px">
+          <div class="media ratio-3x4"><img loading="lazy" decoding="async" src="images/gioi-thieu-1.jpg" alt="" data-ph-title="Toàn cảnh Làng" data-ph-sub="images/gioi-thieu-1.jpg · 3:4"></div>
+          <div style="display:grid;gap:14px">
+            <div class="media ratio-1x1"><img loading="lazy" decoding="async" src="images/gioi-thieu-2.jpg" alt="" data-ph-title="Đồng bào dân tộc" data-ph-sub="images/gioi-thieu-2.jpg · 1:1"></div>
+            <div class="media ratio-1x1"><img loading="lazy" decoding="async" src="images/gioi-thieu-3.jpg" alt="" data-ph-title="Nghề thủ công" data-ph-sub="images/gioi-thieu-3.jpg · 1:1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats rv" style="margin-top:clamp(36px,5vw,60px)">
+      <div class="stat"><b>1.544 ha</b><span data-vi="Tổng diện tích (939 ha mặt nước)" data-en="Total area (939 ha of water)">Tổng diện tích (939 ha mặt nước)</span></div>
+      <div class="stat"><b>7</b><span data-vi="Phân khu chức năng" data-en="Functional zones">Phân khu chức năng</span></div>
+      <div class="stat"><b>16</b><span data-vi="Cộng đồng dân tộc thường trú" data-en="Resident ethnic communities">Cộng đồng dân tộc thường trú</span></div>
+      <div class="stat"><b>32</b><span data-vi="Phòng lưu trú - tối đa 200 khách" data-en="Guest rooms - up to 200 guests">Phòng lưu trú - tối đa 200 khách</span></div>
+      <div class="stat"><b>500</b><span data-vi="Chỗ ngồi nhà hàng Chân Đồi" data-en="Seats at Chan Doi restaurant">Chỗ ngồi nhà hàng Chân Đồi</span></div>
+    </div>
+  </div>
+</section>
+<!-- ======================= KHÔNG GIAN ĐẶC SẮC ======================= -->
+<section class="sec sec--sand" id="khong-gian">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="7 phân khu" data-en="7 zones">7 phân khu</div>
+      <h2 id="h2-khong-gian" data-vi="Những không gian đặc sắc trong Làng" data-en="Signature spaces within the Village">Những không gian đặc sắc trong Làng</h2>
+      <p class="lead" id="lead-khong-gian" data-vi="Từ nhà sàn Tây Bắc, nhà Rông Tây Nguyên, tháp Chăm, chùa Khmer đến Đền thờ Quốc Tổ Hùng Vương và hồ trên núi - mỗi phân khu là một lát cắt văn hóa Việt Nam." data-en="From northwestern stilt houses and Central Highlands communal houses to Cham towers, a Khmer pagoda, the Hung Kings Temple and a mountain lake - every zone is a slice of Vietnamese culture.">Từ nhà sàn Tây Bắc, nhà Rông Tây Nguyên, tháp Chăm, chùa Khmer đến Đền thờ Quốc Tổ Hùng Vương và hồ trên núi - mỗi phân khu là một lát cắt văn hóa Việt Nam.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card rv">
+        <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/khu-lang-1.jpg" alt="" data-ph-title="Khu Làng dân tộc I" data-ph-sub="images/khu-lang-1.jpg · 4:3"></div>
+        <div class="card__body">
+          <span class="tag" data-vi="Khu I · Đông Bắc - Tây Bắc" data-en="Zone I · Northeast - Northwest">Khu I · Đông Bắc - Tây Bắc</span>
+          <h3 data-vi="Bản làng miền núi phía Bắc" data-en="Northern mountain villages">Bản làng miền núi phía Bắc</h3>
+          <p data-vi="Không gian của 28 cộng đồng dân tộc, trong đó 8 làng đang hoạt động giới thiệu văn hóa và trải nghiệm." data-en="Home to 28 ethnic communities, with 8 villages actively presenting culture and hands-on experiences.">Không gian của 28 cộng đồng dân tộc, trong đó 8 làng đang hoạt động giới thiệu văn hóa và trải nghiệm.</p>
+          <div class="chips"><span class="chip">Tày</span><span class="chip">Nùng</span><span class="chip">Dao</span><span class="chip">Mông</span><span class="chip">Mường</span><span class="chip">Thái</span><span class="chip">Lào</span><span class="chip">Khơ Mú</span></div>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/khu-lang-2.jpg" alt="" data-ph-title="Khu Làng dân tộc II" data-ph-sub="images/khu-lang-2.jpg · 4:3"></div>
+        <div class="card__body">
+          <span class="tag" data-vi="Khu II · Trường Sơn - Tây Nguyên" data-en="Zone II · Truong Son - Central Highlands">Khu II · Trường Sơn - Tây Nguyên</span>
+          <h3 data-vi="Đại ngàn Tây Nguyên" data-en="The Central Highlands">Đại ngàn Tây Nguyên</h3>
+          <p data-vi="Tái hiện không gian của 18 dân tộc, 7 làng có bà con sinh sống. Nhà Rông, nhà Dài, nhà Gươl và không gian văn hóa Cồng chiêng." data-en="Recreating 18 ethnic groups, 7 of them inhabited. Rong, Long and Guol houses plus the Gong Culture space.">Tái hiện không gian của 18 dân tộc, 7 làng có bà con sinh sống. Nhà Rông, nhà Dài, nhà Gươl và không gian văn hóa Cồng chiêng.</p>
+          <div class="chips"><span class="chip">Tà Ôi</span><span class="chip">Ba Na</span><span class="chip">Xơ Đăng</span><span class="chip">Gia Rai</span><span class="chip">Cơ Tu</span><span class="chip">Raglai</span><span class="chip">Ê Đê</span></div>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/khu-lang-3.jpg" alt="" data-ph-title="Khu Làng dân tộc III" data-ph-sub="images/khu-lang-3.jpg · 4:3"></div>
+        <div class="card__body">
+          <span class="tag" data-vi="Khu III · Nam Trung Bộ - Nam Bộ" data-en="Zone III · South Central - South">Khu III · Nam Trung Bộ - Nam Bộ</span>
+          <h3 data-vi="Tháp Chăm &amp; chùa Khmer" data-en="Cham towers &amp; Khmer pagoda">Tháp Chăm &amp; chùa Khmer</h3>
+          <p data-vi="Không gian văn hóa của 4 dân tộc Chăm, Khmer, Chơ Ro, Chu Ru. Nổi bật với quần thể Chùa Khmer, Tháp Chăm và làng Khmer có bà con hoạt động hằng ngày." data-en="Cultural space of the Cham, Khmer, Cho Ro and Chu Ru, highlighted by the Khmer pagoda complex, Cham towers and an inhabited Khmer village.">Không gian văn hóa của 4 dân tộc Chăm, Khmer, Chơ Ro, Chu Ru. Nổi bật với quần thể Chùa Khmer, Tháp Chăm và làng Khmer có bà con hoạt động hằng ngày.</p>
+          <div class="chips"><span class="chip">Chăm</span><span class="chip">Khmer</span><span class="chip">Chơ Ro</span><span class="chip">Chu Ru</span></div>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/khu-lang-4.jpg" alt="" data-ph-title="Khu Làng dân tộc IV" data-ph-sub="images/khu-lang-4.jpg · 4:3"></div>
+        <div class="card__body">
+          <span class="tag" data-vi="Khu IV · Đồng bằng" data-en="Zone IV · Delta">Khu IV · Đồng bằng</span>
+          <h3 data-vi="Nhà Hội An, chùa Pháp Ấn, chùa Cầu" data-en="Hoi An houses, Phap An pagoda, Bridge pagoda">Nhà Hội An, chùa Pháp Ấn, chùa Cầu</h3>
+          <p data-vi="Không gian văn hóa của 4 dân tộc vùng đồng bằng: Kinh, Hoa, Ngái, Sán Dìu với kiến trúc đình, đền, chùa quen thuộc." data-en="Cultural space of four delta groups - Kinh, Hoa, Ngai and San Diu - with familiar communal houses, temples and pagodas.">Không gian văn hóa của 4 dân tộc vùng đồng bằng: Kinh, Hoa, Ngái, Sán Dìu với kiến trúc đình, đền, chùa quen thuộc.</p>
+          <div class="chips"><span class="chip">Kinh</span><span class="chip">Hoa</span><span class="chip">Ngái</span><span class="chip">Sán Dìu</span></div>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/khu-nghi-le.jpg" alt="" data-ph-title="Khu Nghi lễ thờ Tổ" data-ph-sub="images/khu-nghi-le.jpg · 4:3"></div>
+        <div class="card__body">
+          <span class="tag" data-vi="Khu Nghi lễ thờ Tổ" data-en="Ancestral Worship Zone">Khu Nghi lễ thờ Tổ</span>
+          <h3 data-vi="Đền thờ Quốc Tổ Hùng Vương" data-en="Hung Kings Ancestral Temple">Đền thờ Quốc Tổ Hùng Vương</h3>
+          <p data-vi="Không gian tâm linh mang ý nghĩa giáo dục truyền thống “Uống nước nhớ nguồn”, nổi bật với Quảng trường Hùng Vương." data-en="A spiritual space teaching gratitude to one's roots, anchored by Hung Vuong Square.">Không gian tâm linh mang ý nghĩa giáo dục truyền thống “Uống nước nhớ nguồn”, nổi bật với Quảng trường Hùng Vương.</p>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/khu-ho-tren-nui.jpg" alt="" data-ph-title="Khu Hồ trên núi &amp; Làng chài" data-ph-sub="images/khu-ho-tren-nui.jpg · 4:3"></div>
+        <div class="card__body">
+          <span class="tag" data-vi="Khu Hồ trên núi · Khu Làng chài" data-en="Mountain Lake · Fishing Village">Khu Hồ trên núi · Khu Làng chài</span>
+          <h3 data-vi="“Cửu sơn - Tam hồ” &amp; văn hóa ngư nghiệp" data-en="“Nine hills - Three lakes” &amp; fishing culture">“Cửu sơn - Tam hồ” &amp; văn hóa ngư nghiệp</h3>
+          <p data-vi="Hồ nước, thác, đường dạo, sân khấu nổi, bể bơi, trượt cỏ và không gian làng quê ven sông với nghề chài lưới." data-en="Lakes, waterfalls, walking trails, a floating stage, pool, grass sliding, plus a riverside village with traditional fishing.">Hồ nước, thác, đường dạo, sân khấu nổi, bể bơi, trượt cỏ và không gian làng quê ven sông với nghề chài lưới.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TRẢI NGHIỆM ======================= -->
+<section class="sec" id="trai-nghiem">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Trải nghiệm tại Làng" data-en="Experiences">Trải nghiệm tại Làng</div>
+      <h2 id="h2-trai-nghiem" data-vi="Không chỉ tham quan - mỗi bước chân là một bài học" data-en="More than sightseeing - every step is a lesson">Không chỉ tham quan - mỗi bước chân là một bài học</h2>
+      <p class="lead" id="lead-trai-nghiem" data-vi="Sáu nhóm hoạt động trải nghiệm được thiết kế cho học sinh, gia đình, đoàn doanh nghiệp và khách quốc tế." data-en="Six families of hands-on activities designed for students, families, corporate groups and international visitors.">Sáu nhóm hoạt động trải nghiệm được thiết kế cho học sinh, gia đình, đoàn doanh nghiệp và khách quốc tế.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card rv"><div class="card__body">
+        <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l9-7 9 7v11"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3 data-vi="Khám phá không gian văn hóa 54 dân tộc" data-en="Discover the culture of 54 ethnic groups">Khám phá không gian văn hóa 54 dân tộc</h3>
+        <p data-vi="Kiến trúc nhà rông, nhà dài, nhà sàn, tháp Chăm, chùa Khmer; phong tục, tín ngưỡng, ngôn ngữ, chữ viết, âm nhạc và nhạc cụ dân tộc." data-en="Rong, Long and stilt houses, Cham towers and Khmer pagodas; customs, beliefs, languages, scripts, music and instruments.">Kiến trúc nhà rông, nhà dài, nhà sàn, tháp Chăm, chùa Khmer; phong tục, tín ngưỡng, ngôn ngữ, chữ viết, âm nhạc và nhạc cụ dân tộc.</p>
+      </div></article>
+      <article class="card rv"><div class="card__body">
+        <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h3 data-vi="Giao lưu văn hóa với đồng bào" data-en="Cultural exchange with the communities">Giao lưu văn hóa với đồng bào</h3>
+        <p data-vi="Dân ca dân vũ, múa xòe, cồng chiêng, múa xoang, hát Then - đàn Tính, múa chuông, Rô Băm... cùng các chương trình chủ đề cuối tuần." data-en="Folk songs and dances, xoe dancing, gongs, xoang, Then singing, bell dance, Ro Bam theatre and themed weekend programs.">Dân ca dân vũ, múa xòe, cồng chiêng, múa xoang, hát Then - đàn Tính, múa chuông, Rô Băm... cùng các chương trình chủ đề cuối tuần.</p>
+      </div></article>
+      <article class="card rv"><div class="card__body">
+        <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v12H3z"/><path d="M3 11h18M8 7V4m8 3V4"/></svg></div>
+        <h3 data-vi="Trải nghiệm nghề thủ công truyền thống" data-en="Traditional craft experiences">Trải nghiệm nghề thủ công truyền thống</h3>
+        <p data-vi="Dệt thổ cẩm, dệt Zèng, đan lát rổ rá gùi, làm nón, quạt, guốc mộc, chế tác nhạc cụ tre nứa, làm bánh truyền thống." data-en="Brocade and Zeng weaving, basketry, conical hats, fans, clogs, bamboo instrument making and traditional cake making.">Dệt thổ cẩm, dệt Zèng, đan lát rổ rá gùi, làm nón, quạt, guốc mộc, chế tác nhạc cụ tre nứa, làm bánh truyền thống.</p>
+      </div></article>
+      <article class="card rv"><div class="card__body">
+        <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3 data-vi="Trò chơi dân gian &amp; team building" data-en="Folk games &amp; team building">Trò chơi dân gian &amp; team building</h3>
+        <p data-vi="Ném pao, đánh yến, ném còn, đi cà kheo, nhảy sạp, kéo co, đẩy gậy, nhảy bao bố, đập niêu, bước chân đoàn kết - rất phù hợp với học sinh và gia đình." data-en="Pao throwing, shuttlecock, con throwing, stilt walking, bamboo pole dance, tug of war, stick pushing, sack racing and team challenges - ideal for students and families.">Ném pao, đánh yến, ném còn, đi cà kheo, nhảy sạp, kéo co, đẩy gậy, nhảy bao bố, đập niêu, bước chân đoàn kết - rất phù hợp với học sinh và gia đình.</p>
+      </div></article>
+      <article class="card rv"><div class="card__body">
+        <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l4-5h8l4 5v12z"/><path d="M9 21v-8h6v8"/></svg></div>
+        <h3 data-vi="Mặc trang phục truyền thống &amp; check-in" data-en="Traditional costumes &amp; photo spots">Mặc trang phục truyền thống &amp; check-in</h3>
+        <p data-vi="Thuê và trải nghiệm trang phục của các dân tộc Khmer, Lào, Thái, Mường, Tày, Mông, Dao, Ba Na, Xơ Đăng, Gia Rai, Ê Đê, Tà Ôi..." data-en="Rent and wear the costumes of the Khmer, Lao, Thai, Muong, Tay, Mong, Dao, Ba Na, Xo Dang, Gia Rai, E De and Ta Oi.">Thuê và trải nghiệm trang phục của các dân tộc Khmer, Lào, Thái, Mường, Tày, Mông, Dao, Ba Na, Xơ Đăng, Gia Rai, Ê Đê, Tà Ôi...</p>
+      </div></article>
+      <article class="card rv"><div class="card__body">
+        <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3v8a3 3 0 006 0V3M9 11v10M18 3c-1.5 2-2 4-2 7v11"/></svg></div>
+        <h3 data-vi="Ẩm thực truyền thống các dân tộc" data-en="Traditional ethnic cuisine">Ẩm thực truyền thống các dân tộc</h3>
+        <p data-vi="Cơm lam, xôi ngũ sắc, gà nướng, thịt lợn đồ, lạp sườn, măng nhồi, rau rừng, cà phê và ca cao Tây Nguyên - đặc sản theo mùa, theo vùng. Du khách có thể trải nghiệm cách chế biến một số món ăn, bánh truyền thống và cảm nhận sự khác biệt trong cách dùng gia vị, nguyên liệu của từng vùng miền." data-en="Bamboo rice, five-coloured sticky rice, grilled chicken, steamed pork, sausages, stuffed bamboo shoots, forest greens, Highlands coffee and cocoa - seasonal and regional. Visitors can try their hand at preparing traditional dishes and cakes, and sense how spices and ingredients differ from one region to the next.">Cơm lam, xôi ngũ sắc, gà nướng, thịt lợn đồ, lạp sườn, măng nhồi, rau rừng, cà phê và ca cao Tây Nguyên - đặc sản theo mùa, theo vùng. Du khách có thể trải nghiệm cách chế biến một số món ăn, bánh truyền thống và cảm nhận sự khác biệt trong cách dùng gia vị, nguyên liệu của từng vùng miền.</p>
+      </div></article>
+    </div>
+
+    <div class="rv" style="margin-top:34px">
+      <div class="media ratio-16x9 yt" data-yt="gioiThieu" data-ph-title="Video giới thiệu Làng (YouTube)" data-ph-sub="YOUTUBE.gioiThieu"></div>
+    </div>
+  </div>
+</section>
+<!-- ======================= CHƯƠNG TRÌNH TRẢI NGHIỆM ======================= -->
+<section class="sec sec--sand" id="chuong-trinh">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Gói chương trình 2026" data-en="2026 programs">Gói chương trình 2026</div>
+      <h2 id="h2-chuong-trinh" data-vi="Chương trình trải nghiệm theo đoàn" data-en="Group experience programs">Chương trình trải nghiệm theo đoàn</h2>
+      <p class="lead" id="lead-chuong-trinh" data-vi="Dành cho học sinh Tiểu học - THCS - THPT, đoàn từ 50 đến 500 khách. Đã bao gồm vé vào cửa, thuyết minh, giao lưu - trải nghiệm và hoạt động team building theo chương trình." data-en="For primary, secondary and high school groups of 50-500 guests. Includes entrance ticket, guiding, cultural exchange, hands-on activities and team building.">Dành cho học sinh Tiểu học - THCS - THPT, đoàn từ 50 đến 500 khách. Đã bao gồm vé vào cửa, thuyết minh, giao lưu - trải nghiệm và hoạt động team building theo chương trình.</p>
+    </div>
+
+    <div class="tabs rv" role="tablist">
+      <button class="tab on" data-tab="p1" data-vi="Dấu chân bản làng · 1 ngày" data-en="Village Footprints · Full day">Dấu chân bản làng · 1 ngày</button>
+      <button class="tab" data-tab="p2" data-vi="Dấu chân bản làng · ½ ngày" data-en="Village Footprints · Half day">Dấu chân bản làng · ½ ngày</button>
+      <button class="tab" data-tab="p3" data-vi="Về với đại ngàn Tây Nguyên · 1 ngày" data-en="Into the Highlands · Full day">Về với đại ngàn Tây Nguyên · 1 ngày</button>
+      <button class="tab" data-tab="p4" data-vi="Về với đại ngàn Tây Nguyên · ½ ngày" data-en="Into the Highlands · Half day">Về với đại ngàn Tây Nguyên · ½ ngày</button>
+    </div>
+
+    <!-- P1 -->
+    <div class="panel on" id="p1">
+      <div class="prog rv">
+        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-dau-chan-1ngay.jpg" alt="" data-ph-title="Ảnh chương trình Dấu chân bản làng" data-ph-sub="images/ct-dau-chan-1ngay.jpg · dọc 3:4"></div></div>
+        <div class="prog__body">
+          <div class="prog__meta">
+            <span class="pill" data-vi="Thời lượng: 1 ngày (8:00 - 16:30)" data-en="Duration: full day (8:00 - 16:30)">Thời lượng: 1 ngày (8:00 - 16:30)</span>
+            <span class="pill" data-vi="Đoàn 50 - 500 khách" data-en="Groups of 50 - 500">Đoàn 50 - 500 khách</span>
+            <span class="pill pill--o" data-vi="Từ 79.000đ/khách" data-en="From 79,000₫/guest">Từ 79.000đ/khách</span>
+          </div>
+          <h3 data-vi="“Dấu chân bản làng”" data-en="“Village Footprints”">“Dấu chân bản làng”</h3>
+          <p data-vi="Làng Tày - Dao - Mông - Nùng - trò chơi tập thể - ăn trưa - làng Raglai - Chùa Khmer - làng Khmer - Tháp Chăm. Mỗi nhóm trải nghiệm 2 trạm văn hóa trong 8 làng: Tày, Dao, Mông, Nùng, Mường, Thái, Khơ Mú, Lào; mỗi trạm chia 3 tốp với 3 hoạt động khác nhau." data-en="Tay - Dao - Mong - Nung villages, group games, lunch, then Raglai village, Khmer pagoda, Khmer village and Cham towers. Each group visits 2 of 8 cultural stations; each station runs 3 parallel hands-on activities.">Làng Tày - Dao - Mông - Nùng - trò chơi tập thể - ăn trưa - làng Raglai - Chùa Khmer - làng Khmer - Tháp Chăm. Mỗi nhóm trải nghiệm 2 trạm văn hóa trong 8 làng: Tày, Dao, Mông, Nùng, Mường, Thái, Khơ Mú, Lào; mỗi trạm chia 3 tốp với 3 hoạt động khác nhau.</p>
+          <ul class="timeline">
+            <li><b>08:00 - 08:30</b><span data-vi="Khởi động, chia nhóm, đặt tên và vũ điệu đặc trưng" data-en="Warm-up, team split, team names and dances">Khởi động, chia nhóm, đặt tên và vũ điệu đặc trưng</span></li>
+            <li><b>08:30 - 10:15</b><span data-vi="Khám phá 2 trạm văn hóa: đàn tính - hát Then, múa chuông, thuốc Nam, thổi khèn, đan lát, giã gạo, hái chè, lịch Đoi..." data-en="Two cultural stations: Then singing, bell dance, herbal medicine, khen flute, basketry, rice pounding, tea picking, Doi calendar...">Khám phá 2 trạm văn hóa: đàn tính - hát Then, múa chuông, thuốc Nam, thổi khèn, đan lát, giã gạo, hái chè, lịch Đoi...</span></li>
+            <li><b>10:15 - 11:45</b><span data-vi="“Sắc màu văn hóa - Gắn kết yêu thương”: team building, trò chơi dân gian, trao thưởng, chụp ảnh cùng đồng bào" data-en="“Colours of culture”: team building, folk games, awards and photos with the communities">“Sắc màu văn hóa - Gắn kết yêu thương”: team building, trò chơi dân gian, trao thưởng, chụp ảnh cùng đồng bào</span></li>
+            <li><b>11:45 - 13:00</b><span data-vi="Ăn trưa (theo nhu cầu)" data-en="Lunch (optional)">Ăn trưa (theo nhu cầu)</span></li>
+            <li><b>13:00 - 14:00</b><span data-vi="Trải nghiệm không gian văn hóa kiến trúc các dân tộc" data-en="Exploring ethnic architecture">Trải nghiệm không gian văn hóa kiến trúc các dân tộc</span></li>
+            <li><b>14:00 - 15:30</b><span data-vi="Làng Raglai (chapi, đàn đá, mã la) → Chùa Khmer → Làng Khmer (Rô Băm) → Tháp Chăm" data-en="Raglai village (chapi, stone lithophone) → Khmer pagoda → Khmer village (Ro Bam) → Cham towers">Làng Raglai (chapi, đàn đá, mã la) → Chùa Khmer → Làng Khmer (Rô Băm) → Tháp Chăm</span></li>
+            <li><b>15:30 - 16:30</b><span data-vi="Tự do vui chơi, mua đồ lưu niệm, trải nghiệm xe đạp, giải khát" data-en="Free time, souvenirs, cycling and refreshments">Tự do vui chơi, mua đồ lưu niệm, trải nghiệm xe đạp, giải khát</span></li>
+          </ul>
+          <div class="tblwrap" style="margin-top:22px">
+            <table><thead><tr>
+              <th data-vi="Quy mô đoàn" data-en="Group size">Quy mô đoàn</th><th style="text-align:right" data-vi="Giá / khách" data-en="Price / guest">Giá / khách</th></tr></thead>
+              <tbody>
+                <tr><td data-vi="Đoàn 50 - 100 người" data-en="50 - 100 guests">Đoàn 50 - 100 người</td><td class="num" data-p="prog.dc1.0">149.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 101 - 200 người" data-en="101 - 200 guests">Đoàn 101 - 200 người</td><td class="num" data-p="prog.dc1.1">129.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 201 - 300 người" data-en="201 - 300 guests">Đoàn 201 - 300 người</td><td class="num" data-p="prog.dc1.2">99.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 301 - 500 người" data-en="301 - 500 guests">Đoàn 301 - 500 người</td><td class="num" data-p="prog.dc1.3">79.000 đ</td></tr>
+              </tbody></table>
+          </div>
+          <p class="tbl-note" data-vi="Điểm tham quan buổi chiều có thể thay đổi theo tình hình thực tế hoặc chuyển sang tham gia chương trình điểm nhấn cuối tuần." data-en="Afternoon stops may change subject to conditions or be replaced by weekend highlight programs.">Điểm tham quan buổi chiều có thể thay đổi theo tình hình thực tế hoặc chuyển sang tham gia chương trình điểm nhấn cuối tuần.</p>
+          <a href="#dat-lich" class="btn btn--primary" style="margin-top:18px" data-book="dc1" data-vi="Đặt chương trình này" data-en="Book this program">Đặt chương trình này</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="panel" id="p2">
+      <div class="prog rv">
+        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-dau-chan-nuangay.jpg" alt="" data-ph-title="Ảnh chương trình ½ ngày" data-ph-sub="images/ct-dau-chan-nuangay.jpg · dọc 3:4"></div></div>
+        <div class="prog__body">
+          <div class="prog__meta">
+            <span class="pill" data-vi="Thời lượng: ½ ngày (8:00 - 11:45)" data-en="Duration: half day (8:00 - 11:45)">Thời lượng: ½ ngày (8:00 - 11:45)</span>
+            <span class="pill" data-vi="Đoàn 50 - 500 khách" data-en="Groups of 50 - 500">Đoàn 50 - 500 khách</span>
+            <span class="pill pill--o" data-vi="Từ 55.000đ/khách" data-en="From 55,000₫/guest">Từ 55.000đ/khách</span>
+          </div>
+          <h3 data-vi="“Dấu chân bản làng” - nửa ngày" data-en="“Village Footprints” - half day">“Dấu chân bản làng” - nửa ngày</h3>
+          <p data-vi="Phiên bản gọn cho các trường ở gần: khởi động, khám phá 2 trạm văn hóa trong nhóm làng Tày - Dao - Mông - Nùng - Mường - Thái - Khơ Mú - Lào và team building trò chơi dân gian." data-en="A compact version for nearby schools: warm-up, two cultural stations among the Tay - Dao - Mong - Nung - Muong - Thai - Kho Mu - Lao villages, then folk-game team building.">Phiên bản gọn cho các trường ở gần: khởi động, khám phá 2 trạm văn hóa trong nhóm làng Tày - Dao - Mông - Nùng - Mường - Thái - Khơ Mú - Lào và team building trò chơi dân gian.</p>
+          <ul class="timeline">
+            <li><b>08:00 - 08:30</b><span data-vi="Khởi động, chia nhóm, phổ biến chương trình" data-en="Warm-up, team split, briefing">Khởi động, chia nhóm, phổ biến chương trình</span></li>
+            <li><b>08:30 - 10:15</b><span data-vi="Khám phá 2 trạm văn hóa (mỗi trạm 3 tốp - 3 hoạt động)" data-en="Two cultural stations (3 sub-groups, 3 activities each)">Khám phá 2 trạm văn hóa (mỗi trạm 3 tốp - 3 hoạt động)</span></li>
+            <li><b>10:15 - 11:30</b><span data-vi="Team building: ném còn, cà kheo, nhảy sạp, kéo co, nhảy bao bố, biểu diễn trang phục dân tộc" data-en="Team building: con throwing, stilts, bamboo dance, tug of war, sack race, costume show">Team building: ném còn, cà kheo, nhảy sạp, kéo co, nhảy bao bố, biểu diễn trang phục dân tộc</span></li>
+            <li><b>11:30 - 11:45</b><span data-vi="Trao thưởng và chụp ảnh kỷ niệm cùng đồng bào" data-en="Awards and group photos with the communities">Trao thưởng và chụp ảnh kỷ niệm cùng đồng bào</span></li>
+          </ul>
+          <div class="tblwrap" style="margin-top:22px">
+            <table><thead><tr><th data-vi="Quy mô đoàn" data-en="Group size">Quy mô đoàn</th><th style="text-align:right" data-vi="Giá / khách" data-en="Price / guest">Giá / khách</th></tr></thead>
+              <tbody>
+                <tr><td data-vi="Đoàn 50 - 100 người" data-en="50 - 100 guests">Đoàn 50 - 100 người</td><td class="num" data-p="prog.dc05.0">119.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 101 - 200 người" data-en="101 - 200 guests">Đoàn 101 - 200 người</td><td class="num" data-p="prog.dc05.1">99.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 201 - 300 người" data-en="201 - 300 guests">Đoàn 201 - 300 người</td><td class="num" data-p="prog.dc05.2">75.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 301 - 500 người" data-en="301 - 500 guests">Đoàn 301 - 500 người</td><td class="num" data-p="prog.dc05.3">55.000 đ</td></tr>
+              </tbody></table>
+          </div>
+          <a href="#dat-lich" class="btn btn--primary" style="margin-top:18px" data-book="dc05" data-vi="Đặt chương trình này" data-en="Book this program">Đặt chương trình này</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="panel" id="p3">
+      <div class="prog rv">
+        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-tay-nguyen-1ngay.jpg" alt="" data-ph-title="Ảnh chương trình Tây Nguyên" data-ph-sub="images/ct-tay-nguyen-1ngay.jpg · dọc 3:4"></div></div>
+        <div class="prog__body">
+          <div class="prog__meta">
+            <span class="pill" data-vi="Thời lượng: 1 ngày (8:00 - 16:30)" data-en="Duration: full day (8:00 - 16:30)">Thời lượng: 1 ngày (8:00 - 16:30)</span>
+            <span class="pill" data-vi="Đoàn 50 - 500 khách" data-en="Groups of 50 - 500">Đoàn 50 - 500 khách</span>
+            <span class="pill pill--o" data-vi="Từ 79.000đ/khách" data-en="From 79,000₫/guest">Từ 79.000đ/khách</span>
+          </div>
+          <h3 data-vi="“Về với đại ngàn Tây Nguyên”" data-en="“Into the Great Highlands”">“Về với đại ngàn Tây Nguyên”</h3>
+          <p data-vi="Trải nghiệm 2 trạm trong nhóm làng Tà Ôi - Ba Na - Xơ Đăng - Gia Rai - Cơ Tu - Raglai - Ê Đê: dệt Zèng, cồng chiêng, đàn T'rưng - K'lông Pút, chế tác nhạc cụ tre nứa, rang xay cà phê Ban Mê; chiều thăm Chùa Khmer, làng Khmer và Tháp Chăm." data-en="Two stations among the Ta Oi - Ba Na - Xo Dang - Gia Rai - Co Tu - Raglai - E De villages: Zeng weaving, gongs, T'rung and K'long Put, bamboo instrument crafting, Ban Me coffee roasting; afternoon at the Khmer pagoda, Khmer village and Cham towers.">Trải nghiệm 2 trạm trong nhóm làng Tà Ôi - Ba Na - Xơ Đăng - Gia Rai - Cơ Tu - Raglai - Ê Đê: dệt Zèng, cồng chiêng, đàn T'rưng - K'lông Pút, chế tác nhạc cụ tre nứa, rang xay cà phê Ban Mê; chiều thăm Chùa Khmer, làng Khmer và Tháp Chăm.</p>
+          <ul class="timeline">
+            <li><b>08:00 - 08:30</b><span data-vi="Khởi động và chia nhóm" data-en="Warm-up and team split">Khởi động và chia nhóm</span></li>
+            <li><b>08:30 - 10:15</b><span data-vi="2 trạm văn hóa Trường Sơn - Tây Nguyên" data-en="Two Truong Son - Highlands stations">2 trạm văn hóa Trường Sơn - Tây Nguyên</span></li>
+            <li><b>10:15 - 11:45</b><span data-vi="Team building &amp; trò chơi dân gian, trao thưởng" data-en="Team building, folk games and awards">Team building &amp; trò chơi dân gian, trao thưởng</span></li>
+            <li><b>11:45 - 13:00</b><span data-vi="Ăn trưa (theo nhu cầu)" data-en="Lunch (optional)">Ăn trưa (theo nhu cầu)</span></li>
+            <li><b>14:00 - 15:30</b><span data-vi="Chùa Khmer → Làng Khmer → Tháp Chăm" data-en="Khmer pagoda → Khmer village → Cham towers">Chùa Khmer → Làng Khmer → Tháp Chăm</span></li>
+            <li><b>15:30 - 16:30</b><span data-vi="Tự do vui chơi, mua sắm, giải khát" data-en="Free time, shopping and refreshments">Tự do vui chơi, mua sắm, giải khát</span></li>
+          </ul>
+          <div class="tblwrap" style="margin-top:22px">
+            <table><thead><tr><th data-vi="Quy mô đoàn" data-en="Group size">Quy mô đoàn</th><th style="text-align:right" data-vi="Giá / khách" data-en="Price / guest">Giá / khách</th></tr></thead>
+              <tbody>
+                <tr><td data-vi="Đoàn 50 - 100 người" data-en="50 - 100 guests">Đoàn 50 - 100 người</td><td class="num" data-p="prog.tn1.0">149.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 101 - 200 người" data-en="101 - 200 guests">Đoàn 101 - 200 người</td><td class="num" data-p="prog.tn1.1">129.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 201 - 300 người" data-en="201 - 300 guests">Đoàn 201 - 300 người</td><td class="num" data-p="prog.tn1.2">99.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 301 - 500 người" data-en="301 - 500 guests">Đoàn 301 - 500 người</td><td class="num" data-p="prog.tn1.3">79.000 đ</td></tr>
+              </tbody></table>
+          </div>
+          <a href="#dat-lich" class="btn btn--primary" style="margin-top:18px" data-book="tn1" data-vi="Đặt chương trình này" data-en="Book this program">Đặt chương trình này</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="panel" id="p4">
+      <div class="prog rv">
+        <div class="prog__media"><div class="media"><img class="fit" loading="lazy" decoding="async" src="images/ct-tay-nguyen-nuangay.jpg" alt="" data-ph-title="Ảnh chương trình Tây Nguyên ½ ngày" data-ph-sub="images/ct-tay-nguyen-nuangay.jpg · dọc 3:4"></div></div>
+        <div class="prog__body">
+          <div class="prog__meta">
+            <span class="pill" data-vi="Thời lượng: ½ ngày (8:00 - 11:45)" data-en="Duration: half day (8:00 - 11:45)">Thời lượng: ½ ngày (8:00 - 11:45)</span>
+            <span class="pill" data-vi="Đoàn 50 - 500 khách" data-en="Groups of 50 - 500">Đoàn 50 - 500 khách</span>
+            <span class="pill pill--o" data-vi="Từ 55.000đ/khách" data-en="From 55,000₫/guest">Từ 55.000đ/khách</span>
+          </div>
+          <h3 data-vi="“Về với đại ngàn Tây Nguyên” - nửa ngày" data-en="“Into the Great Highlands” - half day">“Về với đại ngàn Tây Nguyên” - nửa ngày</h3>
+          <p data-vi="Khởi động, khám phá 2 trạm văn hóa Tây Nguyên với dệt thổ cẩm, đan gùi, học đánh cồng chiêng, chơi đàn T'rưng, đàn đá, mã la; kết thúc bằng team building và trao thưởng." data-en="Warm-up, two Highlands stations with brocade weaving, basket making, gong playing, T'rung, lithophone and ma la, ending with team building and awards.">Khởi động, khám phá 2 trạm văn hóa Tây Nguyên với dệt thổ cẩm, đan gùi, học đánh cồng chiêng, chơi đàn T'rưng, đàn đá, mã la; kết thúc bằng team building và trao thưởng.</p>
+          <div class="tblwrap" style="margin-top:22px">
+            <table><thead><tr><th data-vi="Quy mô đoàn" data-en="Group size">Quy mô đoàn</th><th style="text-align:right" data-vi="Giá / khách" data-en="Price / guest">Giá / khách</th></tr></thead>
+              <tbody>
+                <tr><td data-vi="Đoàn 50 - 100 người" data-en="50 - 100 guests">Đoàn 50 - 100 người</td><td class="num" data-p="prog.tn05.0">119.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 101 - 200 người" data-en="101 - 200 guests">Đoàn 101 - 200 người</td><td class="num" data-p="prog.tn05.1">99.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 201 - 300 người" data-en="201 - 300 guests">Đoàn 201 - 300 người</td><td class="num" data-p="prog.tn05.2">75.000 đ</td></tr>
+                <tr><td data-vi="Đoàn 301 - 500 người" data-en="301 - 500 guests">Đoàn 301 - 500 người</td><td class="num" data-p="prog.tn05.3">55.000 đ</td></tr>
+              </tbody></table>
+          </div>
+          <a href="#dat-lich" class="btn btn--primary" style="margin-top:18px" data-book="tn05" data-vi="Đặt chương trình này" data-en="Book this program">Đặt chương trình này</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= DỊCH VỤ & TIỆN ÍCH ======================= -->
+<section class="sec" id="dich-vu">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Dịch vụ &amp; tiện ích" data-en="Services &amp; facilities">Dịch vụ &amp; tiện ích</div>
+      <h2 id="h2-dich-vu" data-vi="Mọi tiện ích cho một ngày trọn vẹn" data-en="Everything you need for a complete day">Mọi tiện ích cho một ngày trọn vẹn</h2>
+      <p class="lead" id="lead-dich-vu" data-vi="Vé tham quan, vận chuyển xanh trong Làng, ẩm thực vùng miền, lưu trú, lều trại, quà lưu niệm và dịch vụ hỗ trợ tổ chức hoạt động." data-en="Entrance tickets, green transport inside the Village, regional cuisine, accommodation, camping, souvenirs and event support services.">Vé tham quan, vận chuyển xanh trong Làng, ẩm thực vùng miền, lưu trú, lều trại, quà lưu niệm và dịch vụ hỗ trợ tổ chức hoạt động.</p>
+    </div>
+
+    <div class="grid g2 rv" style="gap:26px;align-items:start">
+      <div>
+        <h3 style="margin-bottom:14px" data-vi="Bảng giá vé tham quan 2026" data-en="2026 entrance ticket prices">Bảng giá vé tham quan 2026</h3>
+        <div class="tblwrap">
+          <table><thead><tr>
+            <th data-vi="Đối tượng" data-en="Visitor">Đối tượng</th>
+            <th style="text-align:right" data-vi="Giá vé" data-en="Price">Giá vé</th>
+            <th data-vi="Ghi chú" data-en="Note">Ghi chú</th></tr></thead>
+            <tbody>
+              <tr><td data-vi="Người lớn" data-en="Adult">Người lớn</td><td class="num" data-p="ticket.adult">30.000 đ</td><td>—</td></tr>
+              <tr><td data-vi="Sinh viên, học viên" data-en="Student (college)">Sinh viên, học viên</td><td class="num" data-p="ticket.student">10.000 đ</td><td data-vi="Xuất trình thẻ hoặc giấy giới thiệu của nhà trường" data-en="Show student card or school letter">Xuất trình thẻ hoặc giấy giới thiệu của nhà trường</td></tr>
+              <tr><td data-vi="Học sinh" data-en="Pupil">Học sinh</td><td class="num" data-p="ticket.pupil">5.000 đ</td><td data-vi="Xuất trình thẻ hoặc giấy giới thiệu của nhà trường" data-en="Show student card or school letter">Xuất trình thẻ hoặc giấy giới thiệu của nhà trường</td></tr>
+              <tr><td data-vi="Người từ đủ 60 tuổi, người khuyết tật nặng, đối tượng chính sách (giảm 50%)" data-en="Age 60+, severely disabled, policy beneficiaries (50% off)">Người từ đủ 60 tuổi, người khuyết tật nặng, đối tượng chính sách (giảm 50%)</td><td class="num" data-p="ticket.senior">15.000 đ</td><td data-vi="Xuất trình Căn cước công dân" data-en="Show ID card">Xuất trình Căn cước công dân</td></tr>
+              <tr><td data-vi="Trẻ em dưới 6 tuổi, người khuyết tật đặc biệt nặng" data-en="Children under 6, extremely severely disabled">Trẻ em dưới 6 tuổi, người khuyết tật đặc biệt nặng</td><td class="num" data-vi="Miễn phí" data-en="Free">Miễn phí</td><td>—</td></tr>
+            </tbody></table>
+        </div>
+        <p class="tbl-note" data-vi="* Giá dịch vụ có thể thay đổi, điều chỉnh theo quy định ban hành." data-en="* Prices may change according to official regulations.">* Giá dịch vụ có thể thay đổi, điều chỉnh theo quy định ban hành.</p>
+
+        <h3 style="margin:28px 0 14px" data-vi="Dịch vụ xe điện" data-en="Electric shuttle service">Dịch vụ xe điện</h3>
+        <div class="tblwrap">
+          <table><thead><tr><th data-vi="Loại vé" data-en="Ticket">Loại vé</th><th style="text-align:right" data-vi="Giá" data-en="Price">Giá</th></tr></thead>
+            <tbody>
+              <tr><td data-vi="Xe điện tuyến bus liên tuyến - người lớn (8:00 - 17:00)" data-en="Shuttle bus route - adult (8:00 - 17:00)">Xe điện tuyến bus liên tuyến - người lớn (8:00 - 17:00)</td><td class="num" data-p="shuttle.route">40.000 đ</td></tr>
+              <tr><td data-vi="Xe điện liên tuyến - trẻ từ 6 tuổi, sinh viên, người từ đủ 60 tuổi" data-en="Shuttle bus route - children 6+, students, seniors">Xe điện liên tuyến - trẻ từ 6 tuổi, sinh viên, người từ đủ 60 tuổi</td><td class="num" data-p="shuttle.reduced">25.000 đ</td></tr>
+              <tr><td data-vi="Xe điện theo tour (13 - 15 khách/xe)" data-en="Private shuttle by tour (13 - 15 guests/vehicle)">Xe điện theo tour (13 - 15 khách/xe)</td><td class="num" data-p="shuttle.tour">450.000 đ/giờ</td></tr>
+            </tbody></table>
+        </div>
+      </div>
+
+      <div class="grid" style="gap:18px">
+        <article class="card"><div class="card__body">
+          <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="12" rx="3"/><circle cx="7.5" cy="19" r="1.8"/><circle cx="16.5" cy="19" r="1.8"/><path d="M3 11h18"/></svg></div>
+          <h3 data-vi="Vận chuyển xanh trong Làng" data-en="Green transport inside the Village">Vận chuyển xanh trong Làng</h3>
+          <p data-vi="Xe điện chạy theo tuyến như xe bus với 12 điểm dừng tại các làng có bà con hoạt động; 3 trạm xe đạp điện tại cổng 54, khu Trại Sáng Tác và khu làng III; dịch vụ thuê xe đạp cho hành trình khám phá sâu hơn." data-en="Electric shuttles run a bus-style route with 12 stops at inhabited villages; three e-bike stations at Gate 54, the Creative Camp and Zone III; bicycles are available for deeper exploration.">Xe điện chạy theo tuyến như xe bus với 12 điểm dừng tại các làng có bà con hoạt động; 3 trạm xe đạp điện tại cổng 54, khu Trại Sáng Tác và khu làng III; dịch vụ thuê xe đạp cho hành trình khám phá sâu hơn.</p>
+        </div></article>
+        <article class="card"><div class="card__body">
+          <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3v8a3 3 0 006 0V3M9 11v10M18 3c-1.5 2-2 4-2 7v11"/></svg></div>
+          <h3 data-vi="Ẩm thực" data-en="Dining">Ẩm thực</h3>
+          <p data-vi="Nhà hàng Chân Đồi - không gian ẩm thực trong lòng Làng, khuôn viên rộng, xanh mát bên hồ, phục vụ đặc sản vùng miền với công suất khoảng 500 khách, phù hợp cho khách lẻ, gia đình và các đoàn khách. Du khách cũng có thể đặt bữa ngay tại các làng Tày, Nùng, Dao, Mường, Thái để thưởng thức hương vị đặc trưng của Tây Bắc, Tây Nguyên và Nam Bộ." data-en="Chan Doi restaurant is a dining space in the heart of the Village - spacious, green and set beside the lake, serving regional specialities for around 500 guests, suited to individual travellers, families and large groups. Guests can also book meals directly in the Tay, Nung, Dao, Muong and Thai villages to taste the flavours of the Northwest, the Central Highlands and the South.">Nhà hàng Chân Đồi - không gian ẩm thực trong lòng Làng, khuôn viên rộng, xanh mát bên hồ, phục vụ đặc sản vùng miền với công suất khoảng 500 khách, phù hợp cho khách lẻ, gia đình và các đoàn khách. Du khách cũng có thể đặt bữa ngay tại các làng Tày, Nùng, Dao, Mường, Thái để thưởng thức hương vị đặc trưng của Tây Bắc, Tây Nguyên và Nam Bộ.</p>
+          <p style="margin-top:10px;font-style:italic;color:var(--jade);font-weight:600" data-vi="Thưởng thức hương vị - Chạm vào văn hóa - Nhớ mãi một hành trình." data-en="Taste the flavours - touch the culture - remember the journey.">Thưởng thức hương vị - Chạm vào văn hóa - Nhớ mãi một hành trình.</p>
+        </div></article>
+        <article class="card"><div class="card__body">
+          <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9 17H3z"/><path d="M12 10l5 10H7z"/></svg></div>
+          <h3 data-vi="Lều trại, sân bãi &amp; hỗ trợ tổ chức" data-en="Camping, grounds &amp; event support">Lều trại, sân bãi &amp; hỗ trợ tổ chức</h3>
+          <p data-vi="Hướng dẫn viên tại điểm thuyết minh theo chủ đề giáo dục lịch sử - văn hóa; hỗ trợ không gian, sân bãi cho sinh hoạt tập thể, team building, hội thi tìm hiểu văn hóa; phối hợp bố trí ăn uống, nghỉ ngơi an toàn, chu đáo." data-en="On-site guides with history and culture themes; grounds and spaces for group activities, team building and culture quizzes; coordinated catering and rest arrangements.">Hướng dẫn viên tại điểm thuyết minh theo chủ đề giáo dục lịch sử - văn hóa; hỗ trợ không gian, sân bãi cho sinh hoạt tập thể, team building, hội thi tìm hiểu văn hóa; phối hợp bố trí ăn uống, nghỉ ngơi an toàn, chu đáo.</p>
+        </div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= LƯU TRÚ ======================= -->
+<section class="sec sec--sand" id="luu-tru">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Trại Sáng Tác" data-en="The Creative Camp">Trại Sáng Tác</div>
+      <h2 id="h2-luu-tru" data-vi="Không gian lưu trú giữa lòng văn hóa" data-en="A place to stay in the heart of culture">Không gian lưu trú giữa lòng văn hóa</h2>
+      <p class="lead" id="lead-luu-tru" data-vi="32 phòng hiện đại, phục vụ tối đa 200 khách/ngày, view núi - hồ, chỉ 5 phút xe điện từ cổng chính. Bể bơi vô cực miễn phí cho khách lưu trú." data-en="32 modern rooms for up to 200 guests a day with mountain and lake views, just 5 minutes by shuttle from the main gate. Infinity pool free for in-house guests.">32 phòng hiện đại, phục vụ tối đa 200 khách/ngày, view núi - hồ, chỉ 5 phút xe điện từ cổng chính. Bể bơi vô cực miễn phí cho khách lưu trú.</p>
+    </div>
+
+    <div class="grid g4 rv" style="margin-bottom:30px">
+      <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/luu-tru-1.jpg" alt="" data-ph-title="Biệt thự / phòng nghỉ" data-ph-sub="images/luu-tru-1.jpg · 4:3"></div>
+      <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/luu-tru-2.jpg" alt="" data-ph-title="Bể bơi vô cực" data-ph-sub="images/luu-tru-2.jpg · 4:3"></div>
+      <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/luu-tru-3.jpg" alt="" data-ph-title="Nhà cộng đồng" data-ph-sub="images/luu-tru-3.jpg · 4:3"></div>
+      <div class="media ratio-4x3"><img loading="lazy" decoding="async" src="images/luu-tru-4.jpg" alt="" data-ph-title="Không gian BBQ / ăn uống" data-ph-sub="images/luu-tru-4.jpg · 4:3"></div>
+    </div>
+
+    <div class="tabs rv">
+      <button class="tab on" data-tab="lt-dem" data-vi="Giá phòng qua đêm" data-en="Overnight rates">Giá phòng qua đêm</button>
+      <button class="tab" data-tab="lt-ngay" data-vi="Giá phòng trong ngày" data-en="Day-use rates">Giá phòng trong ngày</button>
+    </div>
+    <div class="panel on" id="lt-dem">
+      <div class="tblwrap rv">
+        <table><thead><tr>
+          <th data-vi="Hạng phòng" data-en="Room type">Hạng phòng</th>
+          <th data-vi="Tiêu chuẩn phòng" data-en="Room standard">Tiêu chuẩn phòng</th>
+          <th data-vi="Số khách" data-en="Capacity">Số khách</th>
+          <th style="text-align:right" data-vi="CN - T5" data-en="Sun - Thu">CN - T5</th>
+          <th style="text-align:right" data-vi="T6, T7, Lễ, Tết" data-en="Fri, Sat, holidays">T6, T7, Lễ, Tết</th></tr></thead>
+          <tbody>
+            <tr><td data-vi="Biệt thự (Thổ Cẩm, Di Sản, Xứ Dừa)" data-en="Villa (Tho Cam, Di San, Xu Dua)">Biệt thự (Thổ Cẩm, Di Sản, Xứ Dừa)</td><td data-vi="01 phòng khách + 02 phòng ngủ (giường 1,8×2m)" data-en="1 living room + 2 bedrooms (1.8×2m beds)">01 phòng khách + 02 phòng ngủ (giường 1,8×2m)</td><td data-vi="04 người" data-en="4 guests">04 người</td><td class="num" data-p="room.villa.n0">2.484.000 đ</td><td class="num" data-p="room.villa.n1">3.564.000 đ</td></tr>
+            <tr><td data-vi="Song lập tầng 1 (Hoa Sen, Hoa Pơ Lang, Hoa Ban)" data-en="Duplex ground floor (Hoa Sen, Hoa Po Lang, Hoa Ban)">Song lập tầng 1 (Hoa Sen, Hoa Pơ Lang, Hoa Ban)</td><td data-vi="01 phòng (giường 1,8×2m)" data-en="1 room (1.8×2m bed)">01 phòng (giường 1,8×2m)</td><td data-vi="02 người" data-en="2 guests">02 người</td><td class="num" data-p="room.d1.n0">918.000 đ</td><td class="num" data-p="room.d1.n1">1.350.000 đ</td></tr>
+            <tr><td data-vi="Song lập tầng 2 (Hoa Sen, Hoa Pơ Lang, Hoa Ban)" data-en="Duplex upper floor (Hoa Sen, Hoa Po Lang, Hoa Ban)">Song lập tầng 2 (Hoa Sen, Hoa Pơ Lang, Hoa Ban)</td><td data-vi="02 phòng thông (01 giường 1,8×2m + 02 giường 1×2m)" data-en="2 connecting rooms (one 1.8×2m + two 1×2m beds)">02 phòng thông (01 giường 1,8×2m + 02 giường 1×2m)</td><td data-vi="04 người" data-en="4 guests">04 người</td><td class="num" data-p="room.d2.n0">1.620.000 đ</td><td class="num" data-p="room.d2.n1">2.160.000 đ</td></tr>
+            <tr><td data-vi="Nhà cộng đồng (Kinh Bắc, Hội An)" data-en="Community house (Kinh Bac, Hoi An)">Nhà cộng đồng (Kinh Bắc, Hội An)</td><td data-vi="26 giường 1×2m" data-en="26 beds of 1×2m">26 giường 1×2m</td><td data-vi="26 người" data-en="26 guests">26 người</td><td class="num" data-p="room.cong.n0">5.400.000 đ</td><td class="num" data-p="room.cong.n1">7.560.000 đ</td></tr>
+          </tbody></table>
+      </div>
+    </div>
+    <div class="panel" id="lt-ngay">
+      <div class="tblwrap rv">
+        <table><thead><tr>
+          <th data-vi="Hạng phòng" data-en="Room type">Hạng phòng</th>
+          <th data-vi="Số khách" data-en="Capacity">Số khách</th>
+          <th style="text-align:right" data-vi="Thứ Hai - Thứ Sáu" data-en="Mon - Fri">Thứ Hai - Thứ Sáu</th>
+          <th style="text-align:right" data-vi="T7, CN, Lễ, Tết" data-en="Sat, Sun, holidays">T7, CN, Lễ, Tết</th></tr></thead>
+          <tbody>
+            <tr><td data-vi="Biệt thự (Thổ Cẩm, Di Sản, Xứ Dừa)" data-en="Villa (Tho Cam, Di San, Xu Dua)">Biệt thự (Thổ Cẩm, Di Sản, Xứ Dừa)</td><td data-vi="04 người" data-en="4 guests">04 người</td><td class="num" data-p="room.villa.d0">1.490.400 đ</td><td class="num" data-p="room.villa.d1">2.138.400 đ</td></tr>
+            <tr><td data-vi="Song lập tầng 1" data-en="Duplex ground floor">Song lập tầng 1</td><td data-vi="02 người" data-en="2 guests">02 người</td><td class="num" data-p="room.d1.d0">550.800 đ</td><td class="num" data-p="room.d1.d1">810.000 đ</td></tr>
+            <tr><td data-vi="Song lập tầng 2" data-en="Duplex upper floor">Song lập tầng 2</td><td data-vi="04 người" data-en="4 guests">04 người</td><td class="num" data-p="room.d2.d0">972.000 đ</td><td class="num" data-p="room.d2.d1">1.296.000 đ</td></tr>
+            <tr><td data-vi="Nhà cộng đồng (Kinh Bắc, Hội An)" data-en="Community house (Kinh Bac, Hoi An)">Nhà cộng đồng (Kinh Bắc, Hội An)</td><td data-vi="26 người" data-en="26 guests">26 người</td><td class="num" data-p="room.cong.d0">3.240.000 đ</td><td class="num" data-p="room.cong.d1">4.536.000 đ</td></tr>
+          </tbody></table>
+      </div>
+    </div>
+
+    <div class="grid g2 rv" style="margin-top:26px;gap:24px">
+      <div class="card"><div class="card__body">
+        <h3 data-vi="Tiện ích kèm theo" data-en="Included amenities">Tiện ích kèm theo</h3>
+        <ul style="margin:0;padding-left:18px;color:var(--muted);font-size:.94rem">
+          <li data-vi="Miễn phí ăn sáng cho khách lưu trú qua đêm" data-en="Free breakfast for overnight guests">Miễn phí ăn sáng cho khách lưu trú qua đêm</li>
+          <li data-vi="Miễn phí wifi, trà, cà phê, nước suối" data-en="Free wifi, tea, coffee and bottled water">Miễn phí wifi, trà, cà phê, nước suối</li>
+          <li data-vi="Miễn phí sử dụng bể bơi vô cực view núi - hồ" data-en="Free access to the infinity pool with mountain and lake views">Miễn phí sử dụng bể bơi vô cực view núi - hồ</li>
+          <li data-vi="Miễn phí không gian tổ chức hoạt động vui chơi, BBQ" data-en="Free use of activity and BBQ spaces">Miễn phí không gian tổ chức hoạt động vui chơi, BBQ</li>
+          <li data-vi="Set ăn gia đình, ăn đoàn hoặc gọi món theo yêu cầu" data-en="Family sets, group menus or à la carte on request">Set ăn gia đình, ăn đoàn hoặc gọi món theo yêu cầu</li>
+        </ul>
+      </div></div>
+      <div class="card"><div class="card__body">
+        <h3 data-vi="Ghi chú &amp; ưu đãi" data-en="Notes &amp; offers">Ghi chú &amp; ưu đãi</h3>
+        <ul style="margin:0;padding-left:18px;color:var(--muted);font-size:.94rem">
+          <li data-vi="Miễn phí trẻ em dưới 6 tuổi (số lượng theo quy định của từng hạng phòng)" data-en="Children under 6 stay free (limits per room type)">Miễn phí trẻ em dưới 6 tuổi (số lượng theo quy định của từng hạng phòng)</li>
+          <li data-vi="Phụ thu trẻ em từ 6 - 11 tuổi; từ 12 tuổi trở lên tính như người lớn" data-en="Surcharge for children 6 - 11; guests 12+ counted as adults">Phụ thu trẻ em từ 6 - 11 tuổi; từ 12 tuổi trở lên tính như người lớn</li>
+          <li data-vi="Giảm 20% giá phòng cộng đồng đối với đoàn từ 15 người trở xuống" data-en="20% off community house rates for groups of 15 or fewer">Giảm 20% giá phòng cộng đồng đối với đoàn từ 15 người trở xuống</li>
+          <li data-vi="Hotline đặt phòng: 024.6969.777 · Hotsale: 0929.295.699 - 0983.686.004" data-en="Booking hotline: 024.6969.777 · Hotsale: 0929.295.699 - 0983.686.004">Hotline đặt phòng: 024.6969.777 · Hotsale: 0929.295.699 - 0983.686.004</li>
+        </ul>
+        <a href="#dat-lich" class="btn btn--maroon" style="margin-top:16px" data-book="stay" data-vi="Đặt phòng lưu trú" data-en="Book a room">Đặt phòng lưu trú</a>
+      </div></div>
+    </div>
+  </div>
+</section>
+<!-- ======================= LỊCH HOẠT ĐỘNG ======================= -->
+<section class="sec" id="lich-hoat-dong">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Lịch hoạt động" data-en="Activity calendar">Lịch hoạt động</div>
+      <h2 id="h2-lich-hoat-dong" data-vi="Làng mở cửa tất cả các ngày trong tuần" data-en="The Village is open every day of the week">Làng mở cửa tất cả các ngày trong tuần</h2>
+      <p class="lead" id="lead-lich-hoat-dong" data-vi="Bán vé 8:00 - 17:00, phục vụ 8:00 - 18:00 (trừ đoàn lưu trú qua đêm), gồm cả ngày Lễ, Tết. Mỗi làng dân tộc có một chủ đề văn hóa riêng, hoạt động điểm nhấn được cập nhật theo tháng." data-en="Ticket sales 8:00 - 17:00, service 8:00 - 18:00 (except overnight groups), including public holidays. Each village has its own cultural theme, with highlight activities updated monthly.">Bán vé 8:00 - 17:00, phục vụ 8:00 - 18:00 (trừ đoàn lưu trú qua đêm), gồm cả ngày Lễ, Tết. Mỗi làng dân tộc có một chủ đề văn hóa riêng, hoạt động điểm nhấn được cập nhật theo tháng.</p>
+    </div>
+
+    <div class="tabs rv">
+      <button class="tab on" data-tab="lich-ngay" data-vi="Hằng ngày tại 16 làng" data-en="Daily at 16 villages">Hằng ngày tại 16 làng</button>
+      <button class="tab" data-tab="lich-tuan" data-vi="Cuối tuần (T7 - CN)" data-en="Weekends (Sat - Sun)">Cuối tuần (T7 - CN)</button>
+    </div>
+
+    <div class="panel on" id="lich-ngay">
+      <div class="acc rv" id="acc16">
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">01</span><span><strong>Tày</strong> · <em data-vi="“Câu chuyện áo chàm và đôi tay khéo léo”" data-en="“The indigo shirt and skilful hands”">“Câu chuyện áo chàm và đôi tay khéo léo”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Nhận biết chất liệu, màu sắc, họa tiết và ý nghĩa văn hóa của áo chàm" data-en="Recognising the fabric, colours, patterns and meaning of the indigo shirt">Nhận biết chất liệu, màu sắc, họa tiết và ý nghĩa văn hóa của áo chàm</li>
+            <li data-vi="Sự tích cây đàn tính, trải nghiệm đàn tính và hát Then" data-en="The legend of the tinh lute, playing tinh and singing Then">Sự tích cây đàn tính, trải nghiệm đàn tính và hát Then</li>
+            <li data-vi="Nghề thủ công: đan rổ, rá, nón, quạt bằng tre nứa, lá cọ" data-en="Crafts: weaving baskets, hats and fans from bamboo and palm leaves">Nghề thủ công: đan rổ, rá, nón, quạt bằng tre nứa, lá cọ</li>
+            <li data-vi="Không gian nhà sàn với cối giã gạo, nông cụ, bếp lửa; mặc trang phục “một ngày làm người Tày”" data-en="The stilt house with rice mortar, farm tools and hearth; wear the costume for “a day as a Tay”">Không gian nhà sàn với cối giã gạo, nông cụ, bếp lửa; mặc trang phục “một ngày làm người Tày”</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">02</span><span><strong>Nùng</strong> · <em data-vi="“Hương sắc Nùng”" data-en="“Nung fragrance”">“Hương sắc Nùng”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Đánh đàn tính, học hát Then cổ cùng bà con Nùng đến từ Thái Nguyên" data-en="Play the tinh lute and learn ancient Then songs with the Nung from Thai Nguyen">Đánh đàn tính, học hát Then cổ cùng bà con Nùng đến từ Thái Nguyên</li>
+            <li data-vi="Kiến trúc nhà sàn: vật liệu, bố trí sinh hoạt và ý nghĩa văn hóa" data-en="Stilt house architecture: materials, layout and cultural meaning">Kiến trúc nhà sàn: vật liệu, bố trí sinh hoạt và ý nghĩa văn hóa</li>
+            <li data-vi="Trải nghiệm ẩm thực truyền thống" data-en="Traditional food experience">Trải nghiệm ẩm thực truyền thống</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">03</span><span><strong>Dao</strong> · <em data-vi="“Sắc màu Dao quần chẹt”" data-en="“Colours of the Dao Quan Chet”">“Sắc màu Dao quần chẹt”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Trải nghiệm múa chuông cùng đồng bào Dao" data-en="Join the bell dance with the Dao">Trải nghiệm múa chuông cùng đồng bào Dao</li>
+            <li data-vi="Không gian thuốc Nam, nhận biết dược liệu và cách tạo ra vị thuốc quý" data-en="The herbal medicine space: recognising plants and making remedies">Không gian thuốc Nam, nhận biết dược liệu và cách tạo ra vị thuốc quý</li>
+            <li data-vi="Phong tục thờ cúng Bàn Vương, chữ viết và học vài câu tiếng Dao" data-en="Ban Vuong worship, the Dao script and a few Dao phrases">Phong tục thờ cúng Bàn Vương, chữ viết và học vài câu tiếng Dao</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">04</span><span><strong>Mông</strong> · <em data-vi="“Tiếng khèn gọi bạn”" data-en="“The khen calls a friend”">“Tiếng khèn gọi bạn”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Học cách thổi và múa khèn của người Mông, Hà Giang" data-en="Learn to play and dance with the khen of the Mong from Ha Giang">Học cách thổi và múa khèn của người Mông, Hà Giang</li>
+            <li data-vi="Trò chơi ném pao, đánh yến, chơi cù quay" data-en="Games: pao throwing, shuttlecock and spinning tops">Trò chơi ném pao, đánh yến, chơi cù quay</li>
+            <li data-vi="Tìm hiểu cách nấu rượu ngô men lá truyền thống" data-en="Discover traditional leaf-yeast corn wine making">Tìm hiểu cách nấu rượu ngô men lá truyền thống</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">05</span><span><strong>Mường</strong> · <em data-vi="“Hồn chiêng đất Mường”" data-en="“Soul of the Muong gongs”">“Hồn chiêng đất Mường”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Trải nghiệm cách đánh chiêng của đồng bào Mường đến từ Hòa Bình" data-en="Play the gongs with the Muong from Hoa Binh">Trải nghiệm cách đánh chiêng của đồng bào Mường đến từ Hòa Bình</li>
+            <li data-vi="Tìm hiểu lịch Đoi (lịch tre) độc đáo của người Mường" data-en="Discover the unique Doi (bamboo) calendar">Tìm hiểu lịch Đoi (lịch tre) độc đáo của người Mường</li>
+            <li data-vi="Chụp ảnh, check-in tại không gian vườn chè" data-en="Photos and check-in at the tea garden">Chụp ảnh, check-in tại không gian vườn chè</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">06</span><span><strong>Lào</strong> · <em data-vi="“Vũ điệu Lăm Vông”" data-en="“The Lam Vong dance”">“Vũ điệu Lăm Vông”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Học múa Lăm Vông, giao lưu với bà con Lào đến từ Sơn La" data-en="Learn Lam Vong and meet the Lao community from Son La">Học múa Lăm Vông, giao lưu với bà con Lào đến từ Sơn La</li>
+            <li data-vi="Tìm hiểu nghề dệt: màu sắc, họa tiết và ý nghĩa" data-en="Weaving: colours, motifs and meaning">Tìm hiểu nghề dệt: màu sắc, họa tiết và ý nghĩa</li>
+            <li data-vi="Thuê trang phục truyền thống rực rỡ của đồng bào Lào" data-en="Rent the vivid traditional Lao costume">Thuê trang phục truyền thống rực rỡ của đồng bào Lào</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">07</span><span><strong>Thái</strong> · <em data-vi="“Vui hội làng Thái”" data-en="“Thai village festival”">“Vui hội làng Thái”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Giao lưu dân ca dân vũ với đồng bào Thái đến từ Sơn La" data-en="Folk songs and dances with the Thai from Son La">Giao lưu dân ca dân vũ với đồng bào Thái đến từ Sơn La</li>
+            <li data-vi="Học múa xòe, múa sạp cùng bà con" data-en="Learn the xoe and bamboo pole dances">Học múa xòe, múa sạp cùng bà con</li>
+            <li data-vi="Trò chơi dân gian: ném còn, đi cà kheo" data-en="Folk games: con throwing and stilt walking">Trò chơi dân gian: ném còn, đi cà kheo</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">08</span><span><strong>Khơ Mú</strong> · <em data-vi="“Rộn ràng cùng bản Khơ Mú”" data-en="“Lively Kho Mu village”">“Rộn ràng cùng bản Khơ Mú”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Trò chơi dân gian: đi cà kheo, ném còn, bập bênh, đu cây" data-en="Folk games: stilts, con throwing, seesaw and tree swings">Trò chơi dân gian: đi cà kheo, ném còn, bập bênh, đu cây</li>
+            <li data-vi="Học múa ong eo, tăng bu dỗ ống truyền thống" data-en="Learn the ong eo dance and traditional bamboo tube rhythms">Học múa ong eo, tăng bu dỗ ống truyền thống</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">09</span><span><strong>Tà Ôi</strong> · <em data-vi="“Vũ điệu của Dèng”" data-en="“Dance of the Deng”">“Vũ điệu của Dèng”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Trải nghiệm nghề dệt Dèng truyền thống" data-en="Try traditional Deng weaving">Trải nghiệm nghề dệt Dèng truyền thống</li>
+            <li data-vi="Giao lưu múa cha chấp, đánh trống chiêng cùng bà con Tà Ôi" data-en="Cha chap dancing and drum-gong playing with the Ta Oi">Giao lưu múa cha chấp, đánh trống chiêng cùng bà con Tà Ôi</li>
+            <li data-vi="Thuê trang phục check-in" data-en="Rent costumes for photos">Thuê trang phục check-in</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">10</span><span><strong>Ba Na</strong> · <em data-vi="“Nhịp điệu cồng chiêng”" data-en="“Rhythm of the gongs”">“Nhịp điệu cồng chiêng”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Giao lưu cồng chiêng, múa xoang, dân ca cùng đồng bào Ba Na" data-en="Gongs, xoang dancing and folk songs with the Ba Na">Giao lưu cồng chiêng, múa xoang, dân ca cùng đồng bào Ba Na</li>
+            <li data-vi="Khám phá nhà Rông - nơi sinh hoạt cộng đồng" data-en="Explore the Rong house, heart of community life">Khám phá nhà Rông - nơi sinh hoạt cộng đồng</li>
+            <li data-vi="Tìm hiểu nghề dệt truyền thống của dân tộc Ba Na" data-en="Discover traditional Ba Na weaving">Tìm hiểu nghề dệt truyền thống của dân tộc Ba Na</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">11</span><span><strong>Xơ Đăng</strong> · <em data-vi="“Bản hòa ca Xơ Đăng”" data-en="“The Xo Dang symphony”">“Bản hòa ca Xơ Đăng”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Trải nghiệm và học chơi đàn T'rưng, đàn K'lông Pút" data-en="Learn to play the T'rung and K'long Put">Trải nghiệm và học chơi đàn T'rưng, đàn K'lông Pút</li>
+            <li data-vi="Giao lưu múa, hát dân ca dân vũ cùng nhạc cụ tre nứa" data-en="Dance and sing along with bamboo instruments">Giao lưu múa, hát dân ca dân vũ cùng nhạc cụ tre nứa</li>
+            <li data-vi="Nghe nghệ nhân kể chuyện buôn làng Xơ Đăng" data-en="Listen to artisans tell stories of the Xo Dang village">Nghe nghệ nhân kể chuyện buôn làng Xơ Đăng</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">12</span><span><strong>Gia Rai</strong> · <em data-vi="“Âm vang rừng già”" data-en="“Echoes of the old forest”">“Âm vang rừng già”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Tìm hiểu kiến trúc nhà Rông - ngôi làng được xây dựng đầu tiên tại Làng" data-en="The Rong house architecture - the first village built here">Tìm hiểu kiến trúc nhà Rông - ngôi làng được xây dựng đầu tiên tại Làng</li>
+            <li data-vi="Học và trải nghiệm đánh cồng chiêng" data-en="Learn and play the gongs">Học và trải nghiệm đánh cồng chiêng</li>
+            <li data-vi="Học một số câu tiếng Gia Rai, múa xoang cùng đồng bào" data-en="Learn simple Gia Rai phrases and join the xoang dance">Học một số câu tiếng Gia Rai, múa xoang cùng đồng bào</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">13</span><span><strong>Cơ Tu</strong> · <em data-vi="“Dưới bóng nhà Gươl”" data-en="“Under the Guol house”">“Dưới bóng nhà Gươl”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Thăm kiến trúc độc đáo nhà Gươl của đồng bào Cơ Tu đến từ Huế" data-en="Visit the unique Guol house of the Co Tu from Hue">Thăm kiến trúc độc đáo nhà Gươl của đồng bào Cơ Tu đến từ Huế</li>
+            <li data-vi="Giao lưu múa Tung tung da dá (vũ điệu dâng trời), múa khiên kiếm" data-en="Join the Tung tung da da (offering to heaven) and shield-sword dances">Giao lưu múa Tung tung da dá (vũ điệu dâng trời), múa khiên kiếm</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">14</span><span><strong>Raglai</strong> · <em data-vi="“Bản tình ca Raglai”" data-en="“The Raglai love song”">“Bản tình ca Raglai”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Giao lưu dân ca dân vũ cùng bà con Raglai đến từ Khánh Hòa" data-en="Folk songs and dances with the Raglai from Khanh Hoa">Giao lưu dân ca dân vũ cùng bà con Raglai đến từ Khánh Hòa</li>
+            <li data-vi="Tìm hiểu cách chế tác và chơi đàn Chapi, đàn đá" data-en="Learn how the Chapi and lithophone are made and played">Tìm hiểu cách chế tác và chơi đàn Chapi, đàn đá</li>
+            <li data-vi="Tìm hiểu và trải nghiệm đánh mã la" data-en="Discover and play the ma la gong set">Tìm hiểu và trải nghiệm đánh mã la</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">15</span><span><strong>Ê Đê</strong> · <em data-vi="“Ký ức nhà Dài”" data-en="“Memories of the Long House”">“Ký ức nhà Dài”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Giao lưu, trải nghiệm dân ca cùng bà con Ê Đê, tỉnh Đắk Lắk" data-en="Folk singing with the E De from Dak Lak">Giao lưu, trải nghiệm dân ca cùng bà con Ê Đê, tỉnh Đắk Lắk</li>
+            <li data-vi="Trải nghiệm nhạc cụ truyền thống Đing Pâng" data-en="Try the traditional Ding Pang instrument">Trải nghiệm nhạc cụ truyền thống Đing Pâng</li>
+            <li data-vi="Lắng nghe câu chuyện về chế độ mẫu hệ tại nhà Dài; quy trình rang xay cà phê Ban Mê" data-en="Hear about the matriarchal system in the Long House and Ban Me coffee roasting">Lắng nghe câu chuyện về chế độ mẫu hệ tại nhà Dài; quy trình rang xay cà phê Ban Mê</li>
+          </ul></div></div>
+        <div class="acc__it"><button class="acc__hd"><span class="acc__n">16</span><span><strong>Khmer</strong> · <em data-vi="“Sắc màu Nam Bộ”" data-en="“Colours of the South”">“Sắc màu Nam Bộ”</em></span><span class="cx">+</span></button>
+          <div class="acc__bd"><ul>
+            <li data-vi="Tìm hiểu nghệ thuật Rô Băm hơn 200 năm tuổi cùng nghệ nhân Khmer đến từ Cần Thơ" data-en="Discover the 200-year-old Ro Bam art with Khmer artisans from Can Tho">Tìm hiểu nghệ thuật Rô Băm hơn 200 năm tuổi cùng nghệ nhân Khmer đến từ Cần Thơ</li>
+            <li data-vi="Nhận biết và thuê trang phục truyền thống Khmer" data-en="Learn about and rent traditional Khmer costumes">Nhận biết và thuê trang phục truyền thống Khmer</li>
+            <li data-vi="Giao lưu múa lăm liêu, lăm vông cùng nghệ nhân" data-en="Join the lam lieu and lam vong dances with the artisans">Giao lưu múa lăm liêu, lăm vông cùng nghệ nhân</li>
+          </ul></div></div>
+      </div>
+      <p class="tbl-note rv" data-vi="* Ngoài khung giờ diễn ra các hoạt động điểm nhấn, 16 nhóm đồng bào vẫn đảm bảo đón tiếp khách tham quan các ngày trong tuần. Thứ Bảy, Chủ nhật có lịch hoạt động riêng theo kế hoạch đã ban hành." data-en="* Outside highlight time slots, all 16 communities continue to welcome visitors on weekdays. Saturdays and Sundays follow a separate published schedule.">* Ngoài khung giờ diễn ra các hoạt động điểm nhấn, 16 nhóm đồng bào vẫn đảm bảo đón tiếp khách tham quan các ngày trong tuần. Thứ Bảy, Chủ nhật có lịch hoạt động riêng theo kế hoạch đã ban hành.</p>
+    </div>
+
+    <div class="panel" id="lich-tuan">
+      <div class="grid g3 rv">
+        <article class="card"><div class="card__body">
+          <span class="tag" data-vi="Giao lưu" data-en="Exchange">Giao lưu</span>
+          <h3 data-vi="Dân ca - dân vũ cuối tuần" data-en="Weekend folk songs &amp; dances">Dân ca - dân vũ cuối tuần</h3>
+          <p data-vi="Múa xòe, nhảy sạp (Thái); múa mảng, múa chuông (Dao); hát Then - đàn Tính (Tày, Nùng); múa Rô-băm, Rôm-vông (Khmer); hòa tấu cồng chiêng, múa xoang (Tây Nguyên)." data-en="Xoe and bamboo dances (Thai); mang and bell dances (Dao); Then singing with tinh lute (Tay, Nung); Ro Bam and Rom Vong (Khmer); gong ensembles and xoang (Central Highlands).">Múa xòe, nhảy sạp (Thái); múa mảng, múa chuông (Dao); hát Then - đàn Tính (Tày, Nùng); múa Rô-băm, Rôm-vông (Khmer); hòa tấu cồng chiêng, múa xoang (Tây Nguyên).</p>
+        </div></article>
+        <article class="card"><div class="card__body">
+          <span class="tag" data-vi="Tương tác" data-en="Hands-on">Tương tác</span>
+          <h3 data-vi="Trải nghiệm tại “Ngôi nhà chung”" data-en="Hands-on at the “Common House”">Trải nghiệm tại “Ngôi nhà chung”</h3>
+          <p data-vi="Học tập và trực tiếp tương tác: gõ cồng chiêng, đánh đàn T'rưng, chơi đàn Tính, múa xòe cùng nghệ nhân và đồng bào." data-en="Learn by doing: strike the gongs, play the T'rung and tinh lute, and dance the xoe with artisans and communities.">Học tập và trực tiếp tương tác: gõ cồng chiêng, đánh đàn T'rưng, chơi đàn Tính, múa xòe cùng nghệ nhân và đồng bào.</p>
+        </div></article>
+        <article class="card"><div class="card__body">
+          <span class="tag" data-vi="Vận động" data-en="Active">Vận động</span>
+          <h3 data-vi="Trò chơi dân gian" data-en="Folk games">Trò chơi dân gian</h3>
+          <p data-vi="Ném còn, đi cà kheo, đánh đu, nhảy sạp, đánh tu lu... giúp rèn luyện thể chất và kỹ năng sống cho học sinh." data-en="Con throwing, stilt walking, swinging, bamboo pole dancing and tu lu spinning - building fitness and life skills for students.">Ném còn, đi cà kheo, đánh đu, nhảy sạp, đánh tu lu... giúp rèn luyện thể chất và kỹ năng sống cho học sinh.</p>
+        </div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SỰ KIỆN THÁNG 8-12/2026 ======================= -->
+<section class="sec sec--maroon" id="su-kien">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Khung chương trình sự kiện" data-en="Event framework">Khung chương trình sự kiện</div>
+      <h2 id="h2-su-kien" data-vi="Lịch sự kiện chuyên đề tháng 8 - 12/2026" data-en="Themed events, August - December 2026">Lịch sự kiện chuyên đề tháng 8 - 12/2026</h2>
+      <p class="lead" id="lead-su-kien" data-vi="Hỗ trợ nhà trường, cơ sở giáo dục và địa phương tổ chức tham quan, học tập ngoại khóa, giáo dục truyền thống và trải nghiệm văn hóa." data-en="Supporting schools, education institutions and localities in organising visits, field trips, heritage education and cultural experiences.">Hỗ trợ nhà trường, cơ sở giáo dục và địa phương tổ chức tham quan, học tập ngoại khóa, giáo dục truyền thống và trải nghiệm văn hóa.</p>
+    </div>
+    <div class="evgrid" id="evGrid">
+      <article class="ev rv">
+        <div class="ev__m"><b data-vi="Tháng 8" data-en="August">Tháng 8</b><span data-vi="Về miền Tây" data-en="To the Mekong Delta">Về miền Tây</span></div>
+        <div class="ev__c">
+          <h3 data-vi="Về miền Tây qua nét văn hóa của đồng bào Khmer" data-en="The Mekong Delta through Khmer culture">Về miền Tây qua nét văn hóa của đồng bào Khmer</h3>
+          <ul>
+            <li data-vi="Sự kiện “Về miền Tây” (22 - 23/8): tái hiện Lễ hội Thăk Côn - Di sản văn hóa phi vật thể quốc gia" data-en="“To the Mekong Delta” (22 - 23 Aug): re-enacting the Thak Con festival, a national intangible heritage">Sự kiện “Về miền Tây” (22 - 23/8): tái hiện Lễ hội Thăk Côn - Di sản văn hóa phi vật thể quốc gia</li>
+            <li data-vi="Đờn ca tài tử Nam Bộ, diễn tấu dàn nhạc Ngũ âm, múa trống Sa-dăm" data-en="Southern don ca tai tu, Ngu Am orchestra and Sa-dam drum dance">Đờn ca tài tử Nam Bộ, diễn tấu dàn nhạc Ngũ âm, múa trống Sa-dăm</li>
+            <li data-vi="Trải nghiệm giã cốm dẹt, ẩm thực miền Tây, tìm hiểu văn hóa Phật giáo Nam Tông" data-en="Pounding flat green rice, Mekong cuisine and Theravada Buddhist culture">Trải nghiệm giã cốm dẹt, ẩm thực miền Tây, tìm hiểu văn hóa Phật giáo Nam Tông</li>
+            <li data-vi="Hoạt động cuối tuần 3 đợt: 01-02, 08-09, 15-16/8" data-en="Weekend activities: 1-2, 8-9, 15-16 Aug">Hoạt động cuối tuần 3 đợt: 01-02, 08-09, 15-16/8</li>
+          </ul>
+        </div>
+      </article>
+      <article class="ev rv">
+        <div class="ev__m"><b data-vi="Tháng 9" data-en="September">Tháng 9</b><span data-vi="Vui Tết Độc lập" data-en="Independence Day">Vui Tết Độc lập</span></div>
+        <div class="ev__c">
+          <h3 data-vi="Vui Tết Độc lập &amp; Buôn làng rực rỡ" data-en="Independence Day &amp; Radiant Villages">Vui Tết Độc lập &amp; Buôn làng rực rỡ</h3>
+          <ul>
+            <li data-vi="“Vui Tết Độc lập” dịp Quốc khánh 2/9 (29/8 - 02/9): chợ phiên vùng cao “Cao nguyên mở hội”" data-en="“Happy Independence Day” (29 Aug - 2 Sep) with the highland fair “Plateau Festival”">“Vui Tết Độc lập” dịp Quốc khánh 2/9 (29/8 - 02/9): chợ phiên vùng cao “Cao nguyên mở hội”</li>
+            <li data-vi="Tái hiện lễ rước dâu dân tộc Dao, cầu mùa dân tộc Nùng (Cao Bằng), cầu an dân tộc Kháng (Sơn La)" data-en="Re-enacting a Dao wedding procession, Nung harvest prayer (Cao Bang) and Khang peace ritual (Son La)">Tái hiện lễ rước dâu dân tộc Dao, cầu mùa dân tộc Nùng (Cao Bằng), cầu an dân tộc Kháng (Sơn La)</li>
+            <li data-vi="Chuyên đề “Buôn làng rực rỡ” của đồng bào Giẻ Triêng, Đà Nẵng (19 - 20/9): nghi thức Cúng lúa trăm" data-en="“Radiant Villages” of the Gie Trieng from Da Nang (19 - 20 Sep) with the hundred-rice ritual">Chuyên đề “Buôn làng rực rỡ” của đồng bào Giẻ Triêng, Đà Nẵng (19 - 20/9): nghi thức Cúng lúa trăm</li>
+            <li data-vi="Hoạt động cuối tuần 3 đợt: 05-06, 12-13, 26-27/9" data-en="Weekend activities: 5-6, 12-13, 26-27 Sep">Hoạt động cuối tuần 3 đợt: 05-06, 12-13, 26-27/9</li>
+          </ul>
+        </div>
+      </article>
+      <article class="ev rv">
+        <div class="ev__m"><b data-vi="Tháng 10" data-en="October">Tháng 10</b><span data-vi="Sắc hương đại ngàn" data-en="Scent of the highlands">Sắc hương đại ngàn</span></div>
+        <div class="ev__c">
+          <h3 data-vi="Làng nghề truyền thống &amp; Di sản văn hóa Chăm" data-en="Traditional crafts &amp; Cham heritage">Làng nghề truyền thống &amp; Di sản văn hóa Chăm</h3>
+          <ul>
+            <li data-vi="“Giới thiệu làng nghề truyền thống” (24 - 25/10): “Một ngày làm nghệ nhân”, “Trung Thu cho em”, gốm Phù Lãng, gốm Bát Tràng, làm đèn ông sao, làm trống, mặt nạ, nón" data-en="“Traditional craft villages” (24 - 25 Oct): “A day as an artisan”, “Mid-Autumn for children”, Phu Lang and Bat Trang ceramics, star lanterns, drums, masks and conical hats">“Giới thiệu làng nghề truyền thống” (24 - 25/10): “Một ngày làm nghệ nhân”, “Trung Thu cho em”, gốm Phù Lãng, gốm Bát Tràng, làm đèn ông sao, làm trống, mặt nạ, nón</li>
+            <li data-vi="Chương trình “Đại ngàn thức giấc” và tái hiện Lễ kết nghĩa dân tộc Mạ (Đồng Nai)" data-en="“The Great Forest Awakens” and the Ma people's sworn-brotherhood ritual (Dong Nai)">Chương trình “Đại ngàn thức giấc” và tái hiện Lễ kết nghĩa dân tộc Mạ (Đồng Nai)</li>
+            <li data-vi="“Phụ nữ Chăm với di sản văn hóa truyền thống”, An Giang (17 - 18/10): không gian Tết Roya, khăn Matơnai, ẩm thực An Giang" data-en="“Cham women and traditional heritage”, An Giang (17 - 18 Oct): the Roya festival space, the Matonai scarf and An Giang cuisine">“Phụ nữ Chăm với di sản văn hóa truyền thống”, An Giang (17 - 18/10): không gian Tết Roya, khăn Matơnai, ẩm thực An Giang</li>
+            <li data-vi="Tuyên dương học sinh, sinh viên DTTS xuất sắc; sự kiện “Cội nguồn di sản giữa lòng Thủ đô”" data-en="Honouring outstanding ethnic minority students; “Heritage roots in the heart of the capital”">Tuyên dương học sinh, sinh viên DTTS xuất sắc; sự kiện “Cội nguồn di sản giữa lòng Thủ đô”</li>
+          </ul>
+        </div>
+      </article>
+      <article class="ev rv">
+        <div class="ev__m"><b data-vi="Tháng 11" data-en="November">Tháng 11</b><span data-vi="Đại đoàn kết" data-en="Great Unity">Đại đoàn kết</span></div>
+        <div class="ev__c">
+          <h3 data-vi="Tuần “Đại đoàn kết các dân tộc - Di sản văn hóa Việt Nam”" data-en="“Great Unity - Vietnamese Cultural Heritage” Week">Tuần “Đại đoàn kết các dân tộc - Di sản văn hóa Việt Nam”</h3>
+          <ul>
+            <li data-vi="Sự kiện chính 18 - 23/11 (06 ngày): Ngày hội Đại đoàn kết toàn dân tộc và chương trình nghệ thuật đặc biệt khai mạc" data-en="Main event 18 - 23 Nov (6 days): the Great National Unity Festival and a special opening performance">Sự kiện chính 18 - 23/11 (06 ngày): Ngày hội Đại đoàn kết toàn dân tộc và chương trình nghệ thuật đặc biệt khai mạc</li>
+            <li data-vi="Tái hiện Lễ mở cửa kho lúa (Rơ Măm, Quảng Ngãi), Lễ đuổi ma hỏa (Bố Y, Lào Cai), trích đoạn Lễ cưới (Dao, Lạng Sơn)" data-en="Re-enactments: the rice barn opening (Ro Mam, Quang Ngai), fire spirit expulsion (Bo Y, Lao Cai) and a Dao wedding excerpt (Lang Son)">Tái hiện Lễ mở cửa kho lúa (Rơ Măm, Quảng Ngãi), Lễ đuổi ma hỏa (Bố Y, Lào Cai), trích đoạn Lễ cưới (Dao, Lạng Sơn)</li>
+            <li data-vi="Sắc màu văn hóa Chăm (Khánh Hòa) với Lễ Rija Praong và gốm Bàu Trúc; di sản Quan họ Bắc Ninh" data-en="Cham culture (Khanh Hoa) with the Rija Praong ritual and Bau Truc pottery; Bac Ninh Quan Ho heritage">Sắc màu văn hóa Chăm (Khánh Hòa) với Lễ Rija Praong và gốm Bàu Trúc; di sản Quan họ Bắc Ninh</li>
+            <li data-vi="Festival Dân tộc - Tôn giáo Thủ đô lần thứ Nhất (03 ngày); hoạt động cuối tuần 07-08, 14-15, 28-29/11" data-en="The first Hanoi Ethnicity - Religion Festival (3 days); weekends 7-8, 14-15, 28-29 Nov">Festival Dân tộc - Tôn giáo Thủ đô lần thứ Nhất (03 ngày); hoạt động cuối tuần 07-08, 14-15, 28-29/11</li>
+          </ul>
+        </div>
+      </article>
+      <article class="ev rv">
+        <div class="ev__m"><b data-vi="Tháng 12" data-en="December">Tháng 12</b><span data-vi="Chào năm mới 2027" data-en="Welcome 2027">Chào năm mới 2027</span></div>
+        <div class="ev__c">
+          <h3 data-vi="“Di sản và bản sắc” &amp; Chợ phiên Chào năm mới" data-en="“Heritage and identity” &amp; New Year fair">“Di sản và bản sắc” &amp; Chợ phiên Chào năm mới</h3>
+          <ul>
+            <li data-vi="Chuyên đề “Di sản và bản sắc” (19 - 20/12): Lễ cầu may của người Sán Chỉ, di sản hát Soọng cô (Quảng Ninh)" data-en="“Heritage and identity” (19 - 20 Dec): the San Chi luck ritual and Soong Co singing heritage (Quang Ninh)">Chuyên đề “Di sản và bản sắc” (19 - 20/12): Lễ cầu may của người Sán Chỉ, di sản hát Soọng cô (Quảng Ninh)</li>
+            <li data-vi="Sự kiện “Không gian tín ngưỡng các dân tộc Việt Nam - Nguồn lực văn hóa cho phát triển Thủ đô”" data-en="“Ethnic belief spaces - cultural resources for the capital's development”">Sự kiện “Không gian tín ngưỡng các dân tộc Việt Nam - Nguồn lực văn hóa cho phát triển Thủ đô”</li>
+            <li data-vi="“Chợ phiên Chào năm mới 2027” (01 - 03/01/2027): “Về với cao nguyên đá”, Tết truyền thống Tuyên Quang, Cúng thần rừng dân tộc Nùng" data-en="“New Year 2027 fair” (1 - 3 Jan 2027): “To the stone plateau”, Tuyen Quang traditional Tet and the Nung forest god ritual">“Chợ phiên Chào năm mới 2027” (01 - 03/01/2027): “Về với cao nguyên đá”, Tết truyền thống Tuyên Quang, Cúng thần rừng dân tộc Nùng</li>
+            <li data-vi="Hoạt động cuối tuần “Mùa hoa Dã quỳ”: 05-06, 12-13, 26-27/12" data-en="“Wild sunflower season” weekends: 5-6, 12-13, 26-27 Dec">Hoạt động cuối tuần “Mùa hoa Dã quỳ”: 05-06, 12-13, 26-27/12</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ======================= ĐẶT LỊCH ======================= -->
+<section class="sec" id="dat-lich">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Đặt lịch trực tuyến" data-en="Online booking">Đặt lịch trực tuyến</div>
+      <h2 id="h2-dat-lich" data-vi="Đặt lịch trải nghiệm &amp; lưu trú" data-en="Book an experience or a stay">Đặt lịch trải nghiệm &amp; lưu trú</h2>
+      <p class="lead" id="lead-dat-lich" data-vi="Chọn nhu cầu, hệ thống tự tạm tính chi phí theo bảng giá 2026. Sau khi bấm gửi, thông tin sẽ được chuyển sang biểu mẫu đăng ký để Làng liên hệ xác nhận." data-en="Choose what you need and the estimate is calculated from the 2026 price list. On submit, your details are carried over to the registration form and our team will confirm.">Chọn nhu cầu, hệ thống tự tạm tính chi phí theo bảng giá 2026. Sau khi bấm gửi, thông tin sẽ được chuyển sang biểu mẫu đăng ký để Làng liên hệ xác nhận.</p>
+    </div>
+
+    <div class="book rv">
+      <div class="book__form">
+        <div class="tabs" style="margin-bottom:22px">
+          <button class="tab on" data-btab="b-doan" data-vi="Đoàn trường học / doanh nghiệp" data-en="School / corporate group">Đoàn trường học / doanh nghiệp</button>
+          <button class="tab" data-btab="b-le" data-vi="Khách lẻ &amp; gia đình" data-en="Individuals &amp; families">Khách lẻ &amp; gia đình</button>
+          <button class="tab" data-btab="b-luutru" data-vi="Lưu trú Trại Sáng Tác" data-en="Stay at the Creative Camp">Lưu trú Trại Sáng Tác</button>
+        </div>
+
+        <!-- ĐOÀN -->
+        <div class="bpanel on" id="b-doan">
+          <div class="field">
+            <label data-vi="Chương trình trải nghiệm" data-en="Experience program">Chương trình trải nghiệm</label>
+            <select id="progSel">
+              <option value="dc1" data-vi="Dấu chân bản làng - 1 ngày" data-en="Village Footprints - full day">Dấu chân bản làng - 1 ngày</option>
+              <option value="dc05" data-vi="Dấu chân bản làng - ½ ngày" data-en="Village Footprints - half day">Dấu chân bản làng - ½ ngày</option>
+              <option value="tn1" data-vi="Về với đại ngàn Tây Nguyên - 1 ngày" data-en="Into the Highlands - full day">Về với đại ngàn Tây Nguyên - 1 ngày</option>
+              <option value="tn05" data-vi="Về với đại ngàn Tây Nguyên - ½ ngày" data-en="Into the Highlands - half day">Về với đại ngàn Tây Nguyên - ½ ngày</option>
+            </select>
+          </div>
+          <div class="f2">
+            <div class="field"><label data-vi="Ngày dự kiến" data-en="Preferred date">Ngày dự kiến</label><input type="date" id="progDate"></div>
+            <div class="field"><label data-vi="Số lượng khách (tối thiểu 50)" data-en="Number of guests (min 50)">Số lượng khách (tối thiểu 50)</label><input type="number" id="progPax" min="50" max="500" step="1" value="100"></div>
+          </div>
+          <div class="f2">
+            <div class="field"><label data-vi="Số người lớn đi kèm (giáo viên, phụ huynh)" data-en="Accompanying adults (teachers, parents)">Số người lớn đi kèm (giáo viên, phụ huynh)</label><input type="number" id="progAdult" min="0" step="1" value="0"><small data-vi="Vé tham quan người lớn đi theo đoàn: 30.000đ/người" data-en="Adult entrance with the group: 30,000₫/person">Vé tham quan người lớn đi theo đoàn: 30.000đ/người</small></div>
+            <div class="field"><label data-vi="Vé xe điện liên tuyến" data-en="Shuttle bus tickets">Vé xe điện liên tuyến</label>
+              <select id="progShuttle">
+                <option value="0" data-vi="Không sử dụng" data-en="Not needed">Không sử dụng</option>
+                <option value="25000" data-vi="Có - vé ưu đãi 25.000đ/khách" data-en="Yes - discounted 25,000₫/guest">Có - vé ưu đãi 25.000đ/khách</option>
+                <option value="40000" data-vi="Có - vé người lớn 40.000đ/khách" data-en="Yes - adult 40,000₫/guest">Có - vé người lớn 40.000đ/khách</option>
+              </select></div>
+          </div>
+        </div>
+
+        <!-- KHÁCH LẺ -->
+        <div class="bpanel" id="b-le">
+          <div class="field"><label data-vi="Ngày dự kiến tham quan" data-en="Preferred visit date">Ngày dự kiến tham quan</label><input type="date" id="leDate"></div>
+          <div class="qty" style="margin-bottom:16px">
+            <div class="field"><label data-vi="Người lớn (30.000đ)" data-en="Adult (30,000₫)">Người lớn (30.000đ)</label><input type="number" id="qAdult" min="0" step="1" value="2"></div>
+            <div class="field"><label data-vi="Sinh viên (10.000đ)" data-en="Student (10,000₫)">Sinh viên (10.000đ)</label><input type="number" id="qStudent" min="0" step="1" value="0"></div>
+            <div class="field"><label data-vi="Học sinh (5.000đ)" data-en="Pupil (5,000₫)">Học sinh (5.000đ)</label><input type="number" id="qPupil" min="0" step="1" value="0"></div>
+            <div class="field"><label data-vi="Người 60+ / ưu đãi (15.000đ)" data-en="Age 60+ / policy (15,000₫)">Người 60+ / ưu đãi (15.000đ)</label><input type="number" id="qSenior" min="0" step="1" value="0"></div>
+            <div class="field"><label data-vi="Trẻ dưới 6 tuổi (miễn phí)" data-en="Children under 6 (free)">Trẻ dưới 6 tuổi (miễn phí)</label><input type="number" id="qKid" min="0" step="1" value="0"></div>
+          </div>
+          <div class="f2">
+            <div class="field"><label data-vi="Vé xe điện liên tuyến - người lớn (40.000đ)" data-en="Shuttle - adult (40,000₫)">Vé xe điện liên tuyến - người lớn (40.000đ)</label><input type="number" id="qShAdult" min="0" step="1" value="0"></div>
+            <div class="field"><label data-vi="Vé xe điện - trẻ 6+, SV, người 60+ (25.000đ)" data-en="Shuttle - children 6+, students, 60+ (25,000₫)">Vé xe điện - trẻ 6+, SV, người 60+ (25.000đ)</label><input type="number" id="qShKid" min="0" step="1" value="0"></div>
+          </div>
+          <div class="field"><label data-vi="Thuê xe điện theo tour (450.000đ/giờ, 13-15 khách/xe)" data-en="Private shuttle by tour (450,000₫/hour, 13-15 guests)">Thuê xe điện theo tour (450.000đ/giờ, 13-15 khách/xe)</label><input type="number" id="qShTour" min="0" step="1" value="0"><small data-vi="Nhập số giờ thuê" data-en="Enter number of hours">Nhập số giờ thuê</small></div>
+        </div>
+
+        <!-- LƯU TRÚ -->
+        <div class="bpanel" id="b-luutru">
+          <div class="field"><label data-vi="Hình thức lưu trú" data-en="Stay type">Hình thức lưu trú</label>
+            <select id="stayMode">
+              <option value="night" data-vi="Nghỉ qua đêm" data-en="Overnight">Nghỉ qua đêm</option>
+              <option value="day" data-vi="Sử dụng phòng trong ngày" data-en="Day use">Sử dụng phòng trong ngày</option>
+            </select></div>
+          <div class="field"><label data-vi="Hạng phòng" data-en="Room type">Hạng phòng</label>
+            <select id="roomSel">
+              <option value="villa" data-vi="Biệt thự (Thổ Cẩm / Di Sản / Xứ Dừa) - 4 khách" data-en="Villa (Tho Cam / Di San / Xu Dua) - 4 guests">Biệt thự (Thổ Cẩm / Di Sản / Xứ Dừa) - 4 khách</option>
+              <option value="d1" data-vi="Song lập tầng 1 - 2 khách" data-en="Duplex ground floor - 2 guests">Song lập tầng 1 - 2 khách</option>
+              <option value="d2" data-vi="Song lập tầng 2 - 4 khách" data-en="Duplex upper floor - 4 guests">Song lập tầng 2 - 4 khách</option>
+              <option value="cong" data-vi="Nhà cộng đồng (Kinh Bắc / Hội An) - 26 khách" data-en="Community house (Kinh Bac / Hoi An) - 26 guests">Nhà cộng đồng (Kinh Bắc / Hội An) - 26 khách</option>
+            </select></div>
+          <div class="f3">
+            <div class="field"><label data-vi="Ngày nhận phòng" data-en="Check-in date">Ngày nhận phòng</label><input type="date" id="stayDate"></div>
+            <div class="field"><label data-vi="Số đêm / ngày" data-en="Nights / days">Số đêm / ngày</label><input type="number" id="stayNights" min="1" step="1" value="1"></div>
+            <div class="field"><label data-vi="Số phòng" data-en="Rooms">Số phòng</label><input type="number" id="stayRooms" min="1" step="1" value="1"></div>
+          </div>
+          <div class="f2">
+            <div class="field"><label data-vi="Loại ngày áp dụng" data-en="Rate day type">Loại ngày áp dụng</label>
+              <select id="stayDayType">
+                <option value="low" data-vi="Ngày thường" data-en="Weekday">Ngày thường</option>
+                <option value="high" data-vi="Cuối tuần / Lễ, Tết" data-en="Weekend / holiday">Cuối tuần / Lễ, Tết</option>
+              </select>
+              <small id="dayTypeHint" data-vi="Qua đêm: CN - T5 là ngày thường; T6, T7, Lễ, Tết là ngày cao điểm." data-en="Overnight: Sun - Thu is weekday rate; Fri, Sat and holidays are peak.">Qua đêm: CN - T5 là ngày thường; T6, T7, Lễ, Tết là ngày cao điểm.</small>
+            </div>
+            <div class="field"><label data-vi="Số khách lưu trú" data-en="Number of guests">Số khách lưu trú</label><input type="number" id="stayPax" min="1" step="1" value="4"></div>
+          </div>
+          <label style="display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--muted);cursor:pointer">
+            <input type="checkbox" id="stayDiscount" style="width:auto;margin-top:4px">
+            <span data-vi="Đoàn từ 15 người trở xuống thuê nhà cộng đồng (giảm 20% giá phòng cộng đồng)" data-en="Group of 15 or fewer in a community house (20% off)">Đoàn từ 15 người trở xuống thuê nhà cộng đồng (giảm 20% giá phòng cộng đồng)</span>
+          </label>
+        </div>
+
+        <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
+        <h3 style="font-size:1.05rem" data-vi="Thông tin liên hệ" data-en="Contact details">Thông tin liên hệ</h3>
+        <div class="f2">
+          <div class="field"><label data-vi="Họ và tên *" data-en="Full name *">Họ và tên *</label><input type="text" id="cName" placeholder="Nguyễn Văn A" data-ph-vi="Nguyễn Văn A" data-ph-en="John Smith"></div>
+          <div class="field"><label data-vi="Số điện thoại *" data-en="Phone number *">Số điện thoại *</label><input type="tel" id="cPhone" placeholder="09xx xxx xxx"></div>
+        </div>
+        <div class="f2">
+          <div class="field"><label data-vi="Email *" data-en="Email *">Email *</label><input type="email" id="cEmail" placeholder="email@example.com"></div>
+          <div class="field"><label data-vi="Đơn vị / trường học" data-en="Organisation / school">Đơn vị / trường học</label><input type="text" id="cOrg"></div>
+        </div>
+        <div class="field"><label data-vi="Yêu cầu thêm" data-en="Additional requests">Yêu cầu thêm</label><textarea id="cNote" rows="3" placeholder="Suất ăn trưa, hướng dẫn viên, xe đưa đón..." data-ph-vi="Suất ăn trưa, hướng dẫn viên, xe đưa đón..." data-ph-en="Lunch sets, guides, shuttle transfer..."></textarea></div>
+      </div>
+
+      <div class="book__side">
+        <div class="eyebrow" style="color:var(--orange-2)" data-vi="Tạm tính chi phí" data-en="Cost estimate">Tạm tính chi phí</div>
+        <h3 style="color:#F7E3B5" data-vi="Chi tiết dự kiến" data-en="Estimate breakdown">Chi tiết dự kiến</h3>
+        <div id="sumLines"></div>
+        <div class="sumtotal">
+          <div class="lbl" data-vi="Tổng tạm tính" data-en="Estimated total">Tổng tạm tính</div>
+          <div class="val" id="sumTotal">0 đ</div>
+          <div class="note" data-vi="Chi phí tạm tính theo bảng giá 2026, chưa gồm suất ăn và dịch vụ phát sinh. Làng sẽ liên hệ báo giá chính thức." data-en="Estimated from the 2026 price list, excluding meals and additional services. Our team will confirm the official quote.">Chi phí tạm tính theo bảng giá 2026, chưa gồm suất ăn và dịch vụ phát sinh. Làng sẽ liên hệ báo giá chính thức.</div>
+          <button class="btn btn--primary" id="btnSubmit" style="width:100%" data-vi="Gửi đăng ký đặt lịch" data-en="Send booking request">Gửi đăng ký đặt lịch</button>
+          <a href="tel:02462929777" class="btn btn--light" style="width:100%;margin-top:10px" data-vi="Hoặc gọi hotline 024.62.929.777" data-en="Or call 024.62.929.777">Hoặc gọi hotline 024.62.929.777</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= BẢN ĐỒ ======================= -->
+<section class="sec sec--sand" id="ban-do">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Bản đồ &amp; hướng dẫn" data-en="Map &amp; directions">Bản đồ &amp; hướng dẫn</div>
+      <h2 id="h2-ban-do" data-vi="Bản đồ Làng &amp; cách tiếp cận điểm đến" data-en="Village map &amp; how to get here">Bản đồ Làng &amp; cách tiếp cận điểm đến</h2>
+      <p class="lead" id="lead-ban-do" data-vi="Làng nằm tại Đồng Mô, Đoài Phương, Hà Nội - cuối Đại lộ Thăng Long, cách trung tâm Thủ đô hơn 40 km về phía Tây." data-en="The Village is in Dong Mo, Doai Phuong, Hanoi - at the end of Thang Long Boulevard, over 40 km west of the city centre.">Làng nằm tại Đồng Mô, Đoài Phương, Hà Nội - cuối Đại lộ Thăng Long, cách trung tâm Thủ đô hơn 40 km về phía Tây.</p>
+    </div>
+    <div class="mapgrid">
+      <div class="rv">
+        <a href="images/ban-do-lang.jpg" target="_blank" rel="noopener" class="media mapzoom" style="display:block;background:#EAF7F4">
+          <img id="mapImg" src="images/ban-do-lang.jpg" alt="Bản đồ tham quan Làng Văn hóa - Du lịch các dân tộc Việt Nam" style="width:100%;height:auto;display:block">
+        </a>
+        <p class="tbl-note" data-vi="Bản đồ tham quan chính thức của Làng - bấm vào ảnh để xem cỡ lớn." data-en="Official visitor map of the Village - click the image to view it full size.">Bản đồ tham quan chính thức của Làng - bấm vào ảnh để xem cỡ lớn.</p>
+        <div style="margin-top:14px" class="media ratio-16x9"><iframe title="Google Maps" src="https://www.google.com/maps?q=L%C3%A0ng+V%C4%83n+h%C3%B3a+-+Du+l%E1%BB%8Bch+c%C3%A1c+d%C3%A2n+t%E1%BB%99c+Vi%E1%BB%87t+Nam&output=embed" style="width:100%;height:100%;border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+      <div class="rv">
+        <div class="ctcard">
+          <h3 data-vi="Cách tiếp cận điểm đến" data-en="Getting here">Cách tiếp cận điểm đến</h3>
+          <ul class="route">
+            <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="10" rx="2"/><circle cx="7.5" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg></span>
+              <div><b data-vi="Từ trung tâm Hà Nội" data-en="From central Hanoi">Từ trung tâm Hà Nội</b><span data-vi="Khoảng 60 phút bằng ô tô: đi hết Đại lộ Thăng Long, đi tiếp 8 km và rẽ phải là đến Làng." data-en="About 60 minutes by car: follow Thang Long Boulevard to the end, continue 8 km and turn right.">Khoảng 60 phút bằng ô tô: đi hết Đại lộ Thăng Long, đi tiếp 8 km và rẽ phải là đến Làng.</span></div></li>
+            <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 16l20-8-9 14-2-6z"/></svg></span>
+              <div><b data-vi="Từ sân bay Nội Bài" data-en="From Noi Bai airport">Từ sân bay Nội Bài</b><span data-vi="Khoảng 70 phút bằng ô tô: từ nút giao vành đai 3 rẽ phải, đi hết Đại lộ Thăng Long, tiếp 8 km và rẽ phải." data-en="About 70 minutes by car: turn right at the Ring Road 3 junction, follow Thang Long Boulevard to the end, then 8 km and turn right.">Khoảng 70 phút bằng ô tô: từ nút giao vành đai 3 rẽ phải, đi hết Đại lộ Thăng Long, tiếp 8 km và rẽ phải.</span></div></li>
+            <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="13" rx="3"/><path d="M4 11h16M8 21l2-4M16 21l-2-4"/></svg></span>
+              <div><b data-vi="Xe bus số 107" data-en="Bus route 107">Xe bus số 107</b><span data-vi="Xuất phát từ bến xe Kim Mã, chạy theo trục Đại lộ Thăng Long, điểm dừng cuối là Làng Văn hóa - Du lịch các dân tộc Việt Nam." data-en="Departs Kim Ma bus station along Thang Long Boulevard; the final stop is the Village.">Xuất phát từ bến xe Kim Mã, chạy theo trục Đại lộ Thăng Long, điểm dừng cuối là Làng Văn hóa - Du lịch các dân tộc Việt Nam.</span></div></li>
+            <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="17" r="3.4"/><circle cx="18" cy="17" r="3.4"/><path d="M6 17l4-8h5l3 8M10 9l-1-3H7"/></svg></span>
+              <div><b data-vi="Phương tiện cá nhân" data-en="Private vehicles">Phương tiện cá nhân</b><span data-vi="Ô tô, xe máy, xe đạp. Trong Làng có xe điện, xe đạp điện và xe đạp cho thuê." data-en="Car, motorbike or bicycle. Inside the Village, electric shuttles, e-bikes and bicycles are available.">Ô tô, xe máy, xe đạp. Trong Làng có xe điện, xe đạp điện và xe đạp cho thuê.</span></div></li>
+            <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><b data-vi="Thời gian đón khách" data-en="Opening hours">Thời gian đón khách</b><span data-vi="Thứ Hai - Chủ nhật, gồm cả Lễ, Tết. Bán vé 8:00 - 17:00, phục vụ 8:00 - 18:00." data-en="Monday to Sunday including public holidays. Tickets 8:00 - 17:00, service 8:00 - 18:00.">Thứ Hai - Chủ nhật, gồm cả Lễ, Tết. Bán vé 8:00 - 17:00, phục vụ 8:00 - 18:00.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= THƯ VIỆN ẢNH ======================= -->
+<section class="sec" id="thu-vien">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Thư viện" data-en="Gallery">Thư viện</div>
+      <h2 id="h2-thu-vien" data-vi="Khoảnh khắc tại Làng" data-en="Moments at the Village">Khoảnh khắc tại Làng</h2>
+    </div>
+    <div class="gal rv">
+      <div class="media w2 h2"><img loading="lazy" decoding="async" src="images/gallery-1.jpg" alt="" data-ph-title="Ảnh nổi bật" data-ph-sub="images/gallery-1.jpg"></div>
+      <div class="media"><img loading="lazy" decoding="async" src="images/gallery-2.jpg" alt="" data-ph-title="Ảnh 2" data-ph-sub="images/gallery-2.jpg"></div>
+      <div class="media"><img loading="lazy" decoding="async" src="images/gallery-3.jpg" alt="" data-ph-title="Ảnh 3" data-ph-sub="images/gallery-3.jpg"></div>
+      <div class="media"><img loading="lazy" decoding="async" src="images/gallery-4.jpg" alt="" data-ph-title="Ảnh 4" data-ph-sub="images/gallery-4.jpg"></div>
+      <div class="media"><img loading="lazy" decoding="async" src="images/gallery-5.jpg" alt="" data-ph-title="Ảnh 5" data-ph-sub="images/gallery-5.jpg"></div>
+      <div class="media w2 yt" data-yt="hoatDong" data-ph-title="Video hoạt động (YouTube)" data-ph-sub="YOUTUBE.hoatDong"></div>
+      <div class="media"><img loading="lazy" decoding="async" src="images/gallery-6.jpg" alt="" data-ph-title="Ảnh 6" data-ph-sub="images/gallery-6.jpg"></div>
+      <div class="media"><img loading="lazy" decoding="async" src="images/gallery-7.jpg" alt="" data-ph-title="Ảnh 7" data-ph-sub="images/gallery-7.jpg"></div>
+    </div>
+  </div>
+</section>
+<!-- ======================= LIÊN HỆ ======================= -->
+<section class="sec sec--sand" id="lien-he">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <div class="eyebrow" data-vi="Liên hệ" data-en="Contact">Liên hệ</div>
+      <h2 id="h2-lien-he" data-vi="Kết nối với Làng Văn hóa - Du lịch các dân tộc Việt Nam" data-en="Get in touch with the Vietnam National Village for Ethnic Culture and Tourism">Kết nối với Làng Văn hóa - Du lịch các dân tộc Việt Nam</h2>
+      <p class="lead" id="lead-lien-he" data-vi="Làng trân trọng kính mời các công ty lữ hành, nhà trường, phòng GD&amp;ĐT, doanh nghiệp, cơ quan, đoàn thể và địa phương phối hợp tổ chức chương trình tham quan, giáo dục ngoại khóa và sự kiện." data-en="We warmly welcome tour operators, schools, education departments, businesses, agencies and localities to co-organise visits, field trips and events.">Làng trân trọng kính mời các công ty lữ hành, nhà trường, phòng GD&amp;ĐT, doanh nghiệp, cơ quan, đoàn thể và địa phương phối hợp tổ chức chương trình tham quan, giáo dục ngoại khóa và sự kiện.</p>
+    </div>
+    <div class="ctgrid">
+      <div class="rv">
+        <div class="ctcard">
+          <h3 data-vi="Thông tin liên hệ" data-en="Contact information">Thông tin liên hệ</h3>
+          <ul class="ctlist">
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+              <div><b data-vi="Địa chỉ" data-en="Address">Địa chỉ</b><span data-vi="Đồng Mô, xã Đoài Phương, TP. Hà Nội" data-en="Dong Mo, Doai Phuong commune, Hanoi">Đồng Mô, xã Đoài Phương, TP. Hà Nội</span></div></li>
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a12 12 0 005 5l1-2 5 2v2c0 1-1 2-2 2A16 16 0 014 5z"/></svg></span>
+              <div><b data-vi="Hotline chung" data-en="Main hotline">Hotline chung</b><a href="tel:02462929777">024.62.929.777</a></div></li>
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a12 12 0 005 5l1-2 5 2v2c0 1-1 2-2 2A16 16 0 014 5z"/></svg></span>
+              <div><b data-vi="Đặt phòng lưu trú" data-en="Room booking">Đặt phòng lưu trú</b><span><a href="tel:02469699777">024.6969.777</a> · <a href="tel:0929295699">0929.295.699</a> · <a href="tel:0983686004">0983.686.004</a></span></div></li>
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <div><b>Email</b><a href="mailto:ttdv.lvh@gmail.com">ttdv.lvh@gmail.com</a></div></li>
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg></span>
+              <div><b>Website</b><a href="https://langvanhoadulich.vn" target="_blank" rel="noopener">langvanhoadulich.vn</a></div></li>
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 011-1z"/></svg></span>
+              <div><b data-vi="Mạng xã hội" data-en="Social media">Mạng xã hội</b><span><a href="https://www.facebook.com/Langvhdl" target="_blank" rel="noopener">facebook.com/Langvhdl</a> · <a href="https://www.tiktok.com/@langvanhoa54dantoc" target="_blank" rel="noopener">@langvanhoa54dantoc</a></span></div></li>
+            <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-6h6v6"/></svg></span>
+              <div><b data-vi="Cơ quan chủ quản" data-en="Governing body">Cơ quan chủ quản</b><span data-vi="Sở Văn hóa, Thể thao và Du lịch Hà Nội" data-en="Hanoi Department of Culture, Sports and Tourism">Sở Văn hóa, Thể thao và Du lịch Hà Nội</span></div></li>
+          </ul>
+          <div class="fanbox">
+            <a class="fanbox__qr" href="https://www.facebook.com/Langvhdl" target="_blank" rel="noopener" aria-label="Fanpage Facebook">
+              <img src="assets/qr-fanpage.png" alt="QR fanpage Facebook cua Lang">
+            </a>
+            <div>
+              <h4 data-vi="Fanpage chính thức của Làng" data-en="Official Facebook page">Fanpage chính thức của Làng</h4>
+              <p data-vi="Quét mã để theo dõi chương trình, hoạt động văn hóa và thông tin tham quan mới nhất - hoặc nhắn tin trực tiếp để được tư vấn nhanh." data-en="Scan to follow the latest programmes, cultural activities and visitor news - or message us directly for a quick reply.">Quét mã để theo dõi chương trình, hoạt động văn hóa và thông tin tham quan mới nhất - hoặc nhắn tin trực tiếp để được tư vấn nhanh.</p>
+              <div class="fanbtns">
+                <a class="fanbtn msg" href="https://m.me/Langvhdl" target="_blank" rel="noopener">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.3 2 2 6.2 2 11.8c0 3.2 1.4 6 3.7 7.8V24l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.8S17.7 2 12 2zm1 13.2l-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg>
+                  <span data-vi="Nhắn tin cho Làng" data-en="Message the Village">Nhắn tin cho Làng</span>
+                </a>
+                <a class="fanbtn fb" href="https://www.facebook.com/Langvhdl" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 011-1z"/></svg>
+                  <span data-vi="Xem fanpage" data-en="Open the page">Xem fanpage</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="formbox">
+          <div class="formbox__hd">
+            <span class="iconbox" style="width:38px;height:38px;border-radius:11px;margin:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span>
+            <h3 data-vi="Biểu mẫu liên hệ &amp; đăng ký chương trình" data-en="Contact &amp; registration form">Biểu mẫu liên hệ &amp; đăng ký chương trình</h3>
+          </div>
+          <div id="formSlot">
+            <div class="formfallback">
+              <div class="ph" id="formPh" style="min-height:300px">
+                <div class="ph__meta"><span class="ph__tag">Google Form</span>
+                <b class="ph__name">GOOGLE_FORM_EMBED_URL</b>
+                <span class="ph__desc" data-vi="Google Form sẽ hiển thị tại đây" data-en="The Google Form will appear here">Google Form sẽ hiển thị tại đây</span></div>
+              </div>
+              <p style="margin-top:18px;font-size:.9rem;color:var(--muted)" data-vi="Dán link nhúng Google Form vào biến GOOGLE_FORM_EMBED_URL ở cuối tệp HTML." data-en="Paste the Google Form embed link into the GOOGLE_FORM_EMBED_URL variable at the bottom of this HTML file.">Dán link nhúng Google Form vào biến GOOGLE_FORM_EMBED_URL ở cuối tệp HTML.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="brocade"></div>
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand">
+          <img src="assets/logo-lang-van-hoa.png" alt="Logo Làng Văn hóa - Du lịch các dân tộc Việt Nam" id="logoFooter">
+          <div>
+            <strong data-vi="Làng Văn hóa - Du lịch<br>các dân tộc Việt Nam" data-en="Vietnam National Village for<br>Ethnic Culture &amp; Tourism">Làng Văn hóa - Du lịch<br>các dân tộc Việt Nam</strong>
+            <span style="font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);font-weight:700">Vinaculto</span>
+          </div>
+        </div>
+        <p style="font-size:.9rem;max-width:38ch" data-vi="“Ngôi nhà chung” của cộng đồng 54 dân tộc Việt Nam. Trực thuộc Sở Văn hóa, Thể thao và Du lịch Hà Nội." data-en="The “Common House” of Vietnam's 54 ethnic communities. Under the Hanoi Department of Culture, Sports and Tourism.">“Ngôi nhà chung” của cộng đồng 54 dân tộc Việt Nam. Trực thuộc Sở Văn hóa, Thể thao và Du lịch Hà Nội.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/Langvhdl" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 011-1z"/></svg></a>
+          <a href="https://www.tiktok.com/@langvanhoa54dantoc" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.4 2.3 1.9 3.9 4 4.2v3.1c-1.6.1-3-.4-4.3-1.3v6.3a5.9 5.9 0 11-5.9-5.9c.3 0 .6 0 .9.1v3.2a2.7 2.7 0 102 2.6V3z"/></svg></a>
+          <a href="mailto:ttdv.lvh@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 data-vi="Khám phá" data-en="Explore">Khám phá</h4>
+        <ul class="flist">
+          <li><a href="#gioi-thieu" data-vi="Giới thiệu chung" data-en="About the Village">Giới thiệu chung</a></li>
+          <li><a href="#khong-gian" data-vi="7 phân khu" data-en="7 zones">7 phân khu</a></li>
+          <li><a href="#trai-nghiem" data-vi="Hoạt động trải nghiệm" data-en="Experiences">Hoạt động trải nghiệm</a></li>
+          <li><a href="#thu-vien" data-vi="Thư viện ảnh - video" data-en="Photo &amp; video gallery">Thư viện ảnh - video</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-vi="Dịch vụ" data-en="Services">Dịch vụ</h4>
+        <ul class="flist">
+          <li><a href="#chuong-trinh" data-vi="Chương trình theo đoàn" data-en="Group programs">Chương trình theo đoàn</a></li>
+          <li><a href="#luu-tru" data-vi="Lưu trú Trại Sáng Tác" data-en="Creative Camp stay">Lưu trú Trại Sáng Tác</a></li>
+          <li><a href="#dich-vu" data-vi="Vé &amp; xe điện" data-en="Tickets &amp; shuttles">Vé &amp; xe điện</a></li>
+          <li><a href="#dat-lich" data-vi="Đặt lịch trực tuyến" data-en="Online booking">Đặt lịch trực tuyến</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span data-vi="© 2026 Làng Văn hóa - Du lịch các dân tộc Việt Nam. Bảo lưu mọi quyền." data-en="© 2026 Vietnam National Village for Ethnic Culture and Tourism. All rights reserved.">© 2026 Làng Văn hóa - Du lịch các dân tộc Việt Nam. Bảo lưu mọi quyền.</span>
+      <span data-vi="Giá dịch vụ có thể thay đổi theo quy định ban hành." data-en="Prices may change according to official regulations.">Giá dịch vụ có thể thay đổi theo quy định ban hành.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="msgr" href="https://m.me/Langvhdl" target="_blank" rel="noopener" aria-label="Nhan tin Messenger cho Lang"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.3 2 2 6.2 2 11.8c0 3.2 1.4 6 3.7 7.8V24l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.8S17.7 2 12 2zm1 13.2l-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg></a>
+  <a class="call" href="tel:02462929777" aria-label="Gọi hotline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a12 12 0 005 5l1-2 5 2v2c0 1-1 2-2 2A16 16 0 014 5z"/></svg></a>
+  <a class="top" href="#top" aria-label="Lên đầu trang"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+/* ============================================================
+   CẤU HÌNH NHANH  ·  QUICK CONFIG
+   ------------------------------------------------------------
+   1) GOOGLE_FORM_EMBED_URL : link nhúng Google Form (Send → < > → src="...")
+   2) GOOGLE_FORM_OPEN_URL  : link mở form ở tab mới (nút "Gửi đăng ký")
+   3) Ảnh/video: tạo thư mục "images" và "videos" cạnh tệp HTML này,
+      đặt tên tệp đúng như gợi ý hiển thị trong từng ô placeholder.
+   ============================================================ */
+/* ====== VIDEO YOUTUBE ======
+   Dán link hoặc ID video YouTube vào đây. Để trống thì trang hiển thị ô demo.
+   Ví dụ: gioiThieu: "https://www.youtube.com/watch?v=XXXXXXXXXXX"  hoặc  "XXXXXXXXXXX" */
+var YOUTUBE = (window.SITE && window.SITE.videos) ? window.SITE.videos : {
+  gioiThieu: "https://www.youtube.com/watch?v=bYOJaQuqGM4",
+  hoatDong:  "https://www.youtube.com/watch?v=DDOyMCEDHzY"
+};
+
+var GOOGLE_FORM_ID        = "1FAIpQLSdpp-duywVUPLuUyDzUBvLFn6nRGl_DvilJR7IdVh2IFz2Ijw";
+var GOOGLE_FORM_EMBED_URL = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + "/viewform?embedded=true";
+var GOOGLE_FORM_OPEN_URL  = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + "/viewform";
+var GOOGLE_FORM_POST_URL  = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + "/formResponse";
+/* Mã trường (entry) của Google Form - lấy tự động từ form đã tạo */
+var GF = {
+  email:   "emailAddress",
+  name:    "entry.957628141",
+  phone:   "entry.138096063",
+  org:     "entry.936609409",
+  type:    "entry.712580094",
+  program: "entry.536684355",
+  date:    "entry.1369508323",
+  pax:     "entry.1625902228",
+  adults:  "entry.400751626",
+  cost:    "entry.140556093",
+  note:    "entry.1336305109"
+};
+var GF_TYPE = {
+  "b-doan":   "Trải nghiệm theo đoàn (trường học, doanh nghiệp) — Group experience",
+  "b-le":     "Khách lẻ / gia đình tham quan — Individual / family visit",
+  "b-luutru": "Lưu trú Tại Trại Sáng Tác — Stay at the Creative Camp"
+};
+var GF_PROG = {
+  "dc1":  "Dấu chân bản làng - 1 ngày — Village Footprints (full day)",
+  "dc05": "Dấu chân bản làng - nửa ngày — Village Footprints (half day)",
+  "tn1":  "Về với đại ngàn Tây Nguyên - 1 ngày — Into the Highlands (full day)",
+  "tn05": "Về với đại ngàn Tây Nguyên - nửa ngày — Into the Highlands (half day)",
+  "stay": "Lưu trú Tại Trại Sáng Tác — Accommodation at the Creative Camp",
+  "visit":"Tham quan tự do — Free independent visit"
+};
+
+/* Logo Làng (VINACULTO) nhúng sẵn dạng base64 - tỉ lệ vuông 1:1 chuẩn theo logo gốc */
+var LOGO_DATA = "assets/logo-lang-van-hoa.png";
+
+
+/* ===== BỘ ẢNH DEMO (vector) - tự khớp theo tên tệp ===== */
+var DEMO_SCENES = {"panorama": "images/demo/panorama.svg", "stilt": "images/demo/stilt.svg", "rong": "images/demo/rong.svg", "cham": "images/demo/cham.svg", "khmer": "images/demo/khmer.svg", "hoian": "images/demo/hoian.svg", "temple": "images/demo/temple.svg", "gong": "images/demo/gong.svg", "dance": "images/demo/dance.svg", "weave": "images/demo/weave.svg", "craft": "images/demo/craft.svg", "game": "images/demo/game.svg", "food": "images/demo/food.svg", "costume": "images/demo/costume.svg", "stay": "images/demo/stay.svg", "pool": "images/demo/pool.svg", "shuttle": "images/demo/shuttle.svg", "map": "images/demo/map.svg", "lake": "images/demo/lake.svg", "fishing": "images/demo/fishing.svg", "festival": "images/demo/festival.svg", "people": "images/demo/people.svg", "music": "images/demo/music.svg", "video": "images/demo/video.svg", "qr": "images/demo/qr.svg", "nature": "images/demo/nature.svg", "team": "images/demo/team.svg", "cover": "images/demo/cover.svg"};
+var DEMO_FILEMAP = {"hero.mp4": "panorama", "hero.jpg": "panorama", "hero-poster.jpg": "panorama", "gioi-thieu-1.jpg": "nature", "gioi-thieu-2.jpg": "people", "gioi-thieu-3.jpg": "weave", "khu-lang-1.jpg": "stilt", "khu-lang-2.jpg": "rong", "khu-lang-3.jpg": "cham", "khu-lang-4.jpg": "hoian", "khu-nghi-le.jpg": "temple", "khu-ho-tren-nui.jpg": "lake", "gioi-thieu.mp4": "video", "video-poster.jpg": "video", "ct-dau-chan-1ngay.jpg": "dance", "ct-dau-chan-nuangay.jpg": "game", "ct-tay-nguyen-1ngay.jpg": "gong", "ct-tay-nguyen-nuangay.jpg": "music", "luu-tru-1.jpg": "stay", "luu-tru-2.jpg": "pool", "luu-tru-3.jpg": "hoian", "luu-tru-4.jpg": "food", "ban-do-lang.jpg": "map", "gallery-1.jpg": "festival", "gallery-2.jpg": "dance", "gallery-3.jpg": "weave", "gallery-4.jpg": "costume", "gallery-5.jpg": "craft", "gallery-6.jpg": "khmer", "gallery-7.jpg": "fishing", "hoat-dong.mp4": "video", "gallery-video-poster.jpg": "video"};
+var DEMO_KEYS = [["ban-do", "map"], ["map", "map"], ["qr", "qr"], ["nha-san", "stilt"], ["rong", "rong"], ["cham", "cham"], ["khmer", "khmer"], ["hoi-an", "hoian"], ["den", "temple"], ["nghi-le", "temple"], ["ho-", "lake"], ["chai", "fishing"], ["cong-chieng", "gong"], ["chieng", "gong"], ["mua", "dance"], ["dance", "dance"], ["det", "weave"], ["tho-cam", "weave"], ["zeng", "weave"], ["dan-lat", "craft"], ["nghe", "craft"], ["tro-choi", "game"], ["game", "game"], ["team", "team"], ["am-thuc", "food"], ["food", "food"], ["bbq", "food"], ["trang-phuc", "costume"], ["luu-tru", "stay"], ["phong", "stay"], ["be-boi", "pool"], ["pool", "pool"], ["xe-dien", "shuttle"], ["xe", "shuttle"], ["nhac", "music"], ["dan-", "music"], ["le-hoi", "festival"], ["su-kien", "festival"], ["cho-phien", "festival"], ["dong-bao", "people"], ["nguoi", "people"], ["hoc-sinh", "people"], [".mp4", "video"], ["video", "video"], ["pano", "panorama"], ["toan-canh", "panorama"]];
+function demoFileName(sub){
+  if(!sub) return "";
+  var first = String(sub).trim().split(/\s+/)[0];
+  first = first.split("(")[0];
+  var parts = first.split("/");
+  return parts[parts.length-1].replace(/[,;]$/,"");
+}
+function demoScene(name){
+  name = (name||"").toLowerCase();
+  if(DEMO_FILEMAP[name]) return DEMO_SCENES[DEMO_FILEMAP[name]];
+  for(var i=0;i<DEMO_KEYS.length;i++){
+    if(name.indexOf(DEMO_KEYS[i][0])>-1) return DEMO_SCENES[DEMO_KEYS[i][1]];
+  }
+  return DEMO_SCENES["panorama"];
+}
+(function(){
+  "use strict";
+  var $ = function(s,c){return (c||document).querySelector(s);};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+
+  /* ---------- LOGO fallback ---------- */
+  $$("#logoNav,#logoHero,#logoFooter").forEach(function(img){
+    img.addEventListener("error", function(){ if(img.src!==LOGO_DATA) img.src = LOGO_DATA; });
+    if(!img.complete || img.naturalWidth===0){ var t=new Image(); t.onerror=function(){img.src=LOGO_DATA;}; t.src=img.src; }
+  });
+
+  /* ---------- Placeholder cho ảnh & video chưa có ---------- */
+  function makePH(title, sub, cls){
+    var d = document.createElement("div");
+    d.className = "ph " + (cls||"");
+    var file = demoFileName(sub);
+    d.style.backgroundImage = "url(\"" + demoScene(file) + "\")";
+    d.innerHTML = '<div class="ph__meta">'
+      + '<span class="ph__tag">' + (lang==="en" ? "Demo image" : "Ảnh demo") + '</span>'
+      + '<b class="ph__name">' + (file || "image.jpg") + '</b>'
+      + '<span class="ph__desc">' + (title||"") + '</span>'
+      + '</div>';
+    return d;
+  }
+  function swapToPH(el){
+    if(!el || el.dataset.phDone) return;
+    el.dataset.phDone = "1";
+    var host = el.parentNode; if(!host) return;
+    var small = host.clientHeight && host.clientHeight < 190;
+    var ph = makePH(el.getAttribute("data-ph-title"), el.getAttribute("data-ph-sub"), small ? "ph--sm" : "");
+    ph.style.height = "100%"; ph.style.width = "100%";
+    var mh = 150;
+    try{ var cs = window.getComputedStyle(host); var v = parseInt(cs.minHeight,10); if(!isNaN(v) && v>mh) mh = v; }catch(e){}
+    ph.style.minHeight = mh + "px";
+    ph.style.borderRadius = "inherit";
+    host.replaceChild(ph, el);
+  }
+  var _hi = $("#heroImg");
+  if(_hi){
+    _hi.addEventListener("error", function(){ swapToPH(_hi); });
+    if(_hi.complete && _hi.naturalWidth===0) swapToPH(_hi);
+  }
+  $$(".media img").forEach(function(img){
+    img.addEventListener("error", function(){ swapToPH(img); });
+    if(img.complete && img.naturalWidth===0) swapToPH(img);
+  });
+  /* --- Khối video YouTube (lite embed: ảnh bìa + nút play) ---
+     Khi mở file trực tiếp từ ổ đĩa (file://) YouTube chặn nhúng (lỗi 153),
+     nên bấm play sẽ mở video ở tab mới. Khi trang chạy trên tên miền http(s)
+     thì video phát ngay tại chỗ. */
+  function ytId(v){
+    if(!v) return "";
+    v = String(v).trim();
+    var m = v.match(/(?:youtu\.be\/|v=|embed\/|shorts\/|live\/)([A-Za-z0-9_-]{6,})/);
+    return m ? m[1] : (/^[A-Za-z0-9_-]{6,}$/.test(v) ? v : "");
+  }
+  function ytPlayBtn(size){
+    return '<span class="yt-play" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;'
+      + 'width:'+size+'px;height:'+size+'px;border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;'
+      + 'box-shadow:0 12px 34px rgba(0,0,0,.42);transition:.25s">'
+      + '<svg width="'+Math.round(size*0.42)+'" height="'+Math.round(size*0.42)+'" viewBox="0 0 24 24" fill="#E5432B"><path d="M8 5.5v13l11-6.5z"/></svg></span>';
+  }
+  $$(".yt").forEach(function(box){
+    var id = ytId(YOUTUBE[box.getAttribute("data-yt")]);
+
+    if(!id){
+      var ph = makePH(box.getAttribute("data-ph-title"), box.getAttribute("data-ph-sub"));
+      ph.style.height="100%"; ph.style.width="100%"; ph.style.borderRadius="inherit";
+      ph.style.backgroundImage = 'url("' + DEMO_SCENES["video"] + '")';
+      ph.insertAdjacentHTML("afterbegin", ytPlayBtn(74));
+      box.appendChild(ph);
+      return;
+    }
+
+    box.style.cursor = "pointer";
+    box.style.position = "relative";
+    box.style.background = "#0E3550";
+    box.innerHTML = ''
+      + '<img class="yt-thumb" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">'
+      + '<span style="position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(8,38,56,.55),rgba(8,38,56,0) 55%)"></span>'
+      + ytPlayBtn(78)
+      + '<span class="yt-cap" style="position:absolute;left:0;right:0;bottom:0;z-index:4;padding:14px 18px;'
+      + 'color:#fff;font-size:.92rem;font-weight:600;text-shadow:0 2px 10px rgba(0,0,0,.6)"></span>';
+
+    var img = box.querySelector(".yt-thumb");
+    img.onerror = function(){
+      if(img.src.indexOf("maxresdefault") > -1){ img.src = "https://i.ytimg.com/vi/" + id + "/hqdefault.jpg"; }
+      else { img.style.display = "none"; box.style.backgroundImage = 'url("' + DEMO_SCENES["panorama"] + '")';
+             box.style.backgroundSize = "cover"; box.style.backgroundPosition = "center"; }
+    };
+    img.src = "https://i.ytimg.com/vi/" + id + "/maxresdefault.jpg";
+
+    var cap = box.querySelector(".yt-cap");
+    function setCap(){ cap.textContent = (lang==="en" ? "Play video on YouTube" : "Xem video trên YouTube"); }
+    setCap();
+    box.addEventListener("mouseenter", function(){ var p=box.querySelector(".yt-play"); if(p) p.style.transform="translate(-50%,-50%) scale(1.08)"; });
+    box.addEventListener("mouseleave", function(){ var p=box.querySelector(".yt-play"); if(p) p.style.transform="translate(-50%,-50%)"; });
+    box.addEventListener("click", function(){
+      if(location.protocol === "http:" || location.protocol === "https:"){
+        box.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?rel=0&autoplay=1" '
+          + 'title="YouTube" frameborder="0" style="width:100%;height:100%;border:0;display:block" '
+          + 'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      } else {
+        window.open("https://www.youtube.com/watch?v=" + id, "_blank", "noopener");
+      }
+    });
+    box._ytCap = setCap;
+  });
+
+  $$(".media video, .hero__bg video").forEach(function(v){
+    var failed = false;
+    var src = v.querySelector("source");
+    function fail(){ if(!failed){ failed=true; swapToPH(v); } }
+    if(src) src.addEventListener("error", fail);
+    v.addEventListener("error", fail);
+    setTimeout(function(){ if(v.readyState===0 && !v.dataset.phDone) fail(); }, 1400);
+  });
+
+  /* ---------- Song ngữ VI / EN ---------- */
+  var lang = "vi";
+  function applyLang(l){
+    lang = l;
+    document.documentElement.lang = l;
+    $$("[data-vi]").forEach(function(el){
+      var v = el.getAttribute("data-" + l);
+      if(v!==null && v!==undefined) el.innerHTML = v;
+    });
+    $$(".yt").forEach(function(b){ if(b._ytCap) b._ytCap(); });
+    $$("[data-ph-vi]").forEach(function(el){
+      var v = el.getAttribute("data-ph-" + l); if(v) el.setAttribute("placeholder", v);
+    });
+    $$(".langsw button").forEach(function(b){ b.classList.toggle("on", b.dataset.lang===l); });
+    try{ localStorage && localStorage.setItem("lvh_lang", l); }catch(e){}
+    calc();
+  }
+  $$(".langsw button").forEach(function(b){ b.addEventListener("click", function(){ applyLang(b.dataset.lang); }); });
+  var saved = null; try{ saved = localStorage && localStorage.getItem("lvh_lang"); }catch(e){}
+  if(saved==="en") applyLang("en");
+
+  /* ---------- Nav ---------- */
+  var nav = $("#nav"), burger = $("#burger"), menu = $("#menu");
+  window.addEventListener("scroll", function(){ nav.classList.toggle("scrolled", window.scrollY>10); });
+  burger.addEventListener("click", function(){ menu.classList.toggle("open"); });
+  $$("#menu a").forEach(function(a){ a.addEventListener("click", function(){ menu.classList.remove("open"); }); });
+
+  /* ---------- Tabs chung ---------- */
+  $$(".tab[data-tab]").forEach(function(t){
+    t.addEventListener("click", function(){
+      var group = t.parentNode;
+      $$(".tab[data-tab]", group).forEach(function(x){ x.classList.remove("on"); });
+      t.classList.add("on");
+      var ids = $$(".tab[data-tab]", group).map(function(x){ return x.dataset.tab; });
+      ids.forEach(function(id){ var p=document.getElementById(id); if(p) p.classList.toggle("on", id===t.dataset.tab); });
+      var shown = document.getElementById(t.dataset.tab);
+      if(shown) $$(".rv", shown).forEach(function(el){ el.classList.add("in"); });
+    });
+  });
+  /* ---------- Tabs đặt lịch ---------- */
+  $$(".tab[data-btab]").forEach(function(t){
+    t.addEventListener("click", function(){
+      $$(".tab[data-btab]").forEach(function(x){ x.classList.remove("on"); });
+      t.classList.add("on");
+      $$(".bpanel").forEach(function(p){ p.classList.toggle("on", p.id===t.dataset.btab); });
+      calc();
+    });
+  });
+  function openBookTab(id){
+    var t = $('.tab[data-btab="'+id+'"]'); if(t) t.click();
+  }
+
+  /* ---------- Accordion ---------- */
+  $$(".acc__hd").forEach(function(h){
+    h.addEventListener("click", function(){ h.parentNode.classList.toggle("on"); });
+  });
+  var first = $(".acc__it"); if(first) first.classList.add("on");
+
+  /* ---------- Reveal ---------- */
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {threshold:.08, rootMargin:"0px 0px -40px 0px"});
+    $$(".rv").forEach(function(el){ io.observe(el); });
+  } else { $$(".rv").forEach(function(el){ el.classList.add("in"); }); }
+  window.addEventListener("beforeprint", function(){ $$(".rv").forEach(function(el){ el.classList.add("in"); }); });
+
+  /* ============================================================
+     TÍNH GIÁ TỰ ĐỘNG (bảng giá 2026)
+     ============================================================ */
+  var PROG = {
+    dc1 : {vi:"Dấu chân bản làng - 1 ngày",   en:"Village Footprints - full day",  tiers:[[50,100,149000],[101,200,129000],[201,300,99000],[301,500,79000]]},
+    dc05: {vi:"Dấu chân bản làng - ½ ngày",   en:"Village Footprints - half day",  tiers:[[50,100,119000],[101,200,99000],[201,300,75000],[301,500,55000]]},
+    tn1 : {vi:"Về với đại ngàn Tây Nguyên - 1 ngày", en:"Into the Highlands - full day", tiers:[[50,100,149000],[101,200,129000],[201,300,99000],[301,500,79000]]},
+    tn05: {vi:"Về với đại ngàn Tây Nguyên - ½ ngày", en:"Into the Highlands - half day", tiers:[[50,100,119000],[101,200,99000],[201,300,75000],[301,500,55000]]}
+  };
+  var ROOMS = {
+    villa:{vi:"Biệt thự (Thổ Cẩm / Di Sản / Xứ Dừa)", en:"Villa (Tho Cam / Di San / Xu Dua)", cap:4,  night:[2484000,3564000], day:[1490400,2138400]},
+    d1   :{vi:"Song lập tầng 1", en:"Duplex ground floor", cap:2,  night:[918000,1350000],  day:[550800,810000]},
+    d2   :{vi:"Song lập tầng 2", en:"Duplex upper floor",  cap:4,  night:[1620000,2160000], day:[972000,1296000]},
+    cong :{vi:"Nhà cộng đồng (Kinh Bắc / Hội An)", en:"Community house (Kinh Bac / Hoi An)", cap:26, night:[5400000,7560000], day:[3240000,4536000]}
+  };
+  var TICKET = {adult:30000, student:10000, pupil:5000, senior:15000, kid:0};
+  var SHUTTLE = {route:40000, reduced:25000, tour:450000};
+
+  /* Dong bo bang gia tu trang quan tri (/admin) sang cong cu tinh chi phi */
+  window.setPricesFromCMS = function(P){
+    try{
+      if(P.programs) Object.keys(P.programs).forEach(function(k){
+        if(!PROG[k]) return;
+        var p = P.programs[k];
+        if(p.label_vi) PROG[k].vi = p.label_vi;
+        if(p.label_en) PROG[k].en = p.label_en;
+        if(p.tiers && p.tiers.length)
+          PROG[k].tiers = p.tiers.map(function(t){ return [Number(t.from), Number(t.to), Number(t.price)]; });
+      });
+      if(P.rooms) Object.keys(P.rooms).forEach(function(k){
+        if(!ROOMS[k]) return;
+        var r = P.rooms[k];
+        if(r.label_vi) ROOMS[k].vi = r.label_vi;
+        if(r.label_en) ROOMS[k].en = r.label_en;
+        if(r.cap) ROOMS[k].cap = Number(r.cap);
+        ROOMS[k].night = [Number(r.night_weekday), Number(r.night_weekend)];
+        ROOMS[k].day   = [Number(r.day_weekday),   Number(r.day_weekend)];
+      });
+      if(P.ticket)  Object.keys(P.ticket).forEach(function(k){ TICKET[k] = Number(P.ticket[k]); });
+      if(P.shuttle) Object.keys(P.shuttle).forEach(function(k){ SHUTTLE[k] = Number(P.shuttle[k]); });
+      var sel = document.getElementById("progSel");
+      if(sel) Array.prototype.forEach.call(sel.options, function(o){
+        var p = PROG[o.value]; if(!p) return;
+        o.setAttribute("data-vi", p.vi); o.setAttribute("data-en", p.en);
+        o.textContent = (document.documentElement.getAttribute("lang")==="en") ? p.en : p.vi;
+      });
+      if(typeof calc === "function") calc();
+    }catch(e){}
+  };
+
+  function vnd(n){ return (Math.round(n)||0).toLocaleString("vi-VN") + " đ"; }
+  function num(id){ var v = parseInt(($(id)||{}).value,10); return isNaN(v)||v<0 ? 0 : v; }
+  function tierPrice(key, pax){
+    var t = PROG[key].tiers, i;
+    for(i=0;i<t.length;i++){ if(pax>=t[i][0] && pax<=t[i][1]) return t[i][2]; }
+    return pax < t[0][0] ? t[0][2] : t[t.length-1][2];
+  }
+  var L = {
+    est:{vi:"Chưa có dữ liệu tính giá. Hãy chọn thông tin bên trái.", en:"No data yet. Please choose your options on the left."},
+    prog:{vi:"Chương trình", en:"Program"},
+    unit:{vi:"Đơn giá theo quy mô", en:"Rate by group size"},
+    pax:{vi:"Số khách", en:"Guests"},
+    subProg:{vi:"Chi phí chương trình", en:"Program cost"},
+    adultTicket:{vi:"Vé người lớn đi kèm (30.000đ)", en:"Accompanying adult tickets (30,000₫)"},
+    shuttle:{vi:"Vé xe điện liên tuyến", en:"Shuttle tickets"},
+    minPax:{vi:"Lưu ý: chương trình áp dụng cho đoàn từ 50 khách.", en:"Note: programs apply to groups of 50 or more."},
+    tickets:{vi:"Vé tham quan", en:"Entrance tickets"},
+    shTour:{vi:"Xe điện theo tour (450.000đ/giờ)", en:"Private shuttle (450,000₫/hour)"},
+    room:{vi:"Hạng phòng", en:"Room type"},
+    rate:{vi:"Đơn giá phòng", en:"Room rate"},
+    nights:{vi:"Số đêm × số phòng", en:"Nights × rooms"},
+    days:{vi:"Số ngày × số phòng", en:"Days × rooms"},
+    disc:{vi:"Giảm 20% (đoàn ≤ 15 người)", en:"20% off (group of 15 or fewer)"},
+    capWarn:{vi:"Sức chứa tối đa", en:"Maximum capacity"},
+    overCap:{vi:"Số khách vượt sức chứa - hãy tăng số phòng.", en:"Guests exceed capacity - please add rooms."}
+  };
+  function t(k){ return L[k][lang] || L[k].vi; }
+
+  function line(label, value, cls){
+    return '<div class="sumline '+(cls||"")+'"><span>'+label+'</span><span>'+value+'</span></div>';
+  }
+  var lastSummary = {};
+
+  function calc(){
+    var out = "", total = 0, s = {};
+    if(!$("#sumLines") || !$("#sumTotal")) return;   /* đã gửi xong, bảng tạm tính không còn */
+    var active = $(".bpanel.on"); if(!active){ return; }
+    var mode = active.id;
+
+    if(mode==="b-doan"){
+      var key = $("#progSel").value, pax = num("#progPax"), adults = num("#progAdult"),
+          sh = parseInt($("#progShuttle").value,10)||0, date = $("#progDate").value;
+      var unit = tierPrice(key, pax);
+      var cProg = unit*pax, cAdult = adults*TICKET.adult, cSh = sh*(pax+adults);
+      total = cProg + cAdult + cSh;
+      out += line(t("prog"), PROG[key][lang]||PROG[key].vi);
+      out += line(t("unit"), vnd(unit) + " / " + (lang==="vi"?"khách":"guest"));
+      out += line(t("pax"), pax + (lang==="vi"?" khách":" guests"));
+      out += line(t("subProg"), vnd(cProg));
+      if(adults>0) out += line(t("adultTicket")+" × "+adults, vnd(cAdult));
+      if(cSh>0)    out += line(t("shuttle")+" × "+(pax+adults), vnd(cSh));
+      if(pax<50)   out += line(t("minPax"), "", "muted");
+      s = {modeId:"b-doan", progKey:key,
+           mode:(lang==="vi"?"Đoàn trường học / doanh nghiệp":"School / corporate group"),
+           detail:(PROG[key][lang]||PROG[key].vi), date:date, pax:pax, adults:adults};
+    }
+
+    else if(mode==="b-le"){
+      var a=num("#qAdult"), st=num("#qStudent"), pu=num("#qPupil"), se=num("#qSenior"), ki=num("#qKid");
+      var sa=num("#qShAdult"), sk=num("#qShKid"), stt=num("#qShTour"), d2=$("#leDate").value;
+      var cT = a*TICKET.adult + st*TICKET.student + pu*TICKET.pupil + se*TICKET.senior;
+      var cS = sa*SHUTTLE.route + sk*SHUTTLE.reduced, cTour = stt*SHUTTLE.tour;
+      total = cT + cS + cTour;
+      var totPax = a+st+pu+se+ki;
+      out += line(t("pax"), totPax + (lang==="vi"?" khách":" guests"));
+      if(a)  out += line((lang==="vi"?"Người lớn":"Adults")+" × "+a, vnd(a*TICKET.adult));
+      if(st) out += line((lang==="vi"?"Sinh viên":"Students")+" × "+st, vnd(st*TICKET.student));
+      if(pu) out += line((lang==="vi"?"Học sinh":"Pupils")+" × "+pu, vnd(pu*TICKET.pupil));
+      if(se) out += line((lang==="vi"?"Người 60+ / ưu đãi":"Age 60+ / policy")+" × "+se, vnd(se*TICKET.senior));
+      if(ki) out += line((lang==="vi"?"Trẻ dưới 6 tuổi":"Children under 6")+" × "+ki, (lang==="vi"?"Miễn phí":"Free"));
+      if(cS) out += line(t("shuttle"), vnd(cS));
+      if(cTour) out += line(t("shTour")+" × "+stt+"h", vnd(cTour));
+      s = {modeId:"b-le", progKey:"visit",
+           mode:(lang==="vi"?"Khách lẻ & gia đình":"Individuals & families"),
+           detail:(lang==="vi"?"Vé tham quan":"Entrance tickets"), date:d2, pax:totPax, adults:a};
+    }
+
+    else {
+      var rk=$("#roomSel").value, md=$("#stayMode").value, dt=$("#stayDayType").value,
+          nights=Math.max(1,num("#stayNights")), rooms=Math.max(1,num("#stayRooms")),
+          spax=num("#stayPax"), disc=$("#stayDiscount").checked, sdate=$("#stayDate").value;
+      var R=ROOMS[rk], arr = (md==="night") ? R.night : R.day;
+      var rate = (dt==="high") ? arr[1] : arr[0];
+      var sub = rate*nights*rooms;
+      var discount = (disc && rk==="cong") ? sub*0.2 : 0;
+      total = sub - discount;
+      out += line(t("room"), R[lang]||R.vi);
+      out += line(t("rate"), vnd(rate) + (md==="night" ? (lang==="vi"?" / đêm":" / night") : (lang==="vi"?" / ngày":" / day")));
+      out += line(md==="night"?t("nights"):t("days"), nights + " × " + rooms);
+      if(discount>0) out += line(t("disc"), "- " + vnd(discount));
+      out += line(t("capWarn"), (R.cap*rooms) + (lang==="vi"?" khách":" guests"), "muted");
+      if(spax > R.cap*rooms) out += line(t("overCap"), "", "muted");
+      s = {modeId:"b-luutru", progKey:"stay",
+           mode:(lang==="vi"?"Lưu trú Trại Sáng Tác":"Stay at the Creative Camp"),
+           detail:(R[lang]||R.vi)+" · "+(md==="night"?(lang==="vi"?"qua đêm":"overnight"):(lang==="vi"?"trong ngày":"day use"))+" · "+nights+(lang==="vi"?" đêm/ngày × ":" nights/days × ")+rooms+(lang==="vi"?" phòng":" rooms"),
+           date:sdate, pax:spax, adults:0};
+      if($("#dayTypeHint")) $("#dayTypeHint").innerHTML = (md==="night")
+        ? (lang==="vi" ? "Qua đêm: CN - T5 là ngày thường; T6, T7, Lễ, Tết là ngày cao điểm."
+                       : "Overnight: Sun - Thu is weekday rate; Fri, Sat and holidays are peak.")
+        : (lang==="vi" ? "Trong ngày: T2 - T6 là ngày thường; T7, CN, Lễ, Tết là ngày cao điểm."
+                       : "Day use: Mon - Fri is weekday rate; Sat, Sun and holidays are peak.");
+    }
+
+    $("#sumLines").innerHTML = out || '<div class="empty-sum">'+t("est")+'</div>';
+    $("#sumTotal").textContent = vnd(total);
+    s.total = total;
+    lastSummary = s;
+  }
+
+  $$("#dat-lich input, #dat-lich select").forEach(function(el){
+    el.addEventListener("input", calc); el.addEventListener("change", calc);
+  });
+
+  /* nút "Đặt chương trình này" ở các card */
+  $$("[data-book]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var k = b.getAttribute("data-book");
+      if(k==="stay"){ openBookTab("b-luutru"); }
+      else { openBookTab("b-doan"); var s=$("#progSel"); if(s){ s.value=k; calc(); } }
+    });
+  });
+
+  /* ---------- Gửi đăng ký ---------- */
+  function toast(msg){
+    var el = $("#toast"); el.textContent = msg; el.classList.add("on");
+    setTimeout(function(){ el.classList.remove("on"); }, 4200);
+  }
+  function gfInput(form, name, value){
+    if(value===undefined || value===null || value==="") return;
+    var i = document.createElement("input");
+    i.type = "hidden"; i.name = name; i.value = value;
+    form.appendChild(i);
+  }
+  function esc(t){ return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+  function showSent(s, name){
+    var side = $(".book__side");
+    if(!side) return;
+    var nm = esc(name);
+    var thanksVi = "Cảm ơn " + nm + ". Làng Văn hóa - Du lịch các dân tộc Việt Nam đã nhận được thông tin và sẽ liên hệ xác nhận trong thời gian sớm nhất.";
+    var thanksEn = "Thank you, " + nm + ". The Vietnam National Village for Ethnic Culture and Tourism has received your request and will contact you shortly to confirm.";
+    side.innerHTML =
+      '<div style="margin:auto;text-align:center;padding:10px 0">'
+      + '<div style="width:82px;height:82px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;margin:0 auto 20px">'
+      + '<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#FFF6E4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.2 5.2L20 7"/></svg></div>'
+      + '<h3 style="color:#FFF6E4;font-size:1.6rem;margin-bottom:10px" data-vi="Đã gửi đăng ký thành công!" data-en="Your request has been sent!">Đã gửi đăng ký thành công!</h3>'
+      + '<p style="color:#DDEFEB;font-size:1rem;max-width:36ch;margin:0 auto 6px" data-vi="' + esc(thanksVi) + '" data-en="' + esc(thanksEn) + '">' + thanksVi + '</p>'
+      + '<p style="color:#FFF6E4;font-weight:700;font-size:1.05rem;margin:14px 0 4px">'
+      + '<span data-vi="Tạm tính:" data-en="Estimated total:">Tạm tính:</span> ' + vnd(s.total||0) + '</p>'
+      + '<p style="color:#CDE7E2;font-size:.92rem;margin-bottom:20px">' + esc(s.detail||"") + '</p>'
+      + '<button class="btn btn--light" id="btnAgain" style="width:100%" data-vi="Gửi một đăng ký khác" data-en="Send another request">Gửi một đăng ký khác</button>'
+      + '<a href="tel:02462929777" class="btn" style="width:100%;margin-top:10px;background:rgba(255,255,255,.18);color:#FFF6E4" data-vi="Gọi hotline 024.62.929.777" data-en="Call 024.62.929.777">Gọi hotline 024.62.929.777</a>'
+      + '</div>';
+    applyLang(lang);
+    var again = document.getElementById("btnAgain");
+    if(again) again.addEventListener("click", function(){ location.reload(); });
+  }
+
+  $("#btnSubmit").addEventListener("click", function(){
+    var name=$("#cName").value.trim(), phone=$("#cPhone").value.trim(), email=$("#cEmail").value.trim();
+    if(!name || !phone || !email){
+      toast(lang==="vi" ? "Vui lòng nhập họ tên, số điện thoại và email." : "Please enter your name, phone number and email.");
+      (!name ? $("#cName") : (!phone ? $("#cPhone") : $("#cEmail"))).focus();
+      return;
+    }
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+      toast(lang==="vi" ? "Email chưa hợp lệ." : "Please enter a valid email.");
+      $("#cEmail").focus(); return;
+    }
+    var s = lastSummary;
+    /* Mỗi nội dung đi vào một cột riêng trên Google Form; ô ghi chú chỉ chứa yêu cầu thêm của khách */
+    var note = $("#cNote").value.trim();
+
+    var btn = $("#btnSubmit");
+    btn.disabled = true;
+    btn.textContent = lang==="vi" ? "Đang gửi..." : "Sending...";
+
+    /* Gửi thẳng vào Google Form qua iframe ẩn - người dùng không rời khỏi trang */
+    var ifr = document.getElementById("gfSink");
+    if(!ifr){
+      ifr = document.createElement("iframe");
+      ifr.id = "gfSink"; ifr.name = "gfSink";
+      ifr.style.cssText = "position:absolute;width:0;height:0;border:0;left:-9999px";
+      document.body.appendChild(ifr);
+    }
+    var form = document.createElement("form");
+    form.action = GOOGLE_FORM_POST_URL;
+    form.method = "POST";
+    form.target = "gfSink";
+    form.style.display = "none";
+
+    gfInput(form, GF.email, email);
+    gfInput(form, GF.name,  name);
+    gfInput(form, GF.phone, phone);
+    gfInput(form, GF.org,   $("#cOrg").value.trim());
+    gfInput(form, GF.type,  GF_TYPE[s.modeId] || GF_TYPE["b-doan"]);
+    if(GF_PROG[s.progKey]) gfInput(form, GF.program, GF_PROG[s.progKey]);
+    if(s.date){
+      var p = String(s.date).split("-");
+      if(p.length===3){
+        gfInput(form, GF.date + "_year",  p[0]);
+        gfInput(form, GF.date + "_month", String(parseInt(p[1],10)));
+        gfInput(form, GF.date + "_day",   String(parseInt(p[2],10)));
+      }
+    }
+    gfInput(form, GF.pax,    String(s.pax||""));
+    gfInput(form, GF.adults, String(s.adults||0));
+    gfInput(form, GF.cost,   vnd(s.total||0));
+    gfInput(form, GF.note,   note);
+    gfInput(form, "fvv", "1");
+    gfInput(form, "pageHistory", "0");
+    gfInput(form, "fbzx", "0");
+
+    document.body.appendChild(form);
+    var done = false;
+    function finish(){
+      if(done) return; done = true;
+      showSent(s, name);
+      toast(lang==="vi" ? "Đã gửi đăng ký tới Làng Văn hóa." : "Your request has been sent.");
+    }
+    ifr.onload = finish;
+    setTimeout(finish, 2600);
+    try{ form.submit(); }catch(e){ finish(); }
+    setTimeout(function(){ if(form.parentNode) form.parentNode.removeChild(form); }, 4000);
+  });
+
+  /* ---------- Nhúng Google Form ---------- */
+  var _fph = $("#formPh"); if(_fph) _fph.style.backgroundImage = 'url("'+DEMO_SCENES["qr"]+'")';
+  if(GOOGLE_FORM_EMBED_URL){
+    $("#formSlot").innerHTML = '<iframe src="'+GOOGLE_FORM_EMBED_URL+'" width="100%" height="880" frameborder="0" marginheight="0" marginwidth="0" loading="lazy" title="Google Form">Đang tải…</iframe>';
+  }
+
+  /* ---------- Ngày mặc định = hôm nay + 7 ---------- */
+  var d = new Date(); d.setDate(d.getDate()+7);
+  var iso = d.toISOString().slice(0,10);
+  ["#progDate","#leDate","#stayDate"].forEach(function(id){ var e=$(id); if(e && !e.value) e.value = iso; });
+
+  calc();
+})();
+</script>
+<script>
+/* ====== AP DUNG NOI DUNG TU TRANG QUAN TRI /admin ====== */
+(function(){
+  var S = window.SITE; if(!S) return;
+  function ready(fn){ if(document.readyState!=="loading") fn(); else document.addEventListener("DOMContentLoaded", fn); }
+  function L(){ return (document.documentElement.getAttribute("lang")==="en") ? "en" : "vi"; }
+  function money(n){ return (Math.round(n)||0).toLocaleString("vi-VN") + " đ"; }
+  function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+  ready(function(){
+    /* ---------- 1. ANH ---------- */
+    if(S.images){
+      Array.prototype.forEach.call(document.querySelectorAll('img[src^="images/"]'), function(img){
+        var key = img.getAttribute("src").split("/").pop().replace(/\.[a-zA-Z0-9]+$/, "");
+        var v = S.images[key];
+        if(v && v !== img.getAttribute("src")){ img.setAttribute("src", v); img.removeAttribute("srcset"); }
+      });
+      var mapA = document.querySelector('a[href^="images/ban-do"]');
+      if(mapA && S.images["ban-do-lang"]) mapA.setAttribute("href", S.images["ban-do-lang"]);
+    }
+
+    /* ---------- 2. CHU: tieu de + mo ta tung muc ---------- */
+    var T = S.texts || {};
+    function setTx(id, vi, en){
+      var el = document.getElementById(id); if(!el) return;
+      if(vi) el.setAttribute("data-vi", vi);
+      if(en) el.setAttribute("data-en", en);
+      var val = el.getAttribute("data-" + L()); if(val) el.innerHTML = val;
+    }
+    setTx("heroTitle", T.heroTitleVi, T.heroTitleEn);
+    setTx("heroLead",  T.heroLeadVi,  T.heroLeadEn);
+    Object.keys(T).forEach(function(k){
+      var m = k.match(/^(h2|lead)\.([a-z0-9-]+)\.(vi|en)$/); if(!m) return;
+      var el = document.getElementById(m[1] + "-" + m[2]); if(!el) return;
+      el.setAttribute("data-" + m[3], T[k]);
+      var val = el.getAttribute("data-" + L()); if(val) el.innerHTML = val;
+    });
+
+    /* ---------- 3. BANG GIA ---------- */
+    var P = S.prices;
+    if(P){
+      var flat = {};
+      if(P.ticket)  Object.keys(P.ticket).forEach(function(k){  flat["ticket."+k]  = money(P.ticket[k]); });
+      if(P.shuttle){
+        flat["shuttle.route"]   = money(P.shuttle.route);
+        flat["shuttle.reduced"] = money(P.shuttle.reduced);
+        flat["shuttle.tour"]    = money(P.shuttle.tour) + "/giờ";
+        flat["shuttle.tour__en"] = money(P.shuttle.tour) + "/hour";
+      }
+      if(P.programs) Object.keys(P.programs).forEach(function(pk){
+        (P.programs[pk].tiers||[]).forEach(function(t,i){ flat["prog."+pk+"."+i] = money(t.price); });
+      });
+      if(P.rooms) Object.keys(P.rooms).forEach(function(rk){
+        var r = P.rooms[rk];
+        flat["room."+rk+".n0"] = money(r.night_weekday); flat["room."+rk+".n1"] = money(r.night_weekend);
+        flat["room."+rk+".d0"] = money(r.day_weekday);   flat["room."+rk+".d1"] = money(r.day_weekend);
+      });
+      Array.prototype.forEach.call(document.querySelectorAll("[data-p]"), function(td){
+        var k = td.getAttribute("data-p"), v = flat[k]; if(!v) return;
+        var en = flat[k + "__en"] || v;
+        td.setAttribute("data-vi", v); td.setAttribute("data-en", en);
+        td.textContent = (L()==="en") ? en : v;
+      });
+      /* dong bo sang cong cu tinh chi phi */
+      if(window.setPricesFromCMS) window.setPricesFromCMS(P);
+    }
+
+    /* ---------- 4. LICH SU KIEN ---------- */
+    var grid = document.getElementById("evGrid");
+    if(grid && S.events && S.events.length){
+      grid.innerHTML = S.events.map(function(e){
+        var lis = (e.items||[]).map(function(it){
+          return '<li data-vi="'+esc(it.vi)+'" data-en="'+esc(it.en||it.vi)+'">'+esc(L()==="en"&&it.en?it.en:it.vi)+'</li>';
+        }).join("");
+        return '<article class="ev rv in">'
+          + '<div class="ev__m"><b data-vi="'+esc(e.month_vi)+'" data-en="'+esc(e.month_en||e.month_vi)+'">'
+              + esc(L()==="en"&&e.month_en?e.month_en:e.month_vi) + '</b>'
+          + '<span data-vi="'+esc(e.tag_vi)+'" data-en="'+esc(e.tag_en||e.tag_vi)+'">'
+              + esc(L()==="en"&&e.tag_en?e.tag_en:e.tag_vi) + '</span></div>'
+          + '<div class="ev__c"><h3 data-vi="'+esc(e.title_vi)+'" data-en="'+esc(e.title_en||e.title_vi)+'">'
+              + esc(L()==="en"&&e.title_en?e.title_en:e.title_vi) + '</h3><ul>' + lis + '</ul></div></article>';
+      }).join("");
+    }
+
+    /* ---------- 5. LIEN KET ---------- */
+    var K = S.links || {};
+    function setHref(sel, url){ if(!url) return;
+      Array.prototype.forEach.call(document.querySelectorAll(sel), function(a){ a.setAttribute("href", url); }); }
+    setHref('a[href*="facebook.com/Langvhdl"]', K.fanpage);
+    setHref('a[href*="m.me/"]', K.messenger);
+    setHref('a[href*="tiktok.com"]', K.tiktok);
+    setHref('a[href*="langvanhoadulich.vn"]', K.website);
+  });
+})();
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+/* Khi ban quan tri bam link moi trong email, dua ho thang vao trang /admin */
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", function(user){
+    if(!user){ window.netlifyIdentity.on("login", function(){ document.location.href = "/admin/"; }); }
+  });
+}
+</script>
+</body>
+</html>

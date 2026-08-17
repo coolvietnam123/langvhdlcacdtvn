@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Quản trị nội dung · Làng Văn hóa - Du lịch các dân tộc Việt Nam</title>
+<link rel="icon" href="../assets/logo-lang-van-hoa.png">
+<style>
+  body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif}
+  #loading{padding:60px 24px;text-align:center;color:#12405F}
+  #loading h1{font-size:1.15rem;margin:0 0 8px}
+  #loading p{font-size:.92rem;color:#55697A;margin:0}
+</style>
+</head>
+<body>
+<div id="loading">
+  <h1>Đang mở trang quản trị…</h1>
+  <p>Nếu chờ quá 15 giây, vui lòng tải lại trang (F5) hoặc kiểm tra kết nối mạng.</p>
+</div>
+
+<!-- Netlify Identity: dùng để đăng nhập bằng email -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Decap CMS (trước đây là Netlify CMS) -->
+<script src="https://unpkg.com/decap-cms@^3.8.4/dist/decap-cms.js"></script>
+<script>
+  // Sau khi đăng nhập lần đầu qua email mời, đưa người dùng thẳng vào trang quản trị
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; });
+      }
+    });
+  }
+  window.addEventListener("load", function(){
+    setTimeout(function(){
+      var el = document.getElementById("loading");
+      if (el) el.style.display = "none";
+    }, 1200);
+  });
+</script>
+</body>
+</html>
