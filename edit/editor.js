@@ -334,7 +334,12 @@
   }
 
   /* ------------------------------------------------------------------ lưu */
-  function jwt() { return user.jwt(); }
+  function jwt() {
+    var u = window.netlifyIdentity && window.netlifyIdentity.currentUser();
+    if (!u) return Promise.reject(new Error("Phiên đăng nhập đã hết hạn. Hãy tải lại trang và đăng nhập lại."));
+    user = u;
+    return u.jwt();
+  }
 
   function ggPut(path, contentB64, sha, msg) {
     return jwt().then(function (t) {
@@ -398,16 +403,21 @@
   }
 
   function boot() {
-    if (!window.netlifyIdentity) { alert("Thiếu Netlify Identity. Hãy tải lại trang."); return; }
-    user = window.netlifyIdentity.currentUser();
-    if (user) { start(); return; }
-    window.netlifyIdentity.on("login", function (u) {
-      user = u; window.netlifyIdentity.close(); start();
-    });
-    window.netlifyIdentity.on("close", function () {
-      if (!user) location.href = location.pathname;
-    });
-    window.netlifyIdentity.open("login");
+    var NI = window.netlifyIdentity;
+    if (!NI) { alert("Thiếu Netlify Identity. Hãy tải lại trang."); return; }
+
+    /* Cho tien ich Identity khoi tao xong roi moi quyet dinh */
+    var settled = false;
+    function decide(u) {
+      if (settled) return; settled = true;
+      user = u || NI.currentUser();
+      if (user) { start(); return; }
+      NI.on("login", function (x) { user = x; NI.close(); start(); });
+      NI.on("close", function () { if (!user) location.href = location.pathname; });
+      NI.open("login");
+    }
+    NI.on("init", decide);
+    setTimeout(function () { decide(NI.currentUser()); }, 1600);
   }
 
   if (document.readyState === "complete") setTimeout(boot, 400);
