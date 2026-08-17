@@ -1,13 +1,19 @@
 /images/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/images/uploads/*
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /videos/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
 
 /content.json
+  Cache-Control: no-cache, must-revalidate
+
+/index.html
   Cache-Control: no-cache, must-revalidate
 
 /admin/*
