@@ -1,0 +1,213 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Anh/video tai len se nam trong thu muc images/uploads
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "vi"
+publish_mode: simple
+
+site_url: https://langvhdlcacdantocvietnam.netlify.app
+display_url: https://langvhdlcacdantocvietnam.netlify.app
+logo_url: /assets/logo-lang-van-hoa.png
+
+collections:
+  - name: "noidung"
+    label: "Nội dung Landing page"
+    files:
+      - name: "anh"
+        label: "🖼  Ảnh trên trang"
+        file: "content.json"
+        description: "Bấm vào từng ô để tải ảnh mới lên. Ảnh nên < 1 MB, chiều ngang khoảng 1500-2400px."
+        fields:
+          - label: "Ảnh"
+            name: "images"
+            widget: "object"
+            fields:
+              - { label: "Ảnh nền đầu trang (ngang, 2400x1350)", name: "hero", widget: "image", required: false }
+              - { label: "Giới thiệu 1 - Toàn cảnh Làng (dọc 3:4)", name: "gioi-thieu-1", widget: "image", required: false }
+              - { label: "Giới thiệu 2 - Đồng bào dân tộc (vuông)", name: "gioi-thieu-2", widget: "image", required: false }
+              - { label: "Giới thiệu 3 - Nghề thủ công (vuông)", name: "gioi-thieu-3", widget: "image", required: false }
+              - { label: "Khu Làng dân tộc I", name: "khu-lang-1", widget: "image", required: false }
+              - { label: "Khu Làng dân tộc II", name: "khu-lang-2", widget: "image", required: false }
+              - { label: "Khu Làng dân tộc III", name: "khu-lang-3", widget: "image", required: false }
+              - { label: "Khu Làng dân tộc IV", name: "khu-lang-4", widget: "image", required: false }
+              - { label: "Khu Nghi lễ thờ Tổ", name: "khu-nghi-le", widget: "image", required: false }
+              - { label: "Khu Hồ trên núi & Làng chài", name: "khu-ho-tren-nui", widget: "image", required: false }
+              - { label: "Chương trình Dấu chân bản làng - 1 ngày", name: "ct-dau-chan-1ngay", widget: "image", required: false }
+              - { label: "Chương trình Dấu chân bản làng - nửa ngày", name: "ct-dau-chan-nuangay", widget: "image", required: false }
+              - { label: "Chương trình Tây Nguyên - 1 ngày", name: "ct-tay-nguyen-1ngay", widget: "image", required: false }
+              - { label: "Chương trình Tây Nguyên - nửa ngày", name: "ct-tay-nguyen-nuangay", widget: "image", required: false }
+              - { label: "Lưu trú 1 - Biệt thự / phòng nghỉ", name: "luu-tru-1", widget: "image", required: false }
+              - { label: "Lưu trú 2 - Bể bơi vô cực", name: "luu-tru-2", widget: "image", required: false }
+              - { label: "Lưu trú 3 - Nhà cộng đồng", name: "luu-tru-3", widget: "image", required: false }
+              - { label: "Lưu trú 4 - Không gian ăn uống / BBQ", name: "luu-tru-4", widget: "image", required: false }
+              - { label: "Bản đồ tham quan", name: "ban-do-lang", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh nổi bật (ô lớn)", name: "gallery-1", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh 2", name: "gallery-2", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh 3", name: "gallery-3", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh 4", name: "gallery-4", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh 5", name: "gallery-5", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh 6", name: "gallery-6", widget: "image", required: false }
+              - { label: "Thư viện - Ảnh 7", name: "gallery-7", widget: "image", required: false }
+
+          - label: "Video YouTube"
+            name: "videos"
+            widget: "object"
+            fields:
+              - { label: "Video giới thiệu Làng", name: "gioiThieu", widget: "string", required: false, hint: "Dán link YouTube" }
+              - { label: "Video hoạt động - trải nghiệm", name: "hoatDong", widget: "string", required: false, hint: "Dán link YouTube. Để trống nếu chưa có." }
+
+          - label: "💰  Bảng giá"
+            name: "prices"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Giá chương trình theo đoàn"
+                name: "programs"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Dấu chân bản làng - 1 ngày"
+                    name: "dc1"
+                    widget: "object"
+                    collapsed: true
+                    fields: &progfields
+                      - { label: "Tên chương trình (VI)", name: "label_vi", widget: "string" }
+                      - { label: "Tên chương trình (EN)", name: "label_en", widget: "string" }
+                      - label: "Bậc giá theo quy mô đoàn"
+                        name: "tiers"
+                        widget: "list"
+                        fields:
+                          - { label: "Từ (khách)", name: "from", widget: "number", value_type: "int" }
+                          - { label: "Đến (khách)", name: "to", widget: "number", value_type: "int" }
+                          - { label: "Giá / khách (đồng)", name: "price", widget: "number", value_type: "int" }
+                  - { label: "Dấu chân bản làng - nửa ngày", name: "dc05", widget: "object", collapsed: true, fields: *progfields }
+                  - { label: "Về với đại ngàn Tây Nguyên - 1 ngày", name: "tn1", widget: "object", collapsed: true, fields: *progfields }
+                  - { label: "Về với đại ngàn Tây Nguyên - nửa ngày", name: "tn05", widget: "object", collapsed: true, fields: *progfields }
+
+              - label: "Giá vé tham quan (đồng)"
+                name: "ticket"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Người lớn", name: "adult", widget: "number", value_type: "int" }
+                  - { label: "Sinh viên, học viên", name: "student", widget: "number", value_type: "int" }
+                  - { label: "Học sinh", name: "pupil", widget: "number", value_type: "int" }
+                  - { label: "Người 60+ / khuyết tật nặng / chính sách", name: "senior", widget: "number", value_type: "int" }
+
+              - label: "Giá xe điện (đồng)"
+                name: "shuttle"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Vé liên tuyến - người lớn", name: "route", widget: "number", value_type: "int" }
+                  - { label: "Vé liên tuyến - ưu đãi", name: "reduced", widget: "number", value_type: "int" }
+                  - { label: "Xe điện theo tour (mỗi giờ)", name: "tour", widget: "number", value_type: "int" }
+
+              - label: "Giá phòng lưu trú (đồng)"
+                name: "rooms"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Biệt thự"
+                    name: "villa"
+                    widget: "object"
+                    collapsed: true
+                    fields: &roomfields
+                      - { label: "Tên hạng phòng (VI)", name: "label_vi", widget: "string" }
+                      - { label: "Tên hạng phòng (EN)", name: "label_en", widget: "string" }
+                      - { label: "Sức chứa (khách)", name: "cap", widget: "number", value_type: "int" }
+                      - { label: "Qua đêm - CN đến T5", name: "night_weekday", widget: "number", value_type: "int" }
+                      - { label: "Qua đêm - T6, T7, Lễ", name: "night_weekend", widget: "number", value_type: "int" }
+                      - { label: "Trong ngày - T2 đến T6", name: "day_weekday", widget: "number", value_type: "int" }
+                      - { label: "Trong ngày - T7, CN, Lễ", name: "day_weekend", widget: "number", value_type: "int" }
+                  - { label: "Song lập tầng 1", name: "d1", widget: "object", collapsed: true, fields: *roomfields }
+                  - { label: "Song lập tầng 2", name: "d2", widget: "object", collapsed: true, fields: *roomfields }
+                  - { label: "Nhà cộng đồng", name: "cong", widget: "object", collapsed: true, fields: *roomfields }
+
+          - label: "📅  Lịch sự kiện theo tháng"
+            name: "events"
+            widget: "list"
+            collapsed: true
+            label_singular: "Tháng"
+            summary: "{{fields.month_vi}} - {{fields.tag_vi}}"
+            fields:
+              - { label: "Tháng (VI)", name: "month_vi", widget: "string", hint: "Ví dụ: Tháng 8" }
+              - { label: "Tháng (EN)", name: "month_en", widget: "string", required: false }
+              - { label: "Chủ đề ngắn (VI)", name: "tag_vi", widget: "string" }
+              - { label: "Chủ đề ngắn (EN)", name: "tag_en", widget: "string", required: false }
+              - { label: "Tiêu đề sự kiện (VI)", name: "title_vi", widget: "string" }
+              - { label: "Tiêu đề sự kiện (EN)", name: "title_en", widget: "string", required: false }
+              - label: "Các hoạt động"
+                name: "items"
+                widget: "list"
+                label_singular: "Hoạt động"
+                summary: "{{fields.vi}}"
+                fields:
+                  - { label: "Nội dung (VI)", name: "vi", widget: "text" }
+                  - { label: "Nội dung (EN)", name: "en", widget: "text", required: false }
+
+          - label: "✍️  Chữ trên trang"
+            name: "texts"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Tiêu đề lớn đầu trang (VI)", name: "heroTitleVi", widget: "string", required: false, hint: "Bọc <em>...</em> quanh cụm từ muốn tô màu vàng." }
+              - { label: "Tiêu đề lớn đầu trang (EN)", name: "heroTitleEn", widget: "string", required: false }
+              - { label: "Mô tả đầu trang (VI)", name: "heroLeadVi", widget: "text", required: false }
+              - { label: "Mô tả đầu trang (EN)", name: "heroLeadEn", widget: "text", required: false }
+              - { label: "Giới thiệu - Tiêu đề (VI)", name: "h2.gioi-thieu.vi", widget: "string", required: false }
+              - { label: "Giới thiệu - Tiêu đề (EN)", name: "h2.gioi-thieu.en", widget: "string", required: false }
+              - { label: "Giới thiệu - Mô tả ngắn (VI)", name: "lead.gioi-thieu.vi", widget: "text", required: false }
+              - { label: "Giới thiệu - Mô tả ngắn (EN)", name: "lead.gioi-thieu.en", widget: "text", required: false }
+              - { label: "Không gian - Tiêu đề (VI)", name: "h2.khong-gian.vi", widget: "string", required: false }
+              - { label: "Không gian - Tiêu đề (EN)", name: "h2.khong-gian.en", widget: "string", required: false }
+              - { label: "Không gian - Mô tả ngắn (VI)", name: "lead.khong-gian.vi", widget: "text", required: false }
+              - { label: "Không gian - Mô tả ngắn (EN)", name: "lead.khong-gian.en", widget: "text", required: false }
+              - { label: "Trải nghiệm - Tiêu đề (VI)", name: "h2.trai-nghiem.vi", widget: "string", required: false }
+              - { label: "Trải nghiệm - Tiêu đề (EN)", name: "h2.trai-nghiem.en", widget: "string", required: false }
+              - { label: "Trải nghiệm - Mô tả ngắn (VI)", name: "lead.trai-nghiem.vi", widget: "text", required: false }
+              - { label: "Trải nghiệm - Mô tả ngắn (EN)", name: "lead.trai-nghiem.en", widget: "text", required: false }
+              - { label: "Chương trình - Tiêu đề (VI)", name: "h2.chuong-trinh.vi", widget: "string", required: false }
+              - { label: "Chương trình - Tiêu đề (EN)", name: "h2.chuong-trinh.en", widget: "string", required: false }
+              - { label: "Chương trình - Mô tả ngắn (VI)", name: "lead.chuong-trinh.vi", widget: "text", required: false }
+              - { label: "Chương trình - Mô tả ngắn (EN)", name: "lead.chuong-trinh.en", widget: "text", required: false }
+              - { label: "Dịch vụ - Tiêu đề (VI)", name: "h2.dich-vu.vi", widget: "string", required: false }
+              - { label: "Dịch vụ - Tiêu đề (EN)", name: "h2.dich-vu.en", widget: "string", required: false }
+              - { label: "Dịch vụ - Mô tả ngắn (VI)", name: "lead.dich-vu.vi", widget: "text", required: false }
+              - { label: "Dịch vụ - Mô tả ngắn (EN)", name: "lead.dich-vu.en", widget: "text", required: false }
+              - { label: "Lưu trú - Tiêu đề (VI)", name: "h2.luu-tru.vi", widget: "string", required: false }
+              - { label: "Lưu trú - Tiêu đề (EN)", name: "h2.luu-tru.en", widget: "string", required: false }
+              - { label: "Lưu trú - Mô tả ngắn (VI)", name: "lead.luu-tru.vi", widget: "text", required: false }
+              - { label: "Lưu trú - Mô tả ngắn (EN)", name: "lead.luu-tru.en", widget: "text", required: false }
+              - { label: "Lịch hoạt động - Tiêu đề (VI)", name: "h2.lich-hoat-dong.vi", widget: "string", required: false }
+              - { label: "Lịch hoạt động - Tiêu đề (EN)", name: "h2.lich-hoat-dong.en", widget: "string", required: false }
+              - { label: "Lịch hoạt động - Mô tả ngắn (VI)", name: "lead.lich-hoat-dong.vi", widget: "text", required: false }
+              - { label: "Lịch hoạt động - Mô tả ngắn (EN)", name: "lead.lich-hoat-dong.en", widget: "text", required: false }
+              - { label: "Lịch sự kiện - Tiêu đề (VI)", name: "h2.su-kien.vi", widget: "string", required: false }
+              - { label: "Lịch sự kiện - Tiêu đề (EN)", name: "h2.su-kien.en", widget: "string", required: false }
+              - { label: "Lịch sự kiện - Mô tả ngắn (VI)", name: "lead.su-kien.vi", widget: "text", required: false }
+              - { label: "Lịch sự kiện - Mô tả ngắn (EN)", name: "lead.su-kien.en", widget: "text", required: false }
+              - { label: "Bản đồ - Tiêu đề (VI)", name: "h2.ban-do.vi", widget: "string", required: false }
+              - { label: "Bản đồ - Tiêu đề (EN)", name: "h2.ban-do.en", widget: "string", required: false }
+              - { label: "Bản đồ - Mô tả ngắn (VI)", name: "lead.ban-do.vi", widget: "text", required: false }
+              - { label: "Bản đồ - Mô tả ngắn (EN)", name: "lead.ban-do.en", widget: "text", required: false }
+              - { label: "Thư viện ảnh - Tiêu đề (VI)", name: "h2.thu-vien.vi", widget: "string", required: false }
+              - { label: "Thư viện ảnh - Tiêu đề (EN)", name: "h2.thu-vien.en", widget: "string", required: false }
+              - { label: "Liên hệ - Tiêu đề (VI)", name: "h2.lien-he.vi", widget: "string", required: false }
+              - { label: "Liên hệ - Tiêu đề (EN)", name: "h2.lien-he.en", widget: "string", required: false }
+              - { label: "Liên hệ - Mô tả ngắn (VI)", name: "lead.lien-he.vi", widget: "text", required: false }
+              - { label: "Liên hệ - Mô tả ngắn (EN)", name: "lead.lien-he.en", widget: "text", required: false }
+
+          - label: "Liên kết mạng xã hội"
+            name: "links"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Fanpage Facebook", name: "fanpage", widget: "string", required: false }
+              - { label: "Nhắn tin Messenger", name: "messenger", widget: "string", required: false, hint: "Dạng https://m.me/TenFanpage" }
+              - { label: "TikTok", name: "tiktok", widget: "string", required: false }
+              - { label: "Website chính thức", name: "website", widget: "string", required: false }
