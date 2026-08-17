@@ -1982,7 +1982,7 @@ function demoScene(name){
     /* ---------- 1. ANH ---------- */
     if(S.images){
       Array.prototype.forEach.call(document.querySelectorAll('img[src^="images/"]'), function(img){
-        var key = img.getAttribute("src").split("/").pop().replace(/\.[a-zA-Z0-9]+$/, "");
+        var key = img.getAttribute("src").split("/").pop().split("?")[0].replace(/\.[a-zA-Z0-9]+$/, "");
         var v = S.images[key];
         if(v && v !== img.getAttribute("src")){ img.setAttribute("src", v); img.removeAttribute("srcset"); }
       });
