@@ -159,6 +159,9 @@ p{margin:0 0 1em}
 .card__body{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column}
 .card__body h3{margin-bottom:.4em}
 .card__body p{font-size:1rem;color:var(--muted);margin-bottom:0;line-height:1.68}
+.card__sub{margin:16px 0 5px;font-family:var(--serif);font-size:1.06rem;font-weight:700;color:var(--indigo-d);line-height:1.35}
+.card__sub:first-of-type{margin-top:12px}
+.card__body p + p{margin-top:9px}
 .tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
 .chip{font-size:.85rem;background:rgba(29,92,138,.10);border:1px solid rgba(29,92,138,.22);color:var(--indigo);padding:5px 13px;border-radius:99px;font-weight:600}
@@ -832,9 +835,16 @@ window.SITE = null;
         </div></article>
         <article class="card"><div class="card__body">
           <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3v8a3 3 0 006 0V3M9 11v10M18 3c-1.5 2-2 4-2 7v11"/></svg></div>
-          <h3 data-vi="Ẩm thực" data-en="Dining">Ẩm thực</h3>
-          <p data-vi="Nhà hàng Chân Đồi - không gian ẩm thực trong lòng Làng, khuôn viên rộng, xanh mát bên hồ, phục vụ đặc sản vùng miền với công suất khoảng 500 khách, phù hợp cho khách lẻ, gia đình và các đoàn khách. Du khách cũng có thể đặt bữa ngay tại các làng Tày, Nùng, Dao, Mường, Thái để thưởng thức hương vị đặc trưng của Tây Bắc, Tây Nguyên và Nam Bộ." data-en="Chan Doi restaurant is a dining space in the heart of the Village - spacious, green and set beside the lake, serving regional specialities for around 500 guests, suited to individual travellers, families and large groups. Guests can also book meals directly in the Tay, Nung, Dao, Muong and Thai villages to taste the flavours of the Northwest, the Central Highlands and the South.">Nhà hàng Chân Đồi - không gian ẩm thực trong lòng Làng, khuôn viên rộng, xanh mát bên hồ, phục vụ đặc sản vùng miền với công suất khoảng 500 khách, phù hợp cho khách lẻ, gia đình và các đoàn khách. Du khách cũng có thể đặt bữa ngay tại các làng Tày, Nùng, Dao, Mường, Thái để thưởng thức hương vị đặc trưng của Tây Bắc, Tây Nguyên và Nam Bộ.</p>
-          <p style="margin-top:10px;font-style:italic;color:var(--jade);font-weight:600" data-vi="Thưởng thức hương vị - Chạm vào văn hóa - Nhớ mãi một hành trình." data-en="Taste the flavours - touch the culture - remember the journey.">Thưởng thức hương vị - Chạm vào văn hóa - Nhớ mãi một hành trình.</p>
+          <h3 data-vi="Ẩm thực - Hương vị văn hóa Việt" data-en="Dining - The flavours of Vietnamese culture">Ẩm thực - Hương vị văn hóa Việt</h3>
+
+          <div class="card__sub" data-vi="Nhà hàng Chân Đồi" data-en="Chan Doi Restaurant">Nhà hàng Chân Đồi</div>
+          <p data-vi="Không gian ẩm thực trong lòng Làng Văn hóa, khuôn viên rộng, xanh mát bên hồ, phục vụ ẩm thực đặc sắc vùng miền, với công suất khoảng 500 khách, phù hợp cho khách lẻ, các gia đình và các đoàn khách." data-en="A dining space in the heart of the Village - spacious, green and set beside the lake, serving distinctive regional cuisine for around 500 guests, suited to individual travellers, families and large groups.">Không gian ẩm thực trong lòng Làng Văn hóa, khuôn viên rộng, xanh mát bên hồ, phục vụ ẩm thực đặc sắc vùng miền, với công suất khoảng 500 khách, phù hợp cho khách lẻ, các gia đình và các đoàn khách.</p>
+
+          <div class="card__sub" data-vi="Ẩm thực tại các làng dân tộc" data-en="Dining in the ethnic villages">Ẩm thực tại các làng dân tộc</div>
+          <p data-vi="Trực tiếp thưởng thức những món ăn truyền thống của đồng bào Tày, Nùng, Dao, Mường, Thái và khám phá hương vị đặc trưng của Tây Bắc, Tây Nguyên, Nam Bộ." data-en="Taste the traditional dishes of the Tay, Nung, Dao, Muong and Thai communities right where they are cooked, and discover the signature flavours of the Northwest, the Central Highlands and the South.">Trực tiếp thưởng thức những món ăn truyền thống của đồng bào Tày, Nùng, Dao, Mường, Thái và khám phá hương vị đặc trưng của Tây Bắc, Tây Nguyên, Nam Bộ.</p>
+          <p data-vi="Du khách có thể trải nghiệm cách chế biến một số món ăn, bánh truyền thống và cảm nhận sự khác biệt trong cách sử dụng gia vị, nguyên liệu của từng vùng miền." data-en="Visitors can try their hand at preparing some traditional dishes and cakes, and feel how each region differs in its use of spices and ingredients.">Du khách có thể trải nghiệm cách chế biến một số món ăn, bánh truyền thống và cảm nhận sự khác biệt trong cách sử dụng gia vị, nguyên liệu của từng vùng miền.</p>
+
+          <p style="margin-top:14px;font-style:italic;color:var(--jade);font-weight:600" data-vi="Thưởng thức hương vị - Chạm vào văn hóa - Nhớ mãi một hành trình." data-en="Taste the flavours - touch the culture - remember the journey.">Thưởng thức hương vị - Chạm vào văn hóa - Nhớ mãi một hành trình.</p>
         </div></article>
         <article class="card"><div class="card__body">
           <div class="iconbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9 17H3z"/><path d="M12 10l5 10H7z"/></svg></div>
