@@ -143,7 +143,7 @@ p{margin:0 0 1em}
 .fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,243,222,.28);border-radius:14px;padding:12px 18px;backdrop-filter:blur(6px);min-width:118px}
 .fact b{display:block;font-family:'Playfair Display',serif;font-size:1.72rem;color:var(--yellow-l);line-height:1.1}
 .fact span{font-size:.86rem;color:#D6E9E5;letter-spacing:.02em}
-.hero__logo{position:absolute;right:5%;top:52%;transform:translateY(-50%);width:min(28vw,320px);aspect-ratio:1/1;opacity:.13;z-index:1;pointer-events:none;filter:drop-shadow(0 10px 40px rgba(0,0,0,.4))}
+.hero__logo{position:absolute;right:5%;top:52%;transform:translateY(-50%);width:min(28vw,320px);aspect-ratio:1/1;opacity:.26;z-index:1;pointer-events:none;filter:drop-shadow(0 6px 22px rgba(0,0,0,.55)) contrast(1.12) saturate(1.15)}
 .scrolldown{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:#E9F5F2;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.85}
 .scrolldown i{display:block;width:1px;height:34px;background:linear-gradient(#EBD8BC,transparent);animation:sd 1.8s infinite}
 @keyframes sd{0%{opacity:0;transform:scaleY(.3)}50%{opacity:1}100%{opacity:0;transform:scaleY(1)}}
@@ -1357,7 +1357,7 @@ window.SITE = null;
               <h4 data-vi="Fanpage chính thức của Làng" data-en="Official Facebook page">Fanpage chính thức của Làng</h4>
               <p data-vi="Quét mã để theo dõi chương trình, hoạt động văn hóa và thông tin tham quan mới nhất - hoặc nhắn tin trực tiếp để được tư vấn nhanh." data-en="Scan to follow the latest programmes, cultural activities and visitor news - or message us directly for a quick reply.">Quét mã để theo dõi chương trình, hoạt động văn hóa và thông tin tham quan mới nhất - hoặc nhắn tin trực tiếp để được tư vấn nhanh.</p>
               <div class="fanbtns">
-                <a class="fanbtn msg" href="https://www.facebook.com/messages/t/472680329591250" target="_blank" rel="noopener">
+                <a class="fanbtn msg" href="https://m.me/Langvhdl" target="_blank" rel="noopener">
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.3 2 2 6.2 2 11.8c0 3.2 1.4 6 3.7 7.8V24l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.8S17.7 2 12 2zm1 13.2l-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg>
                   <span data-vi="Nhắn tin cho Làng" data-en="Message the Village">Nhắn tin cho Làng</span>
                 </a>
@@ -1439,7 +1439,7 @@ window.SITE = null;
 </footer>
 
 <div class="fab">
-  <a class="msgr" href="https://www.facebook.com/messages/t/472680329591250" target="_blank" rel="noopener" aria-label="Nhan tin Messenger cho Lang"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.3 2 2 6.2 2 11.8c0 3.2 1.4 6 3.7 7.8V24l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.8S17.7 2 12 2zm1 13.2l-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg></a>
+  <a class="msgr" href="https://m.me/Langvhdl" target="_blank" rel="noopener" aria-label="Nhan tin Messenger cho Lang"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.3 2 2 6.2 2 11.8c0 3.2 1.4 6 3.7 7.8V24l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.8S17.7 2 12 2zm1 13.2l-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg></a>
   <a class="call" href="tel:02462929777" aria-label="Gọi hotline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a12 12 0 005 5l1-2 5 2v2c0 1-1 2-2 2A16 16 0 014 5z"/></svg></a>
   <a class="top" href="#top" aria-label="Lên đầu trang"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 </div>
@@ -2131,36 +2131,18 @@ if (location.search.indexOf("edit=1") > -1) {
 })();
 </script>
 <script>
-/* ===== Nhan tin cho Lang: dung phien Facebook san co, khong bat dang nhap lai =====
-   m.me chuyen huong sang messenger.com (ten mien khac) nen nguoi dang dang nhap
-   facebook.com van bi hoi dang nhap. Dung thang facebook.com/messages/t/<page-id>:
-   - May tinh da dang nhap Facebook  -> mo thang khung chat
-   - Dien thoai co app Facebook      -> universal link mo app, da dang nhap san
-   - Dien thoai khong co app         -> mo trong trinh duyet bang phien dang co    */
+/* Nut nhan tin: tren dien thoai mo cung tab de he dieu hanh chuyen sang app Messenger
+   (mo tab moi hay lam hong buoc chuyen app, nhat la khi khach vao web tu trong Facebook/Zalo) */
 (function(){
-  var PAGE_ID = "472680329591250";
-  var URL_FB  = "https://www.facebook.com/messages/t/" + PAGE_ID;
-  var MOBILE  = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || "");
-
+  if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent || "")) return;
   function fix(){
-    var sel = 'a[href*="m.me/"], a[href*="messenger.com"], a[href*="/messages/t/"]';
-    Array.prototype.forEach.call(document.querySelectorAll(sel), function(a){
-      a.setAttribute("href", URL_FB);
-      if (MOBILE) a.removeAttribute("target");   /* cung tab de he dieu hanh chuyen sang app */
+    Array.prototype.forEach.call(document.querySelectorAll('a[href*="m.me/"]'), function(a){
+      a.removeAttribute("target");
     });
   }
   fix();
   document.addEventListener("DOMContentLoaded", fix);
   window.addEventListener("load", fix);
-
-  /* Chan o giai doan capture: du trang quan tri co ghi de lien ket thi van dung */
-  document.addEventListener("click", function(e){
-    var a = e.target && e.target.closest && e.target.closest('a[href*="m.me/"], a[href*="messenger.com"]');
-    if (!a) return;
-    e.preventDefault();
-    if (MOBILE) location.href = URL_FB;
-    else window.open(URL_FB, "_blank", "noopener");
-  }, true);
 })();
 </script>
 </body>
